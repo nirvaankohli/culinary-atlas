@@ -4,14 +4,17 @@ from pathlib import Path
 ROOT_PATH = Path(__file__).parent.parent.parent
 SETTING_PATH = ROOT_PATH / "agents" / "common_settings.json"
 EXAMPLE_PATH = ROOT_PATH / "agents" / "examples"
-EXAMPLE_OUTPUT_PATH = EXAMPLE_PATH / "diversifier_output.json"
+EXAMPLE_OUTPUT_PATH = EXAMPLE_PATH / "recipes_output.json"
+
 
 class common_settings:
 
-    def __init__(self, agent_name: str):
+    def __init__(self, agent_name: str, log: bool = False):
 
         import json
         from pathlib import Path
+
+        self.debug = log
 
         self.module_name = self.__class__.__name__
 
@@ -238,63 +241,99 @@ class common_settings:
 
         return url
 
+    def log(self, message: str):
 
-common_settings_instance = common_settings(agent_name="diversifier")
+        if self.log:
+
+            print(f"| FROM {self.module_name} | LOG: {message}")
 
 
-def process_diversification(input_text: str) -> str:
+common_settings_instance = common_settings(agent_name="recipes", log=True)
 
-    SYSTEM_PROMPT = """You are a culinary anthropologist who finds cultural and regional variations of a given dish concept.
 
-Goal:
-- Return dishes from different regions, countries, or ethnic communities that are structurally or culturally similar.
-- Each result must correspond to a concrete, cookable dish that has actual recipes available online (not vague concepts).
+def process_list(input_data: list, at_a_time=5, max_num=10) -> str:
 
-Output format (important):
+    recursion_needed = False
+    input_data.sort(reverse=True, key=lambda x: x.get("similarity_score", 0))
+
+    common_settings_instance.log(f"Running process_list on {len(input_data)} items")
+
+    if len(input_data) > at_a_time:
+
+        recursion_needed = True
+        recursion_list = input_data[at_a_time:max_num]
+
+    input_data = input_data[:at_a_time]
+
+    results = []
+    list_of_inputs = []
+
+    for i in input_data:
+
+        dish_name = i.get("dish_name", "")
+        local_name = i.get("local_name", "")
+        recipe_search_prompt = i.get("recipe_search_prompt", "")
+
+        list_of_inputs.append(
+            {
+                "dish_name": dish_name,
+                "local_name": local_name,
+                "recipe_search_prompt": recipe_search_prompt,
+            }
+        )
+
+    input_into = json.dumps(list_of_inputs)
+
+    common_settings_instance.log(f"Input JSON for API(length): {len(input_into)}")
+    SYSTEM_PROMPT = """You are a recipe retrieval and structuring assistant.
+Given a dish name, local name, and a recipe search prompt (used against a database like Spoonacular),
+you return a clean, structured recipe object.
+
+Rules:
+- Use the given dish/local name as the identity of the dish.
+- Assume the search prompt already matched a real recipe; do NOT invent obviously fake ingredients.
+- Be concise and practical: focus on what a cook needs (ingredients, equipment, steps, time).
 - Return ONLY valid JSON (no extra text, no markdown).
-- JSON must be a list of objects with exactly these keys:
+- There should only be ONE recipe per list item in the input.
 
+Output schema (single JSON object):
 [
-  {
-    "dish_name": "Pad Thai",
-    "local_name": "ผัดไทย",
-    "region": "Thailand",
-    "culture_or_ethnicity": "Thai",
-    "similarity_score": 0.92,
-    "recipe_search_prompt": "pad thai",
-    "coordinates": [12.9716, 100.5018] # Latitude and Longitude of the dish's region
-  }
-]
+{
+"matched_recipe_title": string,
+"summary": string,
+"servings": int,
+"total_time_minutes": int,
+"materials": {
+    "ingredients": [
+    {
+        "name": string,
+        "quantity": string,   # e.g. "2", "1/2", "to taste"
+        "unit": string,       # e.g. "tbsp", "g", "cup", "" if none
+        "notes": string       # optional prep notes, can be ""
+    }
+    ],
+    "equipment": [string]     # e.g. ["wok", "large pot", "baking tray"]
+},
+"steps": [string],          # ordered, clear, numbered implicitly
+"image_url": string,        # direct URL to a representative image - Make sure this is an image URL
+"source_url": string,       # canonical recipe/source URL if available, else ""
+"source": string            # e.g. "spoonacular"
+}
+]"""
 
-Field rules:
-- "dish_name": Name the dish as it’s most commonly known in global food media; it can be the same as local_name.
-- "local_name": Local or native name (can include non-Latin script); if unknown, repeat dish_name.
-- "region": Country and/or notable region/city (e.g. "Italy", "Sichuan, China", "Yucatán, Mexico").
-- "culture_or_ethnicity": The cultural or ethnic group most associated with the dish (e.g. "Turkish", "Punjabi", "Cantonese").
-- "similarity_score": Float 0.0–1.0 for how close it is to the input dish concept.
-- "recipe_search_prompt":
-  - A short, realistic query that should return recipes from a database like Spoonacular.
-  - Use common English transliteration + optional region, e.g. "pad thai", "sicilian arancini", "punjabi chole bhature".
-  - Do NOT include explanations, adjectives like "authentic", or extra description; just the dish search phrase.
-- "coordinates": Latitude and Longitude of the dish's primary region of origin as a list of two floats.
-  
-Behavior:
-- Make them only dishes- not ingredients. If the input is an ingredient, find dishes that primarily feature that ingredient (for example: if the input is "rice", find dishes like "paella" or "risotto" rather than just "rice").
-- Focus ONLY on culturally rooted dishes, not minor ingredient tweaks or brand variants.
-- Prefer dishes with many existing online recipes over obscure or hyper-niche items.
-- Aim for diversity across countries and food cultures.
-- Sort results from highest to lowest similarity_score.
-"""
+    USER_PROMPT = f"""Build a structured recipe for the following dish(es) using my recipe database result.
 
-    USER_PROMPT = f"""Given this dish concept:
+    Input:
+    {input_into}
 
-    {input_text}
+    Tasks:
+    - Use the best-matching recipe from the database result for this search prompt.
+    - Normalize and clean up ingredient quantities and units.
+    - Extract a reasonable total_time_minutes (estimate if only prep/cook times are given).
+    - Write clear, step-by-step cooking instructions in "steps".
+    - Fill in image_url and source_url from the recipe data if available.
 
-    Identify 8–15 cultural or regional variations:
-    - Each variation must be a specific named dish that has real recipes available online.
-    - Dishes should be structurally or culturally similar (similar dish idea and/or similar role in the meal).
-
-    Return ONLY a JSON list of objects using exactly the schema and field rules defined in the system prompt."""
+    Use exactly the schema and field names defined in the system prompt."""
 
     body = common_settings_instance.get_body()
     body = common_settings_instance.replace_prompts_in_body_with_custom(
@@ -308,21 +347,75 @@ Behavior:
 
     response = requests.post(url, headers=header, json=body)
 
+    results = []
+
     if response.status_code == 200:
 
-        return json.loads(response.json()["choices"][0]["message"]["content"].replace("`json", "").replace('\n', '').replace('`', ''))
+        common_settings_instance.log("API request successful")
+
+        try:
+
+            ayy = json.loads(
+                response.json()["choices"][0]["message"]["content"]
+                .replace("`json", "")
+                .replace("\n", "")
+                .replace("`", "")
+            )
+
+        except Exception as e:
+
+            with open(EXAMPLE_PATH / "recipes_debug_response.txt", "w", encoding="utf-8") as f:
+
+                f.write(response.json()["choices"][0]["message"]["content"])
+
+        common_settings_instance.log(f"Received {len(ayy)} results from API")
+
+        for res in range(len(ayy)):
+
+            addition = ayy[res]
+
+            for key, value in input_data[res].items():
+
+                addition[key] = value
+
+            results.append(addition)
+
+
+        if recursion_needed:
+
+            results += process_list(
+                recursion_list, at_a_time=at_a_time, max_num=max_num
+            )
+
+            common_settings_instance.log(
+                f"Recursion needed; total results now {len(results)} after processing remaining items"
+            )
+
     else:
 
         common_settings_instance.warn(
             Exception(f"API request failed with status code {response.status_code}"),
             f"Response: {response.text}",
         )
-        return ""
+
+
+    return results
 
 
 if __name__ == "__main__":
 
-    response = process_diversification("Rice")
+    import time
+
+    t = time.perf_counter()
+
+    with open(EXAMPLE_PATH / "diversifier_output.json", "r", encoding="utf-8") as f:
+
+        diversifier_output = json.load(f)
 
     with open(EXAMPLE_OUTPUT_PATH, "w", encoding="utf-8") as f:
+
+        response = process_list(diversifier_output)
         f.write(json.dumps(response, indent=2))
+
+    elapsed = time.perf_counter() - t
+    print(f"Elapsed time: {elapsed:.2f} seconds")

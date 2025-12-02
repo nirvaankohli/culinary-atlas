@@ -239,6 +239,10 @@ class common_settings:
 
         return url
 
+    def log(self, message: str):
+
+        print(f"| FROM {self.module_name} | LOG: {message}")
+
 
 common_settings_instance = common_settings(agent_name="replace_agent_name")
 

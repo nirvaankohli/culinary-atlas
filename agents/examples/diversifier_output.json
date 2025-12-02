@@ -2,105 +2,181 @@
   {
     "dish_name": "Paella",
     "local_name": "Paella",
-    "region": "Valencia, Spain",
+    "region": "Spain",
     "culture_or_ethnicity": "Spanish",
-    "similarity_score": 0.95,
-    "recipe_search_prompt": "paella"
+    "similarity_score": 0.92,
+    "recipe_search_prompt": "paella",
+    "coordinates": [
+      40.4637,
+      -3.7492
+    ]
+  },
+  {
+    "dish_name": "Biryani",
+    "local_name": "\u092c\u093f\u0930\u092f\u093e\u0928\u0940",
+    "region": "India",
+    "culture_or_ethnicity": "Indian",
+    "similarity_score": 0.91,
+    "recipe_search_prompt": "biryani",
+    "coordinates": [
+      20.5937,
+      78.9629
+    ]
   },
   {
     "dish_name": "Risotto",
     "local_name": "Risotto",
-    "region": "Northern Italy",
+    "region": "Italy",
     "culture_or_ethnicity": "Italian",
-    "similarity_score": 0.93,
-    "recipe_search_prompt": "risotto"
-  },
-  {
-    "dish_name": "Biryani",
-    "local_name": "\u0628\u0631\u06cc\u0627\u0646\u06cc",
-    "region": "Indian Subcontinent",
-    "culture_or_ethnicity": "Indian, Pakistani",
     "similarity_score": 0.9,
-    "recipe_search_prompt": "biryani"
+    "recipe_search_prompt": "risotto",
+    "coordinates": [
+      41.8719,
+      12.5674
+    ]
   },
   {
-    "dish_name": "Jollof Rice",
-    "local_name": "Jollof Rice",
-    "region": "West Africa",
-    "culture_or_ethnicity": "West African",
-    "similarity_score": 0.88,
-    "recipe_search_prompt": "jollof rice"
-  },
-  {
-    "dish_name": "Fried Rice",
-    "local_name": "\u7092\u98ef",
-    "region": "China",
-    "culture_or_ethnicity": "Chinese",
-    "similarity_score": 0.85,
-    "recipe_search_prompt": "fried rice"
+    "dish_name": "Arroz con Pollo",
+    "local_name": "Arroz con Pollo",
+    "region": "Puerto Rico",
+    "culture_or_ethnicity": "Puerto Rican",
+    "similarity_score": 0.89,
+    "recipe_search_prompt": "arroz con pollo",
+    "coordinates": [
+      18.2208,
+      -66.5901
+    ]
   },
   {
     "dish_name": "Nasi Goreng",
     "local_name": "Nasi Goreng",
     "region": "Indonesia",
     "culture_or_ethnicity": "Indonesian",
-    "similarity_score": 0.84,
-    "recipe_search_prompt": "nasi goreng"
-  },
-  {
-    "dish_name": "Arroz con Pollo",
-    "local_name": "Arroz con Pollo",
-    "region": "Latin America",
-    "culture_or_ethnicity": "Latin American",
-    "similarity_score": 0.82,
-    "recipe_search_prompt": "arroz con pollo"
+    "similarity_score": 0.88,
+    "recipe_search_prompt": "nasi goreng",
+    "coordinates": [
+      -1.8242,
+      118.8911
+    ]
   },
   {
     "dish_name": "Congee",
     "local_name": "\u7ca5",
-    "region": "East Asia",
-    "culture_or_ethnicity": "Chinese, East Asian",
-    "similarity_score": 0.78,
-    "recipe_search_prompt": "congee"
+    "region": "China",
+    "culture_or_ethnicity": "Chinese",
+    "similarity_score": 0.87,
+    "recipe_search_prompt": "congee",
+    "coordinates": [
+      35.8617,
+      104.1954
+    ]
   },
   {
-    "dish_name": "Khao Pad",
-    "local_name": "\u0e02\u0e49\u0e32\u0e27\u0e1c\u0e31\u0e14",
-    "region": "Thailand",
-    "culture_or_ethnicity": "Thai",
-    "similarity_score": 0.75,
-    "recipe_search_prompt": "khao pad"
+    "dish_name": "Jambalaya",
+    "local_name": "Jambalaya",
+    "region": "United States",
+    "culture_or_ethnicity": "Creole",
+    "similarity_score": 0.86,
+    "recipe_search_prompt": "jambalaya",
+    "coordinates": [
+      31.4646,
+      -91.1854
+    ]
   },
   {
-    "dish_name": "Bibimbap",
-    "local_name": "\ube44\ube54\ubc25",
-    "region": "Korea",
+    "dish_name": "Kabsa",
+    "local_name": "\u0643\u0633\u0648\u0629",
+    "region": "Saudi Arabia",
+    "culture_or_ethnicity": "Arabian",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "kabsa",
+    "coordinates": [
+      23.3538,
+      45.1746
+    ]
+  },
+  {
+    "dish_name": "Com Tam",
+    "local_name": "C\u01a1m T\u1ea5m",
+    "region": "Vietnam",
+    "culture_or_ethnicity": "Vietnamese",
+    "similarity_score": 0.84,
+    "recipe_search_prompt": "com tam",
+    "coordinates": [
+      14.0583,
+      108.2772
+    ]
+  },
+  {
+    "dish_name": "Arroz Rojo",
+    "local_name": "Arroz Rojo",
+    "region": "Mexico",
+    "culture_or_ethnicity": "Mexican",
+    "similarity_score": 0.83,
+    "recipe_search_prompt": "arroz rojo",
+    "coordinates": [
+      23.6345,
+      -102.5528
+    ]
+  },
+  {
+    "dish_name": "Kimbap",
+    "local_name": "\uae40\ubc25",
+    "region": "South Korea",
     "culture_or_ethnicity": "Korean",
-    "similarity_score": 0.7,
-    "recipe_search_prompt": "bibimbap"
+    "similarity_score": 0.82,
+    "recipe_search_prompt": "kimbap",
+    "coordinates": [
+      37.5665,
+      126.978
+    ]
   },
   {
-    "dish_name": "Sushi Rice",
-    "local_name": "\u9162\u98ef",
+    "dish_name": "Rice and Peas",
+    "local_name": "Rice and Peas",
+    "region": "Jamaica",
+    "culture_or_ethnicity": "Caribbean",
+    "similarity_score": 0.81,
+    "recipe_search_prompt": "rice and peas",
+    "coordinates": [
+      18.1093,
+      -77.2979
+    ]
+  },
+  {
+    "dish_name": "Donburi",
+    "local_name": "\u4e3c",
     "region": "Japan",
     "culture_or_ethnicity": "Japanese",
-    "similarity_score": 0.65,
-    "recipe_search_prompt": "sushi rice"
+    "similarity_score": 0.8,
+    "recipe_search_prompt": "donburi",
+    "coordinates": [
+      35.6895,
+      139.6917
+    ]
   },
   {
-    "dish_name": "Mofongo de Yuca con Chicharr\u00f3n",
-    "local_name": "Mofongo de Yuca con Chicharr\u00f3n",
-    "region": "Puerto Rico",
-    "culture_or_ethnicity": "Puerto Rican",
-    "similarity_score": 0.6,
-    "recipe_search_prompt": "mofongo de yuca"
+    "dish_name": "Arroz Negro",
+    "local_name": "Arroz Negro",
+    "region": "Spain",
+    "culture_or_ethnicity": "Spanish",
+    "similarity_score": 0.79,
+    "recipe_search_prompt": "arroz negro",
+    "coordinates": [
+      37.3891,
+      -5.9847
+    ]
   },
   {
-    "dish_name": "Dolmades",
-    "local_name": "\u039d\u03c4\u03bf\u03bb\u03bc\u03ac\u03b4\u03b5\u03c2",
-    "region": "Greece",
-    "culture_or_ethnicity": "Greek",
-    "similarity_score": 0.55,
-    "recipe_search_prompt": "dolmades"
+    "dish_name": "Pulao",
+    "local_name": "\u092a\u0941\u0932\u093e\u0913",
+    "region": "India",
+    "culture_or_ethnicity": "Indian",
+    "similarity_score": 0.78,
+    "recipe_search_prompt": "pulao",
+    "coordinates": [
+      20.5937,
+      78.9629
+    ]
   }
 ]

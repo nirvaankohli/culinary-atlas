@@ -1,13 +1,13 @@
 {
   "env": {
-    "available_keys": ["AI_API_KEY", "RECIPE_API_KEY_0", "RECIPE_API_KEY_1"],
+    "available_keys": ["AI_API_KEY"],
     "path": ".env"
   },
 
   "ai_api": {
     "body": {
       "default": {
-        "model": "google/gemini-2.5-flash",
+        "model": "google/gemini-2.5-flash:online",
         "temperature": 0.7,
         "max_tokens": 3000,
         "messages": [
@@ -27,6 +27,12 @@
         "diversifier": {
           "raw": {
             "max_tokens": 20000
+          },
+          "roles": ["system", "user"]
+        },
+        "recipes": {
+          "raw": {
+            "max_tokens": 100000
           },
           "roles": ["system", "user"]
         }
@@ -66,6 +72,6 @@
     }
   },
   "agents": {
-    "available_agents": ["diversifier", "scrapers/recipes"]
+    "available_agents": ["diversifier", "recipes"]
   }
 }
