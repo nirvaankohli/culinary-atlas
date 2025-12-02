@@ -237,13 +237,9 @@ class common_settings:
         return url
 
 
-class agent_name_replace:
-
-    def __init__(self):
-
-        common_settings_instance = common_settings(agent_name="agent_name_replace")
+common_settings_instance = common_settings(agent_name="agent_name_replace")
 
 
 if __name__ == "__main__":
 
-    instance = agent_name_replace()
+    pass

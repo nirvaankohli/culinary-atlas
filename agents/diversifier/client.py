@@ -237,20 +237,58 @@ class common_settings:
         return url
 
 
+common_settings_instance = common_settings(agent_name="diversifier")
+
+
+def process_diversification(input_text: str) -> str:
+
+    SYSTEM_PROMPT = """You are a culinary expert with extensive knowledge of world cuisines and food cultures. Your task is to generate diverse variations of a given dish from different cultures and regions.
+
+For each variation, provide:
+1. The dish name (including regional/cultural origin if applicable)
+2. A confidence score (0.0 to 1.0) indicating how similar this variation is to the original dish
+
+Return your response as a valid JSON list of dictionaries with the format:
+[
+    {"Variation Name (Origin)", "confidence": 0.85},
+    {"Another Variation (Origin)", "confidence": 0.72}
+]
+
+Order the list from highest to lowest confidence. Include variations from different cuisines, cooking methods, and cultural adaptations."""
+
+    USER_PROMPT = f"""Generate diverse variations of the following dish: {input_text}
+
+Return a JSON list of dictionaries where each dictionary contains:
+- "dish_name": the name of the variation with its cultural/regional origin
+- "confidence": a float between 0.0 and 1.0 representing similarity to the original dish
+
+Provide at least 10 variations if possible."""
+
+    body = common_settings_instance.get_body()
+    body = common_settings_instance.replace_prompts_in_body_with_custom(
+        body, user=USER_PROMPT, system=SYSTEM_PROMPT
+    )
+    header = common_settings_instance.get_headers()
+
+    url = common_settings_instance.get_chat_completion_url()
+
+    import requests
+
+    response = requests.post(url, headers=header, json=body)
+
+    if response.status_code == 200:
+
+        return response.json()["choices"][0]["message"]["content"]
+
+    else:
+
+        common_settings_instance.warn(
+            Exception(f"API request failed with status code {response.status_code}"),
+            f"Response: {response.text}",
+        )
+        return ""
+
+
 if __name__ == "__main__":
 
-    settings = common_settings(agent_name="diversifier")
-    body = settings.get_body()
-    print("Initial Body:", body)
-    body = settings.replace_prompts_in_body_with_custom(
-        body,
-        user="Hello, how are you?",
-        system="You are a helpful assistant.",
-        assistant=None,
-    )
-    headers = settings.get_headers()
-    url = settings.get_chat_completion_url()
-
-    print("Body:", body)
-    print("Headers:", headers)
-    print("URL:", url)
+    print(process_diversification("Spaghetti Carbonara"))
