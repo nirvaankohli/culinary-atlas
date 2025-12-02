@@ -84,8 +84,12 @@ if __name__ == "__main__":
 
         input_data = json.load(f)
 
-    response = process(input_data[0]["recipe_search_prompt"])
-    print(response)
+    response = {}
+    for i in range(len(input_data)):
+
+        response[clear_of_junk(input_data[i]["recipe_search_prompt"])] = process(
+            input_data[i]["recipe_search_prompt"]
+        )
 
     with open(EXAMPLE_OUTPUT_PATH, "w", encoding="utf-8") as f:
 

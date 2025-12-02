@@ -247,41 +247,52 @@ def process_diversification(input_text: str) -> str:
     SYSTEM_PROMPT = """You are a culinary anthropologist who finds cultural and regional variations of a given dish concept.
 
 Goal:
-- Return dishes from different countries, regions, or ethnic communities that are structurally or culturally similar (same basic dish idea or similar role in the meal).
+- Return dishes from different regions, countries, or ethnic communities that are structurally or culturally similar.
+- Each result must correspond to a concrete, cookable dish that has actual recipes available online (not vague concepts).
 
-Rules:
-- Focus ONLY on cultural/regional variations, not minor ingredient tweaks, brand variants, or diet versions.
-- Prefer widely recognized, traditional, or locally rooted dishes.
-- Different names/ingredients are fine if the underlying concept or role is similar.
-- Consider history, trade, diaspora, and fusion that became culturally established.
-- Aim for diversity across regions and cultures.
+Output format (important):
+- Return ONLY valid JSON (no extra text, no markdown).
+- JSON must be a list of objects with exactly these keys:
 
-Output:
-- Return ONLY valid JSON (no extra text, no markdown, no comments).
-- JSON must be a list of objects sorted by similarity_score (high → low).
-- Each object must have exactly these keys:
+[
+  {
+    "dish_name": "Pad Thai",
+    "local_name": "ผัดไทย",
+    "region": "Thailand",
+    "culture_or_ethnicity": "Thai",
+    "similarity_score": 0.92,
+    "recipe_search_prompt": "pad thai"
+  }
+]
 
-{
-  "dish_name": string, # Doesn't need to be in English or different than local_name - whatever it is known best for
-  "local_name": string,
-  "region": string,
-  "culture_or_ethnicity": string,
-  "similarity_score": float,  # 0.0–1.0
-  "recipe_search_prompt": string
-}"""
+Field rules:
+- "dish_name": Name the dish as it’s most commonly known in global food media; it can be the same as local_name.
+- "local_name": Local or native name (can include non-Latin script); if unknown, repeat dish_name.
+- "region": Country and/or notable region/city (e.g. "Italy", "Sichuan, China", "Yucatán, Mexico").
+- "culture_or_ethnicity": The cultural or ethnic group most associated with the dish (e.g. "Turkish", "Punjabi", "Cantonese").
+- "similarity_score": Float 0.0–1.0 for how close it is to the input dish concept.
+- "recipe_search_prompt":
+  - A short, realistic query that should return recipes from a database like Spoonacular.
+  - Use common English transliteration + optional region, e.g. "pad thai", "sicilian arancini", "punjabi chole bhature".
+  - Do NOT include explanations, adjectives like "authentic", or extra description; just the dish search phrase.
 
-    USER_PROMPT = f"""Identify cultural variations of this dish concept:
+Behavior:
+- Make them only dishes- not ingredients. If the input is an ingredient, find dishes that primarily feature that ingredient (for example: if the input is "rice", find dishes like "paella" or "risotto" rather than just "rice").
+- Focus ONLY on culturally rooted dishes, not minor ingredient tweaks or brand variants.
+- Prefer dishes with many existing online recipes over obscure or hyper-niche items.
+- Aim for diversity across countries and food cultures.
+- Sort results from highest to lowest similarity_score.
+"""
+
+    USER_PROMPT = f"""Given this dish concept:
 
     {input_text}
 
-    Treat this as a general dish concept (structure + role in the meal), not just one specific recipe.
+    Identify 8–15 cultural or regional variations:
+    - Each variation must be a specific named dish that has real recipes available online.
+    - Dishes should be structurally or culturally similar (similar dish idea and/or similar role in the meal).
 
-    Tasks:
-    - Find 8–15 dishes from different countries, regions, or ethnic communities that are:
-    - Structurally similar (e.g., stuffed dumpling, noodles in broth, layered rice + meat), and/or
-    - Play a similar cultural/culinary role (e.g., street snack, festival dish, family comfort food).
-    - Follow all rules from the system prompt.
-    - Return ONLY the JSON list of objects using the exact schema and field names given in the system prompt."""
+    Return ONLY a JSON list of objects using exactly the schema and field rules defined in the system prompt."""
 
     body = common_settings_instance.get_body()
     body = common_settings_instance.replace_prompts_in_body_with_custom(

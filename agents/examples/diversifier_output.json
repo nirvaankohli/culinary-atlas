@@ -1,122 +1,106 @@
 [
   {
-    "dish_name": "Steamed White Rice",
-    "local_name": "\u767d\u98ef (b\u00e1i f\u00e0n)",
-    "region": "East Asia",
-    "culture_or_ethnicity": "Chinese",
-    "similarity_score": 1.0,
-    "recipe_search_prompt": "how to steam white rice Chinese style"
-  },
-  {
-    "dish_name": "Boiled Rice",
-    "local_name": "\u092d\u093e\u0924 (bhaat)",
-    "region": "South Asia",
-    "culture_or_ethnicity": "Indian",
-    "similarity_score": 0.98,
-    "recipe_search_prompt": "how to boil plain rice Indian style"
-  },
-  {
-    "dish_name": "Plain White Rice",
-    "local_name": "riz blanc",
-    "region": "France",
-    "culture_or_ethnicity": "French",
+    "dish_name": "Paella",
+    "local_name": "Paella",
+    "region": "Valencia, Spain",
+    "culture_or_ethnicity": "Spanish",
     "similarity_score": 0.95,
-    "recipe_search_prompt": "how to cook plain white rice French method"
+    "recipe_search_prompt": "paella"
+  },
+  {
+    "dish_name": "Risotto",
+    "local_name": "Risotto",
+    "region": "Northern Italy",
+    "culture_or_ethnicity": "Italian",
+    "similarity_score": 0.93,
+    "recipe_search_prompt": "risotto"
+  },
+  {
+    "dish_name": "Biryani",
+    "local_name": "\u0628\u0631\u06cc\u0627\u0646\u06cc",
+    "region": "Indian Subcontinent",
+    "culture_or_ethnicity": "Indian, Pakistani",
+    "similarity_score": 0.9,
+    "recipe_search_prompt": "biryani"
   },
   {
     "dish_name": "Jollof Rice",
     "local_name": "Jollof Rice",
     "region": "West Africa",
-    "culture_or_ethnicity": "Nigerian",
+    "culture_or_ethnicity": "West African",
+    "similarity_score": 0.88,
+    "recipe_search_prompt": "jollof rice"
+  },
+  {
+    "dish_name": "Fried Rice",
+    "local_name": "\u7092\u98ef",
+    "region": "China",
+    "culture_or_ethnicity": "Chinese",
     "similarity_score": 0.85,
-    "recipe_search_prompt": "authentic Nigerian Jollof Rice recipe"
+    "recipe_search_prompt": "fried rice"
   },
   {
-    "dish_name": "Paella",
-    "local_name": "Paella",
-    "region": "Spain",
-    "culture_or_ethnicity": "Spanish",
-    "similarity_score": 0.82,
-    "recipe_search_prompt": "traditional Spanish Paella recipe"
-  },
-  {
-    "dish_name": "Biryani",
-    "local_name": "\u092c\u093f\u0930\u092f\u093e\u0928\u0940 (Biryani)",
-    "region": "South Asia",
-    "culture_or_ethnicity": "Mughlai",
-    "similarity_score": 0.8,
-    "recipe_search_prompt": "authentic Hyderabadi Biryani recipe"
-  },
-  {
-    "dish_name": "Risotto",
-    "local_name": "Risotto",
-    "region": "Italy",
-    "culture_or_ethnicity": "Italian",
-    "similarity_score": 0.78,
-    "recipe_search_prompt": "classic Italian Risotto recipe"
+    "dish_name": "Nasi Goreng",
+    "local_name": "Nasi Goreng",
+    "region": "Indonesia",
+    "culture_or_ethnicity": "Indonesian",
+    "similarity_score": 0.84,
+    "recipe_search_prompt": "nasi goreng"
   },
   {
     "dish_name": "Arroz con Pollo",
     "local_name": "Arroz con Pollo",
     "region": "Latin America",
-    "culture_or_ethnicity": "Cuban",
-    "similarity_score": 0.75,
-    "recipe_search_prompt": "traditional Cuban Arroz con Pollo recipe"
+    "culture_or_ethnicity": "Latin American",
+    "similarity_score": 0.82,
+    "recipe_search_prompt": "arroz con pollo"
   },
   {
     "dish_name": "Congee",
-    "local_name": "\u7ca5 (zh\u014du)",
+    "local_name": "\u7ca5",
     "region": "East Asia",
-    "culture_or_ethnicity": "Chinese",
-    "similarity_score": 0.7,
-    "recipe_search_prompt": "how to make traditional Chinese Congee"
+    "culture_or_ethnicity": "Chinese, East Asian",
+    "similarity_score": 0.78,
+    "recipe_search_prompt": "congee"
   },
   {
-    "dish_name": "Khao Phat",
-    "local_name": "\u0e02\u0e49\u0e32\u0e27\u0e1c\u0e31\u0e14 (Khao Phat)",
-    "region": "Southeast Asia",
+    "dish_name": "Khao Pad",
+    "local_name": "\u0e02\u0e49\u0e32\u0e27\u0e1c\u0e31\u0e14",
+    "region": "Thailand",
     "culture_or_ethnicity": "Thai",
-    "similarity_score": 0.68,
-    "recipe_search_prompt": "authentic Thai fried rice recipe"
+    "similarity_score": 0.75,
+    "recipe_search_prompt": "khao pad"
   },
   {
     "dish_name": "Bibimbap",
-    "local_name": "\ube44\ube54\ubc25 (Bibimbap)",
-    "region": "East Asia",
+    "local_name": "\ube44\ube54\ubc25",
+    "region": "Korea",
     "culture_or_ethnicity": "Korean",
+    "similarity_score": 0.7,
+    "recipe_search_prompt": "bibimbap"
+  },
+  {
+    "dish_name": "Sushi Rice",
+    "local_name": "\u9162\u98ef",
+    "region": "Japan",
+    "culture_or_ethnicity": "Japanese",
     "similarity_score": 0.65,
-    "recipe_search_prompt": "traditional Korean Bibimbap recipe"
+    "recipe_search_prompt": "sushi rice"
   },
   {
-    "dish_name": "Nasi Goreng",
-    "local_name": "Nasi Goreng",
-    "region": "Southeast Asia",
-    "culture_or_ethnicity": "Indonesian",
-    "similarity_score": 0.62,
-    "recipe_search_prompt": "authentic Indonesian Nasi Goreng recipe"
-  },
-  {
-    "dish_name": "Pilaf",
-    "local_name": "Pilaf",
-    "region": "Middle East",
-    "culture_or_ethnicity": "Turkish",
+    "dish_name": "Mofongo de Yuca con Chicharr\u00f3n",
+    "local_name": "Mofongo de Yuca con Chicharr\u00f3n",
+    "region": "Puerto Rico",
+    "culture_or_ethnicity": "Puerto Rican",
     "similarity_score": 0.6,
-    "recipe_search_prompt": "traditional Turkish Pilaf recipe"
+    "recipe_search_prompt": "mofongo de yuca"
   },
   {
-    "dish_name": "Arroz Caldoso",
-    "local_name": "Arroz Caldoso",
-    "region": "Spain",
-    "culture_or_ethnicity": "Spanish",
-    "similarity_score": 0.58,
-    "recipe_search_prompt": "Spanish creamy rice soup recipe"
-  },
-  {
-    "dish_name": "Hoppin' John",
-    "local_name": "Hoppin' John",
-    "region": "Southern United States",
-    "culture_or_ethnicity": "African American",
+    "dish_name": "Dolmades",
+    "local_name": "\u039d\u03c4\u03bf\u03bb\u03bc\u03ac\u03b4\u03b5\u03c2",
+    "region": "Greece",
+    "culture_or_ethnicity": "Greek",
     "similarity_score": 0.55,
-    "recipe_search_prompt": "traditional Southern Hoppin' John recipe"
+    "recipe_search_prompt": "dolmades"
   }
 ]
