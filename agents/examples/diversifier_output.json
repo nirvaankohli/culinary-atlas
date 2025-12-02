@@ -1,0 +1,122 @@
+[
+  {
+    "dish_name": "Steamed White Rice",
+    "local_name": "\u767d\u98ef (b\u00e1i f\u00e0n)",
+    "region": "East Asia",
+    "culture_or_ethnicity": "Chinese",
+    "similarity_score": 1.0,
+    "recipe_search_prompt": "how to steam white rice Chinese style"
+  },
+  {
+    "dish_name": "Boiled Rice",
+    "local_name": "\u092d\u093e\u0924 (bhaat)",
+    "region": "South Asia",
+    "culture_or_ethnicity": "Indian",
+    "similarity_score": 0.98,
+    "recipe_search_prompt": "how to boil plain rice Indian style"
+  },
+  {
+    "dish_name": "Plain White Rice",
+    "local_name": "riz blanc",
+    "region": "France",
+    "culture_or_ethnicity": "French",
+    "similarity_score": 0.95,
+    "recipe_search_prompt": "how to cook plain white rice French method"
+  },
+  {
+    "dish_name": "Jollof Rice",
+    "local_name": "Jollof Rice",
+    "region": "West Africa",
+    "culture_or_ethnicity": "Nigerian",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "authentic Nigerian Jollof Rice recipe"
+  },
+  {
+    "dish_name": "Paella",
+    "local_name": "Paella",
+    "region": "Spain",
+    "culture_or_ethnicity": "Spanish",
+    "similarity_score": 0.82,
+    "recipe_search_prompt": "traditional Spanish Paella recipe"
+  },
+  {
+    "dish_name": "Biryani",
+    "local_name": "\u092c\u093f\u0930\u092f\u093e\u0928\u0940 (Biryani)",
+    "region": "South Asia",
+    "culture_or_ethnicity": "Mughlai",
+    "similarity_score": 0.8,
+    "recipe_search_prompt": "authentic Hyderabadi Biryani recipe"
+  },
+  {
+    "dish_name": "Risotto",
+    "local_name": "Risotto",
+    "region": "Italy",
+    "culture_or_ethnicity": "Italian",
+    "similarity_score": 0.78,
+    "recipe_search_prompt": "classic Italian Risotto recipe"
+  },
+  {
+    "dish_name": "Arroz con Pollo",
+    "local_name": "Arroz con Pollo",
+    "region": "Latin America",
+    "culture_or_ethnicity": "Cuban",
+    "similarity_score": 0.75,
+    "recipe_search_prompt": "traditional Cuban Arroz con Pollo recipe"
+  },
+  {
+    "dish_name": "Congee",
+    "local_name": "\u7ca5 (zh\u014du)",
+    "region": "East Asia",
+    "culture_or_ethnicity": "Chinese",
+    "similarity_score": 0.7,
+    "recipe_search_prompt": "how to make traditional Chinese Congee"
+  },
+  {
+    "dish_name": "Khao Phat",
+    "local_name": "\u0e02\u0e49\u0e32\u0e27\u0e1c\u0e31\u0e14 (Khao Phat)",
+    "region": "Southeast Asia",
+    "culture_or_ethnicity": "Thai",
+    "similarity_score": 0.68,
+    "recipe_search_prompt": "authentic Thai fried rice recipe"
+  },
+  {
+    "dish_name": "Bibimbap",
+    "local_name": "\ube44\ube54\ubc25 (Bibimbap)",
+    "region": "East Asia",
+    "culture_or_ethnicity": "Korean",
+    "similarity_score": 0.65,
+    "recipe_search_prompt": "traditional Korean Bibimbap recipe"
+  },
+  {
+    "dish_name": "Nasi Goreng",
+    "local_name": "Nasi Goreng",
+    "region": "Southeast Asia",
+    "culture_or_ethnicity": "Indonesian",
+    "similarity_score": 0.62,
+    "recipe_search_prompt": "authentic Indonesian Nasi Goreng recipe"
+  },
+  {
+    "dish_name": "Pilaf",
+    "local_name": "Pilaf",
+    "region": "Middle East",
+    "culture_or_ethnicity": "Turkish",
+    "similarity_score": 0.6,
+    "recipe_search_prompt": "traditional Turkish Pilaf recipe"
+  },
+  {
+    "dish_name": "Arroz Caldoso",
+    "local_name": "Arroz Caldoso",
+    "region": "Spain",
+    "culture_or_ethnicity": "Spanish",
+    "similarity_score": 0.58,
+    "recipe_search_prompt": "Spanish creamy rice soup recipe"
+  },
+  {
+    "dish_name": "Hoppin' John",
+    "local_name": "Hoppin' John",
+    "region": "Southern United States",
+    "culture_or_ethnicity": "African American",
+    "similarity_score": 0.55,
+    "recipe_search_prompt": "traditional Southern Hoppin' John recipe"
+  }
+]

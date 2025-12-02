@@ -1,8 +1,10 @@
+import json
 from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent.parent.parent
 SETTING_PATH = ROOT_PATH / "agents" / "common_settings.json"
-
+EXAMPLE_PATH = ROOT_PATH / "agents" / "examples"
+EXAMPLE_OUTPUT_PATH = EXAMPLE_PATH / "diversifier_output.json"
 
 class common_settings:
 
@@ -242,27 +244,44 @@ common_settings_instance = common_settings(agent_name="diversifier")
 
 def process_diversification(input_text: str) -> str:
 
-    SYSTEM_PROMPT = """You are a culinary expert with extensive knowledge of world cuisines and food cultures. Your task is to generate diverse variations of a given dish from different cultures and regions.
+    SYSTEM_PROMPT = """You are a culinary anthropologist who finds cultural and regional variations of a given dish concept.
 
-For each variation, provide:
-1. The dish name (including regional/cultural origin if applicable)
-2. A confidence score (0.0 to 1.0) indicating how similar this variation is to the original dish
+Goal:
+- Return dishes from different countries, regions, or ethnic communities that are structurally or culturally similar (same basic dish idea or similar role in the meal).
 
-Return your response as a valid JSON list of dictionaries with the format:
-[
-    {"Variation Name (Origin)", "confidence": 0.85},
-    {"Another Variation (Origin)", "confidence": 0.72}
-]
+Rules:
+- Focus ONLY on cultural/regional variations, not minor ingredient tweaks, brand variants, or diet versions.
+- Prefer widely recognized, traditional, or locally rooted dishes.
+- Different names/ingredients are fine if the underlying concept or role is similar.
+- Consider history, trade, diaspora, and fusion that became culturally established.
+- Aim for diversity across regions and cultures.
 
-Order the list from highest to lowest confidence. Include variations from different cuisines, cooking methods, and cultural adaptations."""
+Output:
+- Return ONLY valid JSON (no extra text, no markdown, no comments).
+- JSON must be a list of objects sorted by similarity_score (high → low).
+- Each object must have exactly these keys:
 
-    USER_PROMPT = f"""Generate diverse variations of the following dish: {input_text}
+{
+  "dish_name": string, # Doesn't need to be in English or different than local_name - whatever it is known best for
+  "local_name": string,
+  "region": string,
+  "culture_or_ethnicity": string,
+  "similarity_score": float,  # 0.0–1.0
+  "recipe_search_prompt": string
+}"""
 
-Return a JSON list of dictionaries where each dictionary contains:
-- "dish_name": the name of the variation with its cultural/regional origin
-- "confidence": a float between 0.0 and 1.0 representing similarity to the original dish
+    USER_PROMPT = f"""Identify cultural variations of this dish concept:
 
-Provide at least 10 variations if possible."""
+    {input_text}
+
+    Treat this as a general dish concept (structure + role in the meal), not just one specific recipe.
+
+    Tasks:
+    - Find 8–15 dishes from different countries, regions, or ethnic communities that are:
+    - Structurally similar (e.g., stuffed dumpling, noodles in broth, layered rice + meat), and/or
+    - Play a similar cultural/culinary role (e.g., street snack, festival dish, family comfort food).
+    - Follow all rules from the system prompt.
+    - Return ONLY the JSON list of objects using the exact schema and field names given in the system prompt."""
 
     body = common_settings_instance.get_body()
     body = common_settings_instance.replace_prompts_in_body_with_custom(
@@ -278,8 +297,7 @@ Provide at least 10 variations if possible."""
 
     if response.status_code == 200:
 
-        return response.json()["choices"][0]["message"]["content"]
-
+        return json.loads(response.json()["choices"][0]["message"]["content"].replace("`json", "").replace('\n', '').replace('`', ''))
     else:
 
         common_settings_instance.warn(
@@ -291,4 +309,7 @@ Provide at least 10 variations if possible."""
 
 if __name__ == "__main__":
 
-    print(process_diversification("Spaghetti Carbonara"))
+    response = process_diversification("Rice")
+
+    with open(EXAMPLE_OUTPUT_PATH, "w", encoding="utf-8") as f:
+        f.write(json.dumps(response, indent=2))

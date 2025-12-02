@@ -1,7 +1,10 @@
+import json
 from pathlib import Path
 
 ROOT_PATH = Path(__file__).parent.parent.parent
 SETTING_PATH = ROOT_PATH / "agents" / "common_settings.json"
+EXAMPLE_PATH = ROOT_PATH / "agents" / "examples"
+EXAMPLE_OUTPUT_PATH = EXAMPLE_PATH / "replace_agent_name_output.json"
 
 
 class common_settings:
@@ -237,9 +240,49 @@ class common_settings:
         return url
 
 
-common_settings_instance = common_settings(agent_name="agent_name_replace")
+common_settings_instance = common_settings(agent_name="replace_agent_name")
+
+
+def process(input_text: str) -> str:
+
+    SYSTEM_PROMPT = """"""
+
+    USER_PROMPT = f""""""
+
+    body = common_settings_instance.get_body()
+    body = common_settings_instance.replace_prompts_in_body_with_custom(
+        body, user=USER_PROMPT, system=SYSTEM_PROMPT
+    )
+    header = common_settings_instance.get_headers()
+
+    url = common_settings_instance.get_chat_completion_url()
+
+    import requests
+
+    response = requests.post(url, headers=header, json=body)
+
+    if response.status_code == 200:
+
+        return json.loads(
+            response.json()["choices"][0]["message"]["content"]
+            .replace("`json", "")
+            .replace("\n", "")
+            .replace("`", "")
+        )
+
+    else:
+
+        common_settings_instance.warn(
+            Exception(f"API request failed with status code {response.status_code}"),
+            f"Response: {response.text}",
+        )
+        return ""
 
 
 if __name__ == "__main__":
 
-    pass
+    with open(EXAMPLE_OUTPUT_PATH, "w", encoding="utf-8") as f:
+
+        response = process("Rice")
+
+        f.write(json.dumps(response, indent=2))
