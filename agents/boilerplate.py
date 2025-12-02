@@ -237,20 +237,13 @@ class common_settings:
         return url
 
 
+class agent_name_replace:
+
+    def __init__(self):
+
+        common_settings_instance = common_settings(agent_name="agent_name_replace")
+
+
 if __name__ == "__main__":
 
-    settings = common_settings(agent_name="diversifier")
-    body = settings.get_body()
-    print("Initial Body:", body)
-    body = settings.replace_prompts_in_body_with_custom(
-        body,
-        user="Hello, how are you?",
-        system="You are a helpful assistant.",
-        assistant=None,
-    )
-    headers = settings.get_headers()
-    url = settings.get_chat_completion_url()
-
-    print("Body:", body)
-    print("Headers:", headers)
-    print("URL:", url)
+    instance = agent_name_replace()

@@ -25,7 +25,10 @@
       },
       "specific": {
         "diversifier": {
-          "max_tokens": 3000
+          "raw": {
+            "max_tokens": 3000
+          },
+          "roles": ["system", "user"]
         }
       }
     },
