@@ -1,6 +1,6 @@
 {
   "env": {
-    "available_keys": ["AI_API_KEY"],
+    "available_keys": ["AI_API_KEY", "RECIPE_API_KEY_0", "RECIPE_API_KEY_1"],
     "path": ".env"
   },
 
