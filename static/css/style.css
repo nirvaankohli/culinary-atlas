@@ -1,21 +1,23 @@
 @font-face {
   font-family: "Sans";
-  src: url("../fonts/sans.woff2") format("ttf");
+  src: url("../fonts/sans.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Serif";
-  src: url("../fonts/serif.woff2") format("ttf");
+  src: url("../fonts/serif.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
---root {
+:root {
   --background: #1e1e1e;
+  --dark: #191830;
   --light: #ccd5db;
   --primary: #726ee0;
   --secondary: #eb5755;
+  --transparent-light: rgba(204, 213, 219, 0.4);
 }
 
 .root {
@@ -31,12 +33,162 @@ body {
   font-family: "Sans", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: linear-gradient(
-    to bottom,
-    var(--background) 0%,
-    var(--background) 70%,
-    var(--primary) 100%
-  );
+  background-color: var(--background);
   color: var(--light);
+  position: relative;
+  overflow-x: hidden;
 }
 
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(225deg, var(--background) 50%, var(--dark) 100%);
+  z-index: -2;
+}
+
+.grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+  opacity: 0.6;
+  z-index: -1;
+  pointer-events: none;
+  filter: contrast(150%) brightness(40%) invert(1);
+  mix-blend-mode: multiply;
+}
+
+nav {
+  background-color: var(--background);
+  border: 1px solid var(--transparent-light);
+  width: 101%;
+  margin-top: -0.4rem;
+  margin-left: -0.5rem;
+  align-self: center;
+  justify-content: center;
+  padding: 1rem;
+  padding-left: 2rem;
+  z-index: 20;
+}
+
+.lines {
+  position: fixed;
+  left: 4vw;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  gap: calc(3vw);
+  z-index: -1;
+}
+
+.lines .line {
+  width: 1.5px;
+  height: 100%;
+  background-color: var(--light);
+  opacity: 0.3;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  padding: 2rem;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chat-header {
+  font-family: "Serif", serif;
+  font-size: 3.4rem;
+  font-weight: normal;
+  color: var(--light);
+  text-align: center;
+  margin: 0;
+}
+
+.chat-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+
+  background-color: rgba(30, 30, 30, 0.8);
+  border: 1px solid var(--light);
+  border-radius: 24px;
+  padding: 0.75rem 1.25rem;
+  padding-right: 2%;
+  min-height: 70px;
+  backdrop-filter: blur(10px);
+  transition: box-shadow 1s ease, border-color 0.5s ease;
+}
+
+.chat-input-wrapper:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(114, 110, 224, 0.5),
+    0 0 40px rgba(114, 110, 224, 0.3);
+}
+
+.chat-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  width: 90%;
+  color: var(--light);
+  font-family: "Sans", sans-serif;
+  font-size: 1.1rem;
+  padding: 0;
+  outline: none;
+  resize: none;
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+
+.chat-input::placeholder {
+  color: var(--light);
+  opacity: 0.5;
+}
+
+.send-button {
+  background-color: var(--primary);
+  color: var(--light);
+  border: 1px solid var(--light);
+  border-radius: 20px;
+  min-width: 60px;
+  padding: 0 1rem;
+  height: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.send-button:hover {
+  background-color: var(--background);
+  border-color: var(--primary);
+}
+
+h1 {
+  font-family: "Serif", serif;
+  font-weight: lighter;
+  color: var(--light);
+  margin: 0.5rem 0;
+}
+
+svg {
+  z-index: -2;
+}
