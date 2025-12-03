@@ -17,7 +17,17 @@ def home():
 
     import random
 
-    phrases = ["see how the world eats.", "one dish. every culture.", "map the menu.", "eat everywhere.", "the geography of flavor.", "global roots. local tastes.", "savor the world's flavors.", "culinary journeys await.", "flavorful adventures start here."]
+    phrases = [
+        "see how the world eats.",
+        "one dish. every culture.",
+        "map the menu.",
+        "eat everywhere.",
+        "the geography of flavor.",
+        "global roots. local tastes.",
+        "savor the world's flavors.",
+        "culinary journeys await.",
+        "flavorful adventures start here.",
+    ]
 
     return render_template("index.html", phrase=random.choice(phrases))
 
@@ -57,7 +67,6 @@ def ai_query():
         yield json.dumps({"status": "done"}) + "\n"
 
     return Response(stream_with_context(generate()), mimetype="application/json")
-
 
 
 if __name__ == "__main__":
