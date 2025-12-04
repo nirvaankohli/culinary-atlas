@@ -30,11 +30,32 @@
             placeholder="Enter a dish to explore..."
             rows="1"
           ></textarea>
-          <button class="send-button">→</button>
+          <button class="send-button" onclick="handleSubmit()">↑</button>
         </div>
       </div>
     </main>
     <div class="bg"></div>
     <div class="grain"></div>
   </body>
+  <script>
+    const redirect = "/";
+    const chat_input_element = document.querySelector(".chat-input");
+
+
+    chat_input_element.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        handleSubmit();
+      }
+    });
+
+    function handleSubmit() {
+      const query = chat_input_element.value.trim();
+      if (query === "") {
+        return;
+      }
+      const encodedQuery = encodeURIComponent(query);
+      window.location.href = `/query/load/?food=${encodedQuery}`;
+    }
+  </script>
 </html>

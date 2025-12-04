@@ -38,7 +38,16 @@ def status():
     return jsonify({"status": "ok"}), 200
 
 
-@app.route("/api/query", methods=["GET", "POST"])
+@app.route("/query/load/", methods=["GET"])
+def load_query():
+
+    params = request.args
+    food = params.get("food", "")
+
+    return render_template("query.html", query=food)
+
+
+@app.route("/api/query/", methods=["GET", "POST"])
 def ai_query():
 
     params = request.args
