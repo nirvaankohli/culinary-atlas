@@ -398,6 +398,7 @@ Output schema (single JSON object):
             f"Response: {response.text}",
         )
 
+    common_settings_instance.log(f"process_list completed with {len(results)} total results")
 
     return results
 

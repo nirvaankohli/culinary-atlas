@@ -11,6 +11,9 @@ import json
 
 app = Flask(__name__)
 
+# Store results temporarily (in production, use a database or session)
+results_store = {}
+
 
 @app.route("/", methods=["GET"])
 def home():
@@ -59,23 +62,54 @@ def ai_query():
 
         import agents.diversifier.client as diversifier_client
 
-        result = diversifier_client.process_diversification(food)
+        diversification_result = diversifier_client.process_diversification(food)
 
         yield json.dumps(
-            {"status": "complete", "stage": "diversification", "result": result}
+            {
+                "status": "complete",
+                "stage": "diversification",
+                "result": diversification_result,
+            }
         ) + "\n"
 
         import agents.recipes.client as recipes_client
 
-        result = recipes_client.process_list(result)
+        recipes_result = recipes_client.process_list(diversification_result)
 
         yield json.dumps(
-            {"status": "complete", "stage": "recipes", "result": result}
+            {"status": "complete", "stage": "recipes", "result": recipes_result}
         ) + "\n"
+
+        # Store results for the results page
+        results_store[food] = {
+            "dishes": diversification_result,
+            "recipes": recipes_result,
+        }
 
         yield json.dumps({"status": "done"}) + "\n"
 
     return Response(stream_with_context(generate()), mimetype="application/json")
+
+
+@app.route("/load_results/", methods=["GET"])
+def load_results():
+    params = request.args
+    food = params.get("query", "")
+
+    # Get stored results
+    data = results_store.get(food, {"dishes": "[]", "recipes": "{}"})
+
+    # Parse dishes
+    try:
+        dishes = (
+            json.loads(data["dishes"])
+            if isinstance(data["dishes"], str)
+            else data["dishes"]
+        )
+    except:
+        dishes = []
+
+    return render_template("results.html", query=food, dishes=dishes)
 
 
 if __name__ == "__main__":

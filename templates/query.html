@@ -89,23 +89,32 @@
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder("utf-8");
-      let done = false;
+      let buffer = "";
 
-      while (!done) {
-        const { value, done: doneReading } = await reader.read();
-        done = doneReading;
-        const chunkValue = decoder.decode(value);
+      while (true) {
+        const { value, done } = await reader.read();
 
-        if (chunkValue) {
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+
+
+        buffer = lines.pop() || "";
+
+        for (const line of lines) {
+          if (!line.trim()) continue;
+
           try {
-            const data = JSON.parse(chunkValue);
+            const data = JSON.parse(line);
+            console.log("Received data:", data);
 
             if (data.status === "start") {
               addToQueue("Initializing your culinary journey...");
             } else if (data.stage === "diversification") {
               addToQueue("Discovering cultural variations...");
 
-              // Parse the result if it's a string
+
               if (data.result) {
                 try {
                   const dishes = JSON.parse(data.result);
@@ -120,19 +129,23 @@
                     });
                   }
                 } catch (e) {
-                  // Result might not be JSON yet
+                  console.log("Error parsing dishes:", e);
                 }
               }
             } else if (data.stage === "recipes") {
-                
               addToQueue("Gathering recipes from around the world...");
             } else if (data.status === "done") {
-              addToQueue("Your culinary atlas is ready!");
+              console.log("Done! Redirecting...");
+              setTimeout(() => {
+                window.location.href =
+                  "/load_results/?query=" + encodeURIComponent(food);
+              }, 1000);
+              return;
             } else if (data.stage && data.status) {
               addToQueue(`${data.stage}: ${data.status}`);
             }
           } catch (e) {
-            // Not valid JSON, continue
+            console.log("Error parsing line:", line, e);
           }
         }
       }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Results - Culinary Atlas</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/results.css') }}"
+    />
+  </head>
+  <body>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="bg"></div>
+    <div class="grain"></div>
+
+    <nav>
+      <h1>Culinary Atlas</h1>
+    </nav>
+
+    <main>
+      <div class="results-header">
+        <h2>
+          Cultural Variations of <span class="highlight">{{ query }}</span>
+        </h2>
+        <p class="subtitle">
+          Discover how different cultures interpret this dish
+        </p>
+      </div>
+
+      <div class="cards-container">
+        {% for dish in dishes %}
+        <div class="food-card">
+          <div class="card-content">
+            <h3 class="dish-name">{{ dish.dish_name }}</h3>
+            <div class="confidence-bar">
+              <div
+                class="confidence-fill"
+                style="width: {{ (dish.confidence * 100)|round }}%"
+              ></div>
+            </div>
+            <p class="confidence-text">
+              {{ (dish.confidence * 100)|round }}% similarity
+            </p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="back-button-container">
+        <a href="/" class="back-button">Explore Another Dish</a>
+      </div>
+    </main>
+  </body>
+</html>
