@@ -41,7 +41,7 @@
         {% for dish in recipe_dishes %}
         <div class="food-card">
           <div class="card-content">
-            <img src="{{ dish.image_url }}" alt="Recipe Available" class="recipe-img"/>
+            <img src="{{ dish.image_url }}" alt="" class="recipe-img"/>
             <h3 class="dish-name">{{ dish.dish_name }}</h3>
             <h4 class="local-dish-name">{{ dish.local_name }}</h4>
             <div class="confidence-bar">
@@ -76,7 +76,7 @@
         {% endfor %}
       </div>
 
-      <p>Total {{ dishes|length }} dishes | {{ recipe_dishes|length }} with available recipes | {{ non_recipe_dishes|length }} without available recipes</p>
+      <p class="bottom-info">Total {{ dishes|length }} dishes | {{ recipe_dishes|length }} with available recipes | {{ non_recipe_dishes|length }} without available recipes</p>
 
       <div class="back-button-container">
         <a href="/" class="back-button">Explore Another Dish</a>

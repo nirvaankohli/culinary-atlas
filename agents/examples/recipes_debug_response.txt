@@ -1,1 +1,159 @@
-[{"matched_recipe_title": "Fettuccine Alfredo", "summary": "A rich and creamy Italian pasta dish made with butter, heavy cream, and Parmesan cheese, served with fettuccine.", "servings": 4, "total_time_minutes": 30, "materials": {"ingredients": [{"name": "fettuccine pasta", "quantity": "12 oz", "unit": "oz", "notes": ""}, {"name": "unsalted butter", "quantity": "1/2 cup", "unit": "cup", "notes": ""}, {"name": "heavy cream", "quantity": "1 cup", "unit": "cup", "notes": ""}, {"name": "Parmesan cheese", "quantity": "1 cup", "unit": "cup", "notes": "grated"}, {"name": "salt", "quantity": "1/2 tsp", "unit": "tsp", "notes": "to taste"}, {"name": "black pepper", "quantity": "1/4 tsp", "unit": "tsp", "notes": "to taste"}], "equipment": ["large pot", "colander", "large skillet", "wooden spoon", "tongs"]}, "steps": ["Bring a large pot of salted water to a boil. Add fettuccine pasta and cook according to package instructions until al dente. Drain and keep warm.", "In a large skillet, melt the butter over medium heat. Add the heavy cream and bring to a gentle simmer, stirring constantly.", "Reduce the heat and add the grated Parmesan cheese, stirring until the sauce is smooth and creamy. Season with salt and black pepper to taste.", "Add the cooked fettuccine to the skillet and toss until the pasta is well coated with the sauce.", "Serve immediately, garnished with additional Parmesan cheese if desired."], "image_url": "https://spoonacular.com/recipeImages/1350232-312x231.jpg", "source_url": "https://spoonacular.com/recipes/fettuccine-alfredo-1350232", "source": "spoonacular"}, {"matched_recipe_title": "Dan Dan Noodles", "summary": "A classic Sichuan noodle dish featuring a spicy, savory broth and topped with meat, vegetables, and chili oil.", "servings": 4, "total_time_minutes": 45, "materials": {"ingredients": [{"name": "noodles", "quantity": "1 lb", "unit": "lb", "notes": "any type, preferably wheat"}], {"name": "ground pork", "quantity": "1/2 lb", "unit": "lb", "notes": "or ground chicken"}, {"name": "fermented black beans", "quantity": "2 tbsp", "unit": "tbsp", "notes": "crushed"}, {"name": "dried shiitake mushrooms", "quantity": "4 oz", "unit": "oz", "notes": "soaked and sliced"}, {"name": "cabbage", "quantity": "1 cup", "unit": "cup", "notes": "shredded"}, {"name": "soy sauce", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "chili oil", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "peanut", "quantity": "1/2 cup", "unit": "cup", "notes": "minced or crushed"}, {"name": "green onions", "quantity": "2 tbsp", "unit": "tbsp", "notes": "chopped"}, {"name": "sesame oil", "quantity": "1 tbsp", "unit": "tbsp", "notes": ""}, {"name": "chili powder", "quantity": "1 tsp", "unit": "tsp", "notes": "optional, for extra heat"}, {"name": "garlic", "quantity": "2 cloves", "unit": "", "notes": "minced"}, {"name": "ginger", "quantity": "1 tbsp", "unit": "tbsp", "notes": "minced"}, {"name": "vegetable oil", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "dashi stock", "quantity": "2 cups", "unit": "cup", "notes": "or chicken broth"}, {"name": "salt", "quantity": "1/2 tsp", "unit": "tsp", "notes": "to taste"}], "equipment": ["large pot", "wok or skillet", "chopping board", "chopping knife", "tongs", "serving bowls"]}, "steps": ["In a large pot of boiling water, cook the noodles until al dente. Drain and set aside.", "In a wok or skillet, heat the vegetable oil over medium heat. Add the garlic and ginger, sauté for 1 minute until fragrant.", "Add the ground pork (or chicken) and cook until browned. Add the fermented black beans and shiitake mushrooms, stir well.", "Pour in the dashi stock and soy sauce. Simmer for 5 minutes. Add the cabbage and cook for another 5 minutes until tender.", "Add the cooked noodles to the wok and mix gently to combine with the sauce.", "Stir in the chili oil, chili powder (if using), and sesame oil. Cook for another 2 minutes, then add the minced peanuts and green onions.", "Serve in bowls, garnished with additional green onions and chili oil if desired."], "image_url": "https://spoonacular.com/recipeImages/1350244-312x231.jpg", "source_url": "https://spoonacular.com/recipes/dan-dan-noodles-1350244", "source": "spoonacular"}, {"matched_recipe_title": "Naengmyeon", "summary": "A popular Korean cold buckwheat noodle dish, often served in a spicy or sweet and sour broth and topped with vegetables, meat, and a poached egg.", "servings": 4, "total_time_minutes": 45, "materials": {"ingredients": [{"name": "buckwheat noodles", "quantity": "8 oz", "unit": "oz", "notes": "cold or rehydrated"}], {"name": "beef", "quantity": "1/2 lb", "unit": "lb", "notes": "thinly sliced"}, {"name": "kimchi", "quantity": "1 cup", "unit": "cup", "notes": ""}, {"name": "cucumber", "quantity": "1 cup", "unit": "cup", "notes": "thinly sliced"}, {"name": "carrot", "quantity": "1 cup", "unit": "cup", "notes": "julienned"}, {"name": "soy sauce", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "vinegar", "quantity": "1 tbsp", "unit": "tbsp", "notes": "rice vinegar preferred"}, {"name": "sesame oil", "quantity": "1 tsp", "unit": "tsp", "notes": ""}, {"name": "sugar", "quantity": "1 tbsp", "unit": "tbsp", "notes": ""}, {"name": "chili powder (gochugaru)", "quantity": "1 tbsp", "unit": "tbsp", "notes": "adjust to taste"}, {"name": "boiled egg", "quantity": "2", "unit": "", "notes": "per serving"}, {"name": "toasted sesame seeds", "quantity": "1 tbsp", "unit": "tbsp", "notes": "for garnish"}], "equipment": ["large pot", "colander", "knife", "bowl for broth", "serving bowls", "egg poacher or pot with lid"]}, "steps": ["Bring a large pot of water to a boil. Add the buckwheat noodles and cook according to package instructions until tender. Drain and run under cold water to cool completely, then set aside.", "If using dried noodles, soak them in cold water for 15-20 minutes until soft, then drain and cool.", "In a bowl, mix together soy sauce, vinegar, sesame oil, sugar, and chili powder (gochugaru) to make the dressing. Adjust the flavor to your preference.", "Poach the eggs by placing them in a pot of simmering water and cooking for 4-5 minutes. Remove and let them cool slightly, then slice in half.", "In a large serving bowl, combine the cooled noodles with the beef, kimchi, cucumber, and carrot. Toss lightly.", "Serve with the dressing on the side, and place sliced eggs on top of the noodles.", "Garnish with toasted sesame seeds and additional chili powder if desired."], "image_url": "https://spoonacular.com/recipeImages/1323583-312x231.jpg", "source_url": "https://spoonacular.com/recipes/naengmyeon-cold-buckwheat-noodles-1323583", "source": "spoonacular"}, {"matched_recipe_title": "Laksa", "summary": "A spicy and sour noodle soup originating from Southeast Asia, with a rich coconut milk broth and a variety of toppings such as shrimp, tofu, and vegetables.", "servings": 4, "total_time_minutes": 40, "materials": {"ingredients": [{"name": "rice noodles", "quantity": "12 oz", "unit": "oz", "notes": ""}, {"name": "coconut milk", "quantity": "1 can", "unit": "can", "notes": "13.5 fl oz"}, {"name": "shrimp", "quantity": "1 lb", "unit": "lb", "notes": "shelled and deveined"}, {"name": "tofu", "quantity": "1 cup", "unit": "cup", "notes": "firm, cubed"}, {"name": "egg", "quantity": "2", "unit": "", "notes": "boiled"}, {"name": "carrot", "quantity": "1 cup", "unit": "cup", "notes": "julienned"}, {"name": "bok choy", "quantity": "1 cup", "unit": "cup", "notes": "cut into pieces"}, {"name": "chili paste", "quantity": "2 tbsp", "unit": "tbsp", "notes": "spicy"}, {"name": "soy sauce", "quantity": "1 tbsp", "unit": "tbsp", "notes": ""}, {"name": "rice vinegar", "quantity": "1 tbsp", "unit": "tbsp", "notes": ""}, {"name": "toasted sesame seeds", "quantity": "1 tbsp", "unit": "tbsp", "notes": "optional"}, {"name": "fried shallots", "quantity": "1/2 cup", "unit": "cup", "notes": "optional"}, {"name": "lime", "quantity": "1", "unit": "", "notes": "cut into wedges"}], "equipment": ["large pot", "colander", "wok or skillet", "wooden spoon", "tongs", "serving bowls"]}, "steps": ["Cook the rice noodles in a large pot of boiling water until tender but still firm. Drain and rinse under cold water to stop the cooking process. Set aside.", "In a wok or skillet, heat up a splash of oil, then add the chili paste and stir-fry for 1-2 minutes until fragrant.", "Add the coconut milk and stir to combine. Bring the mixture to a gentle simmer and add soy sauce, rice vinegar, and salt to taste.", "Add the shrimp, tofu cubes, carrot, and bok choy to the pot. Cook for 5-7 minutes until the shrimp turns pink and the vegetables are tender.", "Serve the noodles in bowls, ladling the spicy coconut broth over them. Top with boiled eggs, lime wedges, and garnish with fried shallots and sesame seeds if desired."], "image_url": "https://spoonacular.com/recipeImages/1350249-312x231.jpg", "source_url": "https://spoonacular.com/recipes/laksa-1350249", "source": "spoonacular"}, {"matched_recipe_title": "Pancit", "summary": "A Filipino stir-fried noodle dish with a variety of vegetables, meat, and seafood, cooked in a savory broth and often seasoned with soy sauce and garlic.", "servings": 4, "total_time_minutes": 35, "materials": {"ingredients": [{"name": "noodles", "quantity": "12 oz", "unit": "oz", "notes": "any type, preferably wide"}], {"name": "chicken breast", "quantity": "1 lb", "unit": "lb", "notes": "or pork, shrimp, tofu"}, {"name": "carrot", "quantity": "1 cup", "unit": "cup", "notes": "julienned"}, {"name": "bok choy", "quantity": "1 bunch", "unit": "bunch", "notes": "cut into 2-inch pieces"}, {"name": "water chestnuts", "quantity": "1 can", "unit": "can", "notes": "drained and sliced"}, {"name": "soy sauce", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "garlic", "quantity": "3 cloves", "unit": "", "notes": "minced"}, {"name": "ginger", "quantity": "1 tbsp", "unit": "tbsp", "notes": "minced"}, {"name": "vegetable oil", "quantity": "2 tbsp", "unit": "tbsp", "notes": ""}, {"name": "green onions", "quantity": "2 tbsp", "unit": "tbsp", "notes": "sliced"}, {"name": "chili flakes", "quantity": "1 tsp", "unit": "tsp", "notes": "optional"}], "equipment": ["large pot", "wok", "chopping board", "chopping knife", "tongs", "serving bowls"]}, "steps": ["Cook the noodles in a large pot of boiling water until tender but still firm. Drain and set aside.", "In a wok, heat the vegetable oil over medium heat. Add the garlic and ginger, sauté for 1-2 minutes until fragrant.", "Add the chicken (or other protein) and cook until browned and nearly cooked through.", "Stir in the soy sauce, water chestnuts, and other vegetables. Cook for 5-7 minutes until the chicken is cooked and the vegetables are tender.", "Add the cooked noodles to the wok and mix well to combine with the sauce and ingredients.", "Sprinkle green onions and chili flakes (if using) over the top and toss gently.", "Serve hot in bowls."], "image_url": "https://spoonacular.com/recipeImages/1350251-312x231.jpg", "source_url": "https://spoonacular.com/recipes/pancit-1350251", "source": "spoonacular"}]
+[
+  {
+    "matched_recipe_title": "Greek Meze Platter",
+    "summary": "A selection of small Greek dishes served as appetizers, including feta cheese, olives, hummus, tzatziki, and grilled vegetables.",
+    "servings": 4,
+    "total_time_minutes": 60,
+    "materials": {
+      "ingredients": [
+        {
+          "name": "feta cheese",
+          "quantity": "200",
+          "unit": "g",
+          "notes": "cubed"
+        },
+        {
+          "name": "black olives",
+          "quantity": "1/2",
+          "unit": "cup",
+          "notes": ""
+        },
+        {
+          "name": "cucumber",
+          "quantity": "1",
+          "unit": "",
+          "notes": "sliced"
+        },
+        {
+          "name": "tomatoes",
+          "quantity": "2",
+          "unit": "",
+          "notes": "chopped"
+        },
+        {
+          "name": "grilled zucchini",
+          "quantity": "1",
+          "unit": "",
+          "notes": "sliced and cooked"
+        },
+        {
+          "name": "grilled eggplant",
+          "quantity": "1",
+          "unit": "",
+          "notes": "sliced and cooked"
+        },
+        {
+          "name": "hummus",
+          "quantity": "1",
+          "unit": "cup",
+          "notes": ""
+        },
+        {
+          "name": "tzatziki",
+          "quantity": "1",
+          "unit": "cup",
+          "notes": ""
+        },
+        {
+          "name": "pita bread",
+          "quantity": "4",
+          "unit": "",
+          "notes": "slices"
+        },
+        {
+          "name": "fresh herbs",
+          "quantity": "1",
+          "unit": "tbsp",
+          "notes": "for garnish"
+        }
+      ],
+      "equipment": ["grill pan", "cheese knife", "bowls", "chopping board", "chopping knife"]
+    },
+    "steps": [
+      "Prepare the ingredients: cube the feta cheese, slice the cucumber, and chop the tomatoes.",
+      "Grill the zucchini and eggplant slices until tender and slightly charred. Set aside.",
+      "Place the feta cheese, olives, cucumber, and tomatoes in separate bowls.",
+      "Arrange the grilled vegetables, hummus, and tzatziki on a platter.",
+      "Garnish the platter with fresh herbs.",
+      "Serve with pita bread slices."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/greek-meze-platter-128441.jpg",
+    "source_url": "https://spoonacular.com/greek-meze-platter-128441",
+    "source": "spoonacular"
+  },
+  {
+    "matched_recipe_title": "Spanish Tapas Platter",
+    "summary": "A variety of small Spanish tapas dishes including patatas bravas, pan con tomate, and tortilla española.",
+    "servings": 4,
+    "total_time_minutes": 90,
+    "materials": {
+      "ingredients": [
+        {
+          "name": "potatoes",
+          "quantity": "400",
+          "unit": "g",
+          "notes": "cut into cubes"
+        },
+        {
+          "name": "tomato",
+          "quantity": "1",
+          "unit": "",
+          "notes": "ripe"
+        },
+        {
+          "name": "garlic",
+          "quantity": "2",
+          "unit": "cloves",
+          "notes": "minced"
+        },
+        {
+          "name": "olive oil",
+          "quantity": "2",
+          "unit": "tbsp",
+          "notes": ""
+        },
+        {
+          "name": "saffron-infused broth",
+          "quantity": "1",
+          "unit": "cup",
+          "notes": ""
+        },
+        {
+          "name": "onion",
+          "quantity": "1",
+          "unit": "",
+          "notes": "diced"
+        },
+        {
+          "name": "eggs",
+          "quantity": "3",
+          "unit": "",
+          "notes": "beaten"
+        },
+        {
+          "name": "pepper",
+          "quantity": "to taste",
+          "unit": "",
+          "notes": "freshly ground"
+        },
+        {
+          "name": "salt",
+          "quantity": "to taste",
+          "unit": "",
+          "notes": ""
+        },
+        {
+          "name": "bread",
+          "quantity": "1",
+          "unit": "",
+          "notes": "sliced"
+        }
+      ],
+      "equipment": ["oven", "frying pan", "oven proof pot", "chopping board", "chopping knife"]
+    },
+    "steps": [
+      "Preheat the oven to 200°C (390°F).",
+      "Toss the potato cubes with olive oil, salt, and pepper. Roast in the oven for 25 minutes until crispy.",
+      "For pan con tomate, mash the ripe tomato and garlic with a fork. Spread on slices of bread and drizzle with olive oil.",
+      "To make tortilla española, sauté the diced onion in olive oil until golden. Add beaten eggs and cook gently until set.",
+      "Arrange all tapas items on a platter and

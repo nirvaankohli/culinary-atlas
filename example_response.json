@@ -1,829 +1,1036 @@
 {
     "dishes": [
         {
-            "dish_name": "Bacon and Egg Sandwich",
-            "local_name": "Bacon and Egg Sandwich",
-            "region": "United States",
-            "culture_or_ethnicity": "American",
-            "similarity_score": 0.98,
-            "recipe_search_prompt": "bacon and egg sandwich",
-            "coordinates": [
-                39.8283,
-                -98.5907
-            ]
-        },
-        {
-            "dish_name": "Bacon and Egg Roll",
-            "local_name": "Bacon and Egg Roll",
-            "region": "Australia",
-            "culture_or_ethnicity": "Australian",
-            "similarity_score": 0.95,
-            "recipe_search_prompt": "bacon and egg roll",
-            "coordinates": [
-                -33.494,
-                143.2104
-            ]
-        },
-        {
-            "dish_name": "Uova al Prosciutto e Mozzarella",
-            "local_name": "Uova al Prosciutto e Mozzarella",
-            "region": "Italy",
-            "culture_or_ethnicity": "Italian",
-            "similarity_score": 0.93,
-            "recipe_search_prompt": "uova al prosciutto mozzarella",
-            "coordinates": [
-                41.9028,
-                12.4964
-            ]
-        },
-        {
-            "dish_name": "Huevos con Chorizo y Queso",
-            "local_name": "Huevos con Chorizo y Queso",
-            "region": "Mexico",
-            "culture_or_ethnicity": "Mexican",
-            "similarity_score": 0.92,
-            "recipe_search_prompt": "huevos chorizo queso",
-            "coordinates": [
-                19.4326,
-                -99.1332
-            ]
-        },
-        {
-            "dish_name": "Bread Omelette with Bacon and Cheese",
-            "local_name": "Bread Omelette",
+            "dish_name": "Thali",
+            "local_name": "\u0925\u093e\u0932\u0940",
             "region": "India",
             "culture_or_ethnicity": "Indian",
-            "similarity_score": 0.91,
-            "recipe_search_prompt": "bread omelette with bacon cheese",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "thali",
             "coordinates": [
                 20.5937,
                 78.9629
             ]
         },
         {
-            "dish_name": "Eier mit Speck",
-            "local_name": "Eier mit Speck",
-            "region": "Germany",
-            "culture_or_ethnicity": "German",
+            "dish_name": "Meze",
+            "local_name": "Meze",
+            "region": "Lebanon",
+            "culture_or_ethnicity": "Lebanese",
+            "similarity_score": 0.91,
+            "recipe_search_prompt": "lebanese meze",
+            "coordinates": [
+                33.8938,
+                35.4939
+            ]
+        },
+        {
+            "dish_name": "Tapas",
+            "local_name": "Tapas",
+            "region": "Spain",
+            "culture_or_ethnicity": "Spanish",
             "similarity_score": 0.9,
-            "recipe_search_prompt": "eggs with bacon",
+            "recipe_search_prompt": "spanish tapas",
             "coordinates": [
-                51.1657,
-                10.4515
+                40.4168,
+                -3.7038
             ]
         },
         {
-            "dish_name": "Omelet with Bacon and Cheese",
-            "local_name": "Omelette aux Lardons et Fromage",
-            "region": "France",
-            "culture_or_ethnicity": "French",
+            "dish_name": "Antipasti",
+            "local_name": "Antipasti",
+            "region": "Italy",
+            "culture_or_ethnicity": "Italian",
             "similarity_score": 0.89,
-            "recipe_search_prompt": "omelet with bacon cheese",
+            "recipe_search_prompt": "italian antipasti",
             "coordinates": [
-                46.2276,
-                2.2137
+                41.8719,
+                12.5674
             ]
         },
         {
-            "dish_name": "Bacon and Egg Toast",
-            "local_name": "Bacon and Egg Toast",
-            "region": "United Kingdom",
-            "culture_or_ethnicity": "British",
+            "dish_name": "Tegane",
+            "local_name": "\u624b\u304c\u306d",
+            "region": "Japan",
+            "culture_or_ethnicity": "Japanese",
             "similarity_score": 0.88,
-            "recipe_search_prompt": "bacon egg toast",
+            "recipe_search_prompt": "japanese tegane",
             "coordinates": [
-                55.3781,
-                -3.436
+                35.6895,
+                139.6917
             ]
         },
         {
-            "dish_name": "Huevos con Chorizo y Queso",
-            "local_name": "Huevos con Chorizo y Queso",
-            "region": "Colombia",
-            "culture_or_ethnicity": "Colombian",
-            "similarity_score": 0.87,
-            "recipe_search_prompt": "huevos chorizo queso",
-            "coordinates": [
-                4.5709,
-                -74.2973
-            ]
-        },
-        {
-            "dish_name": "Bacon and Egg Croissant",
-            "local_name": "Bacon and Egg Croissant",
-            "region": "Canada",
-            "culture_or_ethnicity": "Canadian",
-            "similarity_score": 0.86,
-            "recipe_search_prompt": "bacon egg croissant",
-            "coordinates": [
-                56.1304,
-                -106.3468
-            ]
-        },
-        {
-            "dish_name": "Bacon and Egg Baozi",
-            "local_name": "Bacon Egg Baozi",
-            "region": "China",
+            "dish_name": "Northern Chinese Breakfast",
+            "local_name": "\u5317\u65b9\u65e9\u9910",
+            "region": "Northeast China",
             "culture_or_ethnicity": "Chinese",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "bacon egg baozi",
+            "similarity_score": 0.87,
+            "recipe_search_prompt": "northern chinese breakfast",
             "coordinates": [
-                35.8617,
-                104.1954
+                40.75,
+                111.4742
             ]
         },
         {
-            "dish_name": "Bacon and Egg Sando",
-            "local_name": "Bacon and Egg Sando",
+            "dish_name": "Com Tam",
+            "local_name": "C\u01a1m T\u1ea5m",
+            "region": "Vietnam",
+            "culture_or_ethnicity": "Vietnamese",
+            "similarity_score": 0.86,
+            "recipe_search_prompt": "vietnamese com tam",
+            "coordinates": [
+                10.7722,
+                106.6602
+            ]
+        },
+        {
+            "dish_name": "Jeon",
+            "local_name": "\uc804",
+            "region": "Korea",
+            "culture_or_ethnicity": "Korean",
+            "similarity_score": 0.85,
+            "recipe_search_prompt": "korean jeon",
+            "coordinates": [
+                37.5665,
+                126.978
+            ]
+        },
+        {
+            "dish_name": "Turkish Meze",
+            "local_name": "Meze",
+            "region": "Turkey",
+            "culture_or_ethnicity": "Turkish",
+            "similarity_score": 0.84,
+            "recipe_search_prompt": "turkish meze",
+            "coordinates": [
+                39.9049,
+                32.8539
+            ]
+        },
+        {
+            "dish_name": "Greek Mezedes",
+            "local_name": "\u039c\u03b5\u03b6\u03ad\u03b4\u03b5\u03c2",
+            "region": "Greece",
+            "culture_or_ethnicity": "Greek",
+            "similarity_score": 0.83,
+            "recipe_search_prompt": "greek mezedes",
+            "coordinates": [
+                39.0338,
+                21.8243
+            ]
+        },
+        {
+            "dish_name": "Yunnan Breakfast",
+            "local_name": "\u4e91\u5357\u65e9\u9910",
+            "region": "Yunnan, China",
+            "culture_or_ethnicity": "Chinese",
+            "similarity_score": 0.82,
+            "recipe_search_prompt": "yunnan breakfast",
+            "coordinates": [
+                22.3333,
+                100.1667
+            ]
+        },
+        {
+            "dish_name": "Nasi Liwet",
+            "local_name": "Nasi Liwet",
+            "region": "Indonesia",
+            "culture_or_ethnicity": "Indonesian",
+            "similarity_score": 0.81,
+            "recipe_search_prompt": "indonesian nasi liwet",
+            "coordinates": [
+                -6.2088,
+                106.8456
+            ]
+        },
+        {
+            "dish_name": "Silog Meals",
+            "local_name": "Silog Meals",
             "region": "Philippines",
             "culture_or_ethnicity": "Filipino",
-            "similarity_score": 0.84,
-            "recipe_search_prompt": "bacon egg sando",
+            "similarity_score": 0.8,
+            "recipe_search_prompt": "filipino silog meals",
             "coordinates": [
-                12.8797,
-                121.774
-            ]
-        },
-        {
-            "dish_name": "Bacon and Egg Wrap",
-            "local_name": "Bacon and Egg Wrap",
-            "region": "New Zealand",
-            "culture_or_ethnicity": "New Zealand",
-            "similarity_score": 0.83,
-            "recipe_search_prompt": "bacon egg wrap",
-            "coordinates": [
-                -41.2865,
-                174.7762
-            ]
-        },
-        {
-            "dish_name": "Bacon and Egg Tacos",
-            "local_name": "Tacos de Bacon y Huevo",
-            "region": "Mexico",
-            "culture_or_ethnicity": "Mexican",
-            "similarity_score": 0.82,
-            "recipe_search_prompt": "bacon egg tacos",
-            "coordinates": [
-                23.6345,
-                -102.5528
+                14.5995,
+                120.9842
             ]
         }
     ],
     "recipes": [
         {
-            "matched_recipe_title": "Bacon and Egg Sandwich",
-            "summary": "A classic breakfast sandwich made with crispy bacon, a fried egg, and cheese on toasted bread.",
-            "servings": 1,
-            "total_time_minutes": 10,
+            "matched_recipe_title": "Indian Thali",
+            "summary": "An Indian Thali is a traditional meal that typically includes a variety of dishes served on a large plate, including lentils, rice, vegetables, and some form of protein. This version includes dal, roti, chutney, pickles, and a side dish.",
+            "servings": 4,
+            "total_time_minutes": 90,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "bacon",
-                        "quantity": "2",
-                        "unit": "slices",
-                        "notes": ""
+                        "name": "toor dal",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "split pigeon peas"
                     },
                     {
-                        "name": "egg",
+                        "name": "onion",
                         "quantity": "1",
                         "unit": "",
-                        "notes": ""
+                        "notes": "thinly sliced"
                     },
                     {
-                        "name": "cheese slice",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "bread",
+                        "name": "tomatoes",
                         "quantity": "2",
-                        "unit": "slices",
+                        "unit": "",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "rice",
+                        "quantity": "2",
+                        "unit": "cups",
                         "notes": ""
+                    },
+                    {
+                        "name": "whole wheat flour",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "for making roti"
+                    },
+                    {
+                        "name": "coconut chutney",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "mint chutney",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "pickle",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": "any preferred Indian variety"
+                    },
+                    {
+                        "name": "paneer",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "cubed"
+                    },
+                    {
+                        "name": "oil",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": "for cooking and frying"
                     }
                 ],
                 "equipment": [
-                    "pan",
-                    "toaster",
-                    "plate"
+                    "large pot",
+                    "roti pan or griddle",
+                    "blender (for chutneys)",
+                    "plates for serving"
                 ]
             },
             "steps": [
-                "Toast the bread slices and set aside.",
-                "Cook the bacon in a pan over medium heat until crispy, about 3-4 minutes.",
-                "In the same pan, crack the egg and cook to your desired doneness (e.g., over-easy or sunny-side up).",
-                "Place the cheese slice on one side of the toasted bread and top with cooked bacon and egg.",
-                "Place the other toast on top to complete the sandwich."
+                "Rinse the toor dal and soak it for 30 minutes. Drain and add it to a large pot with 3 cups of water. Bring to a boil, reduce heat, and simmer for 30-40 minutes until the dal is soft and mushy.",
+                "While the dal is cooking, prepare the chutneys. For coconut chutney, blend coconut, green chilies, ginger, and salt with a little water. For mint chutney, blend mint, green chilies, lemon juice, and salt until smooth.",
+                "Cook the rice in a rice cooker or on the stove with 2.5 cups of water until fully cooked.",
+                "Knead the whole wheat flour with enough warm water to make a soft dough. Let it rest for 10 minutes.",
+                "Divide the dough into small balls and roll out each into a flat roti.",
+                "Heat the roti pan over medium heat and cook each roti for 1-2 minutes on each side until lightly browned and puffed.",
+                "Heat oil in a pan and saut\u00e9 onions until golden. Add tomatoes and cook until softened. Season with salt, turmeric, and red chili powder.",
+                "Cube the paneer and add to the tomato mixture. Cook for 5-7 minutes until the paneer is well coated and slightly browned.",
+                "Assemble the thali by arranging the dal, rice, roti, chutneys, pickles, and paneer on a large plate. Serve with a small bowl of water to wash hands."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/653999-312x231.jpg",
-            "source_url": "https://spoonacular.com/recipes/bacon-and-egg-sandwich-653999",
+            "image_url": "https://spoonacular.com/recipeImages/636683-556x370.jpg",
+            "source_url": "https://spoonacular.com/indian-thali-recipe-636683",
             "source": "spoonacular",
-            "dish_name": "Bacon and Egg Sandwich",
-            "local_name": "Bacon and Egg Sandwich",
-            "region": "United States",
-            "culture_or_ethnicity": "American",
-            "similarity_score": 0.98,
-            "recipe_search_prompt": "bacon and egg sandwich",
-            "coordinates": [
-                39.8283,
-                -98.5907
-            ]
-        },
-        {
-            "matched_recipe_title": "Bacon and Egg Roll",
-            "summary": "A handheld breakfast or snack made with scrambled eggs, crispy bacon, and seasonings wrapped in a tortilla or pancake.",
-            "servings": 1,
-            "total_time_minutes": 15,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "bacon",
-                        "quantity": "2",
-                        "unit": "slices",
-                        "notes": ""
-                    },
-                    {
-                        "name": "egg",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "tortilla",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "or a thin pancake"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "a pinch",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    }
-                ],
-                "equipment": [
-                    "pan",
-                    "spatula",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Crisp the bacon in a pan over medium heat until fully cooked, about 3-5 minutes. Set aside.",
-                "Crack the eggs into a bowl, add salt and pepper to taste, and whisk until combined.",
-                "Pour the egg mixture into the same pan and scramble gently until fully cooked.",
-                "Place the tortilla or pancake on a plate, add the scrambled eggs and cooked bacon in the center.",
-                "Fold the sides of the tortilla/pancake inward and roll it up to form a roll. Serve warm."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/654005-312x231.jpg",
-            "source_url": "https://spoonacular.com/recipes/bacon-and-egg-roll-654005",
-            "source": "spoonacular",
-            "dish_name": "Bacon and Egg Roll",
-            "local_name": "Bacon and Egg Roll",
-            "region": "Australia",
-            "culture_or_ethnicity": "Australian",
-            "similarity_score": 0.95,
-            "recipe_search_prompt": "bacon and egg roll",
-            "coordinates": [
-                -33.494,
-                143.2104
-            ]
-        },
-        {
-            "matched_recipe_title": "Uova al Prosciutto e Mozzarella",
-            "summary": "An Italian-style dish where eggs are poached or scrambled and served with prosciutto and mozzarella on toasted bread.",
-            "servings": 1,
-            "total_time_minutes": 12,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "prosciutto",
-                        "quantity": "2",
-                        "unit": "slices",
-                        "notes": ""
-                    },
-                    {
-                        "name": "mozzarella",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": ""
-                    },
-                    {
-                        "name": "egg",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "bread",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": ""
-                    }
-                ],
-                "equipment": [
-                    "pan",
-                    "toaster",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Toast the bread slice and set aside.",
-                "In a pan, cook the prosciutto slices over medium heat until slightly softened or crispy, depending on preference.",
-                "Add the egg to the pan and poach or scramble it with the prosciutto.",
-                "Place the mozzarella slice on the toasted bread and top with the egg and prosciutto mixture.",
-                "Serve warm."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/654017-312x231.jpg",
-            "source_url": "https://spoonacular.com/recipes/uova-al-prosciutto-e-mozzarella-654017",
-            "source": "spoonacular",
-            "dish_name": "Uova al Prosciutto e Mozzarella",
-            "local_name": "Uova al Prosciutto e Mozzarella",
-            "region": "Italy",
-            "culture_or_ethnicity": "Italian",
-            "similarity_score": 0.93,
-            "recipe_search_prompt": "uova al prosciutto mozzarella",
-            "coordinates": [
-                41.9028,
-                12.4964
-            ]
-        },
-        {
-            "matched_recipe_title": "Huevos con Chorizo y Queso",
-            "summary": "A Spanish-style dish with scrambled eggs, chorizo, and melted cheese, often served in a pan or on top of tortillas.",
-            "servings": 1,
-            "total_time_minutes": 10,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "chorizo",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": "or 1 tbsp crumbled"
-                    },
-                    {
-                        "name": "egg",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "cheese",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": "such as manchego or mozzarella"
-                    }
-                ],
-                "equipment": [
-                    "pan",
-                    "spatula",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Heat a pan over medium heat and cook the chorizo until slightly crisp, about 2-3 minutes.",
-                "Add the eggs to the pan and scramble with the chorizo.",
-                "Place the scrambled egg and chorizo mixture on a plate and top with warm cheese slice.",
-                "Alternatively, serve the mixture in a tortilla for a Spanish-style wrap."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/654027-312x231.jpg",
-            "source_url": "https://spoonacular.com/recipes/huevos-con-chorizo-y-queso-654027",
-            "source": "spoonacular",
-            "dish_name": "Huevos con Chorizo y Queso",
-            "local_name": "Huevos con Chorizo y Queso",
-            "region": "Mexico",
-            "culture_or_ethnicity": "Mexican",
-            "similarity_score": 0.92,
-            "recipe_search_prompt": "huevos chorizo queso",
-            "coordinates": [
-                19.4326,
-                -99.1332
-            ]
-        },
-        {
-            "matched_recipe_title": "Bread Omelette with Bacon and Cheese",
-            "summary": "A hearty omelette made with eggs, bacon, cheese, and wrapped in a piece of bread for a portable meal.",
-            "servings": 1,
-            "total_time_minutes": 10,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "egg",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "bacon",
-                        "quantity": "2",
-                        "unit": "slices",
-                        "notes": ""
-                    },
-                    {
-                        "name": "cheese",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": ""
-                    },
-                    {
-                        "name": "bread",
-                        "quantity": "2",
-                        "unit": "slices",
-                        "notes": ""
-                    }
-                ],
-                "equipment": [
-                    "pan",
-                    "toaster",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Toast both bread slices and set aside.",
-                "In a pan, cook the bacon until crisp, about 3-5 minutes. Remove and set aside.",
-                "In the same pan, cook the eggs gently, either scrambled or folded into an omelette, and add the cooked bacon and cheese.",
-                "Transfer the egg mixture onto one of the toasted bread slices.",
-                "Top with the second slice of bread to form a sandwich and serve."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/654028-312x231.jpg",
-            "source_url": "https://spoonacular.com/recipes/bread-omelette-with-bacon-and-cheese-654028",
-            "source": "spoonacular",
-            "dish_name": "Bread Omelette with Bacon and Cheese",
-            "local_name": "Bread Omelette",
+            "dish_name": "Thali",
+            "local_name": "\u0925\u093e\u0932\u0940",
             "region": "India",
             "culture_or_ethnicity": "Indian",
-            "similarity_score": 0.91,
-            "recipe_search_prompt": "bread omelette with bacon cheese",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "thali",
             "coordinates": [
                 20.5937,
                 78.9629
             ]
         },
         {
-            "matched_recipe_title": "Eier mit Speck",
-            "summary": "A simple and hearty German dish of eggs with bacon, perfect for a quick breakfast or light lunch.",
-            "servings": 2,
-            "total_time_minutes": 15,
+            "matched_recipe_title": "Lebanese Meze Platter",
+            "summary": "A traditional Lebanese Meze platter is a selection of small dishes meant to be shared, often including dips, grilled vegetables, cheese, and olives.",
+            "servings": 4,
+            "total_time_minutes": 60,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "eggs",
-                        "quantity": "2",
-                        "unit": "",
+                        "name": "hummus",
+                        "quantity": "1",
+                        "unit": "cup",
                         "notes": ""
                     },
                     {
-                        "name": "bacon",
+                        "name": "baba ghanoush",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "falafel",
+                        "quantity": "10",
+                        "unit": "",
+                        "notes": "deep fried"
+                    },
+                    {
+                        "name": "grilled eggplant",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "grilled zucchini",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "grilled tomatoes",
                         "quantity": "4",
-                        "unit": "slices",
-                        "notes": ""
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste",
                         "unit": "",
                         "notes": ""
                     },
                     {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "oil or butter",
+                        "name": "feta cheese",
                         "quantity": "1",
-                        "unit": "tbsp",
-                        "notes": "for frying"
-                    }
-                ],
-                "equipment": [
-                    "frying pan",
-                    "fork or spatula",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Heat a frying pan over medium heat and add oil or butter.",
-                "Add the bacon slices and cook until crispy, about 3-5 minutes.",
-                "Crack the eggs directly into the pan with the bacon or set them aside in a bowl.",
-                "Cook the eggs to your desired doneness, either scrambled, fried, or poached.",
-                "Season with salt and pepper.",
-                "Serve the eggs with the cooked bacon on top or alongside."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/635970-556x370.jpg",
-            "source_url": "https://spoonacular.com/eggs-with-bacon-recipe",
-            "source": "spoonacular",
-            "dish_name": "Eier mit Speck",
-            "local_name": "Eier mit Speck",
-            "region": "Germany",
-            "culture_or_ethnicity": "German",
-            "similarity_score": 0.9,
-            "recipe_search_prompt": "eggs with bacon",
-            "coordinates": [
-                51.1657,
-                10.4515
-            ]
-        },
-        {
-            "matched_recipe_title": "Omelet with Bacon and Cheese",
-            "summary": "A classic French omelet made with bacon and cheese, fluffy and rich, easy to prepare for a satisfying meal.",
-            "servings": 2,
-            "total_time_minutes": 10,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "eggs",
-                        "quantity": "3",
-                        "unit": "",
-                        "notes": ""
+                        "unit": "cup",
+                        "notes": "cubed"
                     },
                     {
-                        "name": "bacon",
+                        "name": "olives",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "mixed variety"
+                    },
+                    {
+                        "name": "lavash bread",
                         "quantity": "4",
-                        "unit": "slices",
-                        "notes": "cut into small pieces"
+                        "unit": "",
+                        "notes": "for serving"
                     },
                     {
-                        "name": "cheese",
+                        "name": "olive oil",
                         "quantity": "2",
                         "unit": "tbsp",
-                        "notes": "grated, any mild type like cheddar or Gruy\u00e8re"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "1/4",
-                        "unit": "tsp",
-                        "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "butter",
-                        "quantity": "1",
-                        "unit": "tbsp",
-                        "notes": "for cooking"
+                        "notes": "for grilling"
                     }
                 ],
                 "equipment": [
-                    "non-stick skillet",
-                    "whisk",
-                    "spatula",
-                    "plate"
+                    "oven or grill",
+                    "oven-safe baking tray",
+                    "platter for serving"
                 ]
             },
             "steps": [
-                "Whisk the eggs in a bowl and season with salt and pepper.",
-                "Melt butter in a non-stick skillet over medium heat.",
-                "Add the chopped bacon to the pan and cook until crisp, about 2 minutes.",
-                "Pour the whisked eggs into the pan and let them cook for a minute or two, gently pushing the edges with a spatula.",
-                "Sprinkle the grated cheese over the top of the omelet.",
-                "Fold the omelet in half and cook for another 1-2 minutes until the cheese is melted and the eggs are set.",
-                "Slide the omelet onto a plate and serve warm."
+                "Preheat the oven or grill to medium-high heat.",
+                "Brush eggplant, zucchini, and tomatoes with olive oil. Season with salt and pepper.",
+                "Arrange the vegetables on a baking tray and grill for 10-15 minutes, turning occasionally, until charred and tender.",
+                "Meanwhile, prepare the hummus and baba ghanoush. Store them in serving bowls.",
+                "Cube the feta cheese and arrange it on the serving platter.",
+                "Toss the olives in a small bowl and place them on the platter.",
+                "Place the grilled vegetables, hummus, baba ghanoush, and falafel on the serving platter.",
+                "Add the lavash bread and serve with lemon wedges and small forks or pita for scooping."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/716455-556x370.jpg",
-            "source_url": "https://spoonacular.com/omelet-with-bacon-and-cheese-recipe",
+            "image_url": "https://spoonacular.com/recipeImages/636662-556x370.jpg",
+            "source_url": "https://spoonacular.com/lebanese-meze-platter-recipe-636662",
             "source": "spoonacular",
-            "dish_name": "Omelet with Bacon and Cheese",
-            "local_name": "Omelette aux Lardons et Fromage",
-            "region": "France",
-            "culture_or_ethnicity": "French",
-            "similarity_score": 0.89,
-            "recipe_search_prompt": "omelet with bacon cheese",
+            "dish_name": "Meze",
+            "local_name": "Meze",
+            "region": "Lebanon",
+            "culture_or_ethnicity": "Lebanese",
+            "similarity_score": 0.91,
+            "recipe_search_prompt": "lebanese meze",
             "coordinates": [
-                46.2276,
-                2.2137
+                33.8938,
+                35.4939
             ]
         },
         {
-            "matched_recipe_title": "Bacon and Egg Toast",
-            "summary": "A quick and delicious breakfast or snack combining crispy bacon, fried or poached eggs, and buttery toast.",
-            "servings": 1,
-            "total_time_minutes": 10,
+            "matched_recipe_title": "Spanish Tapas: Chorizo and Manchego Cheese",
+            "summary": "This simple Spanish tapas dish features juicy chorizo sausage and aged Manchego cheese, served with crusty bread and olives for a traditional flavor-packed plate.",
+            "servings": 4,
+            "total_time_minutes": 30,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "bacon",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": ""
-                    },
-                    {
-                        "name": "eggs",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "bread",
-                        "quantity": "1",
-                        "unit": "slice",
-                        "notes": ""
-                    },
-                    {
-                        "name": "butter",
-                        "quantity": "1",
-                        "unit": "tbsp",
-                        "notes": "for toasting and garnish"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    }
-                ],
-                "equipment": [
-                    "toaster or pan",
-                    "frying pan",
-                    "fork or spatula",
-                    "plate"
-                ]
-            },
-            "steps": [
-                "Toast the bread in a toaster or pan until golden and crispy.",
-                "In a small pan, cook the bacon until crisp, about 2-3 minutes.",
-                "Fry or poach the egg to your liking and season with salt and pepper.",
-                "Place the toast on a plate, top it with the cooked bacon and the prepared egg.",
-                "Add a small pat of butter on top of the egg for a rich finish.",
-                "Serve immediately."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/635957-556x370.jpg",
-            "source_url": "https://spoonacular.com/bacon-egg-toast-recipe",
-            "source": "spoonacular",
-            "dish_name": "Bacon and Egg Toast",
-            "local_name": "Bacon and Egg Toast",
-            "region": "United Kingdom",
-            "culture_or_ethnicity": "British",
-            "similarity_score": 0.88,
-            "recipe_search_prompt": "bacon egg toast",
-            "coordinates": [
-                55.3781,
-                -3.436
-            ]
-        },
-        {
-            "matched_recipe_title": "Huevos con Chorizo y Queso",
-            "summary": "A flavorful Spanish dish of eggs cooked with spicy chorizo and melted cheese for a hearty and savory meal.",
-            "servings": 2,
-            "total_time_minutes": 15,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "eggs",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "chorizo",
-                        "quantity": "50",
+                        "name": "chorizo sausage",
+                        "quantity": "200",
                         "unit": "g",
                         "notes": "sliced"
                     },
                     {
-                        "name": "cheese",
-                        "quantity": "2",
-                        "unit": "tbsp",
-                        "notes": "grated, such as Manchego or mozzarella"
+                        "name": "Manchego cheese",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "cut into cubes"
                     },
                     {
-                        "name": "salt",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "oil",
+                        "name": "crusty bread",
                         "quantity": "1",
-                        "unit": "tbsp",
-                        "notes": "for cooking"
+                        "unit": "loaf",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "Spanish olives",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "mixed green and black"
+                    },
+                    {
+                        "name": "crushed red pepper",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "optional for garnish"
                     }
                 ],
                 "equipment": [
-                    "frying pan",
-                    "spatula",
-                    "bowl",
-                    "plate"
+                    "frying pan or skillet",
+                    "cutting board",
+                    "knife",
+                    "serving platter"
                 ]
             },
             "steps": [
-                "Heat a frying pan over medium heat and add oil.",
-                "Cook the chorizo in the pan until it releases its fat and starts to brown, about 3-4 minutes.",
-                "Crack the eggs into the pan with the chorizo and cook gently, preferably over low heat.",
-                "Sprinkle the grated cheese over the top of the eggs as they cook.",
-                "Allow the eggs to cook until the whites are set but the yolk is still runny, about 3-5 minutes.",
-                "Season with salt and pepper.",
-                "Serve the eggs with the chorizo and cheese on a plate."
+                "Heat a frying pan over medium heat. Add chorizo slices and cook for 5-7 minutes until they release their oils and are slightly crispy. Remove to a plate.",
+                "Arrange the crusty bread slices, Manchego cheese cubes, and cooked chorizo on a serving platter.",
+                "Add the Spanish olives around the platter and sprinkle crushed red pepper on top, if desired.",
+                "Serve the tapas as part of a shared platter, typically with a glass of wine or beer."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/636429-556x370.jpg",
-            "source_url": "https://spoonacular.com/huevos-con-chorizo-y-queso-recipe",
+            "image_url": "https://spoonacular.com/recipeImages/636677-556x370.jpg",
+            "source_url": "https://spoonacular.com/spanish-tapas-chorizo-and-manchego-recipe-636677",
             "source": "spoonacular",
-            "dish_name": "Huevos con Chorizo y Queso",
-            "local_name": "Huevos con Chorizo y Queso",
-            "region": "Colombia",
-            "culture_or_ethnicity": "Colombian",
-            "similarity_score": 0.87,
-            "recipe_search_prompt": "huevos chorizo queso",
+            "dish_name": "Tapas",
+            "local_name": "Tapas",
+            "region": "Spain",
+            "culture_or_ethnicity": "Spanish",
+            "similarity_score": 0.9,
+            "recipe_search_prompt": "spanish tapas",
             "coordinates": [
-                4.5709,
-                -74.2973
+                40.4168,
+                -3.7038
             ]
         },
         {
-            "matched_recipe_title": "Bacon and Egg Croissant",
-            "summary": "A luxurious twist on breakfast, featuring a flaky croissant filled with crispy bacon and a runny or poached egg.",
+            "matched_recipe_title": "Italian Antipasti Platter",
+            "summary": "An Italian Antipasti platter is a colorful assortment of cured meats, cheeses, olives, and vegetables served as a pre-dinner starter.",
+            "servings": 4,
+            "total_time_minutes": 45,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "mozzarella cheese",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "cubed"
+                    },
+                    {
+                        "name": "prosciutto",
+                        "quantity": "100",
+                        "unit": "g",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "parma ham",
+                        "quantity": "100",
+                        "unit": "g",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "salami",
+                        "quantity": "100",
+                        "unit": "g",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "capers",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "grilled artichokes",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "grilled eggplant",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "grilled zucchini",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "olives",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "mixed green and black"
+                    },
+                    {
+                        "name": "breadsticks or crusty bread",
+                        "quantity": "12",
+                        "unit": "",
+                        "notes": "for serving"
+                    }
+                ],
+                "equipment": [
+                    "oven or grill",
+                    "baking tray",
+                    "cutting board",
+                    "knife",
+                    "serving platter"
+                ]
+            },
+            "steps": [
+                "Preheat the oven or grill to medium heat.",
+                "Brush artichokes, eggplant, and zucchini with olive oil and season with salt and pepper.",
+                "Place the vegetables on a baking tray and grill for 10-15 minutes until charred and tender.",
+                "On a serving platter, arrange mozzarella cheese, prosciutto, parma ham, and salami.",
+                "Add the grilled artichokes, grilled eggplant, and grilled zucchini to the platter.",
+                "Toss the olives and capers together and place them around the platter.",
+                "Add breadsticks or crusty bread to the sides for dipping and serving."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/636682-556x370.jpg",
+            "source_url": "https://spoonacular.com/italian-antipasti-platter-recipe-636682",
+            "source": "spoonacular",
+            "dish_name": "Antipasti",
+            "local_name": "Antipasti",
+            "region": "Italy",
+            "culture_or_ethnicity": "Italian",
+            "similarity_score": 0.89,
+            "recipe_search_prompt": "italian antipasti",
+            "coordinates": [
+                41.8719,
+                12.5674
+            ]
+        },
+        {
+            "matched_recipe_title": "Japanese Tegane (Platter) with Appetizers",
+            "summary": "Tegane is a Japanese assortment of small dishes typically enjoyed as an appetizer or side to sake. This version includes edamame, gyoza, and seaweed salad.",
+            "servings": 4,
+            "total_time_minutes": 60,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "edamame",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "shelled"
+                    },
+                    {
+                        "name": "gyoza (Japanese dumplings)",
+                        "quantity": "20",
+                        "unit": "",
+                        "notes": "store-bought or homemade"
+                    },
+                    {
+                        "name": "seaweed salad",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "miso soup",
+                        "quantity": "4",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "pickles (tsukemono)",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "soy sauce",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "for serving"
+                    },
+                    {
+                        "name": "wasabi",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "sake or green tea",
+                        "quantity": "4",
+                        "unit": "cups",
+                        "notes": "for serving"
+                    }
+                ],
+                "equipment": [
+                    "steamer or microwave",
+                    "frying pan (for gyoza)",
+                    "serving bowls and plates"
+                ]
+            },
+            "steps": [
+                "Boil or steam the edamame for 5-7 minutes. Season with a pinch of salt and set aside.",
+                "Heat a frying pan over medium heat and cook gyoza for 5-7 minutes until the bottoms are golden, adding a bit of water and covering to steam if using homemade dumplings.",
+                "Prepare the seaweed salad by mixing it with its dressing and setting aside.",
+                "Heat the miso soup in a pot or microwave and serve in individual bowls.",
+                "Arrange the edamame, gyoza, seaweed salad, tsukemono, and miso soup on a serving platter or individual plates.",
+                "Serve with soy sauce and a bit of wasabi if desired, along with sake or green tea for a traditional experience."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/636668-556x370.jpg",
+            "source_url": "https://spoonacular.com/japanese-tegane-recipe-636668",
+            "source": "spoonacular",
+            "dish_name": "Tegane",
+            "local_name": "\u624b\u304c\u306d",
+            "region": "Japan",
+            "culture_or_ethnicity": "Japanese",
+            "similarity_score": 0.88,
+            "recipe_search_prompt": "japanese tegane",
+            "coordinates": [
+                35.6895,
+                139.6917
+            ]
+        },
+        {
+            "matched_recipe_title": "Northern Chinese Breakfast",
+            "summary": "A traditional morning meal from Northern China, typically including wheat-based foods like jianbing, noodles, or steamed buns, paired with soybean paste and tea.",
             "servings": 1,
             "total_time_minutes": 20,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "croissant",
+                        "name": "wheat flour",
                         "quantity": "1",
+                        "unit": "cup",
+                        "notes": "for making jianbing or steamed buns"
+                    },
+                    {
+                        "name": "water",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": "for dough or tea"
+                    },
+                    {
+                        "name": "fermentation starter",
+                        "quantity": "1 tbsp",
+                        "unit": "tbsp",
+                        "notes": "for buns if using"
+                    },
+                    {
+                        "name": "eggs",
+                        "quantity": "2",
                         "unit": "",
+                        "notes": "for jianbing"
+                    },
+                    {
+                        "name": "vegetables",
+                        "quantity": "1 cup",
+                        "unit": "cup",
+                        "notes": "such as scallions or spinach"
+                    },
+                    {
+                        "name": "soybean paste",
+                        "quantity": "1",
+                        "unit": "tbsp",
                         "notes": ""
                     },
                     {
-                        "name": "bacon",
+                        "name": "oil",
+                        "quantity": "1 tbsp",
+                        "unit": "tbsp",
+                        "notes": "for frying jianbing"
+                    },
+                    {
+                        "name": "green tea leaves",
+                        "quantity": "1 tsp",
+                        "unit": "tsp",
+                        "notes": "optional"
+                    }
+                ],
+                "equipment": [
+                    "mixing bowl",
+                    "frying pan",
+                    "steamer",
+                    "teapot"
+                ]
+            },
+            "steps": [
+                "Mix wheat flour with water and a fermentation starter if using, and let the dough rest for 1 hour.",
+                "Roll out the dough into thin wrappers and cook them like jianbing\u2014fry in a pan, add beaten egg, vegetables, and soybean paste.",
+                "Alternatively, shape the dough into small buns and steam for 10-15 minutes.",
+                "Brew green tea with remaining water to serve alongside the meal."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/1353876-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/northern-chinese-breakfast-1353876",
+            "source": "spoonacular",
+            "dish_name": "Northern Chinese Breakfast",
+            "local_name": "\u5317\u65b9\u65e9\u9910",
+            "region": "Northeast China",
+            "culture_or_ethnicity": "Chinese",
+            "similarity_score": 0.87,
+            "recipe_search_prompt": "northern chinese breakfast",
+            "coordinates": [
+                40.75,
+                111.4742
+            ]
+        },
+        {
+            "matched_recipe_title": "Com Tam (Vietnamese Broken Rice)",
+            "summary": "A popular Vietnamese dish made with broken rice, grilled pork, and a variety of accompaniments, offering a flavorful and balanced meal.",
+            "servings": 4,
+            "total_time_minutes": 45,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "broken rice",
                         "quantity": "2",
-                        "unit": "slices",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "pork belly",
+                        "quantity": "500",
+                        "unit": "g",
+                        "notes": "for grilled pork"
+                    },
+                    {
+                        "name": "garlic",
+                        "quantity": "3",
+                        "unit": "cloves",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "soy sauce",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "peanut sauce",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "fresh herbs",
+                        "quantity": "1",
+                        "unit": "bunch",
+                        "notes": "such as cilantro and mint"
+                    },
+                    {
+                        "name": "fermented shrimp paste",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "chili",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced or crushed"
+                    },
+                    {
+                        "name": "lime",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "cut into wedges"
+                    },
+                    {
+                        "name": "oil",
+                        "quantity": "1 tbsp",
+                        "unit": "tbsp",
+                        "notes": "for cooking pork"
+                    }
+                ],
+                "equipment": [
+                    "rice cooker or pot",
+                    "grill pan",
+                    "wok",
+                    "bowls"
+                ]
+            },
+            "steps": [
+                "Cook the broken rice in a rice cooker or pot until tender and set aside.",
+                "Season pork belly with minced garlic, soy sauce, and oil. Grill or pan-fry until crispy and cooked through.",
+                "Prepare the peanut sauce by mixing ground peanuts, water, soy sauce, and a pinch of sugar to taste.",
+                "Arrange broken rice in bowls and top with grilled pork, fresh herbs, chili, and a drizzle of peanut sauce.",
+                "Serve with lime wedges on the side for squeezing over the dish."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/635671-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/com-tam-635671",
+            "source": "spoonacular",
+            "dish_name": "Com Tam",
+            "local_name": "C\u01a1m T\u1ea5m",
+            "region": "Vietnam",
+            "culture_or_ethnicity": "Vietnamese",
+            "similarity_score": 0.86,
+            "recipe_search_prompt": "vietnamese com tam",
+            "coordinates": [
+                10.7722,
+                106.6602
+            ]
+        },
+        {
+            "matched_recipe_title": "Korean Jeon (Korean Pancakes)",
+            "summary": "A savory Korean dish made by pan-frying a mixture of vegetables, seafood, or meat in a flour and egg batter, served hot with dipping sauces.",
+            "servings": 4,
+            "total_time_minutes": 30,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "flour",
+                        "quantity": "1/2",
+                        "unit": "cup",
                         "notes": ""
                     },
                     {
                         "name": "eggs",
-                        "quantity": "1",
+                        "quantity": "2",
                         "unit": "",
+                        "notes": "beaten"
+                    },
+                    {
+                        "name": "water",
+                        "quantity": "1/4",
+                        "unit": "cup",
                         "notes": ""
                     },
                     {
-                        "name": "salt",
-                        "quantity": "a pinch",
-                        "unit": "",
-                        "notes": ""
+                        "name": "vegetables",
+                        "quantity": "1 cup",
+                        "unit": "cup",
+                        "notes": "such as zucchini, onions, mushrooms, and spinach"
                     },
                     {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
+                        "name": "seafood or meat",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": "optional, like shrimp or beef"
                     },
                     {
-                        "name": "optional: cheese",
+                        "name": "soy sauce",
+                        "quantity": "1 tbsp",
+                        "unit": "tbsp",
+                        "notes": "for marinating"
+                    },
+                    {
+                        "name": "oil",
+                        "quantity": "2 tbsp",
+                        "unit": "tbsp",
+                        "notes": "for frying"
+                    },
+                    {
+                        "name": "sesame seeds",
                         "quantity": "1",
                         "unit": "tbsp",
-                        "notes": "grated, for extra flavor"
+                        "notes": "optional, for garnish"
                     }
                 ],
                 "equipment": [
-                    "oven or toaster",
-                    "frying pan",
-                    "plate",
-                    "fork"
+                    "mixing bowl",
+                    "pan",
+                    "serving plate"
                 ]
             },
             "steps": [
-                "Heat up a frying pan over medium heat and cook the bacon slices until crispy.",
-                "Place the croissant in a toaster or oven and warm until slightly toasty.",
-                "Poach or fry the egg to your desired doneness and set aside.",
-                "Once the croissant is ready, open it gently to create a pocket.",
-                "Place the cooked bacon and egg inside the croissant pocket.",
-                "If using cheese, sprinkle it on top of the egg before closing the croissant.",
-                "Season with a pinch of salt and a dash of black pepper.",
-                "Serve warm and enjoy."
+                "Mix flour, beaten eggs, and water to form a thick batter. Let it rest for 10 minutes.",
+                "Prepare the fillings by chopping vegetables and marinating seafood or meat in soy sauce if using.",
+                "Heat oil in a pan over medium heat. Drop spoonfuls of batter into the pan and press into thin patties.",
+                "Add chopped fillings into each patty and spread them out slightly for even cooking.",
+                "Fry until golden and crispy on both sides. Sprinkle with sesame seeds for garnish if desired.",
+                "Serve hot with a side of dipping sauce like soy-ginger or gochujang."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/637514-556x370.jpg",
-            "source_url": "https://spoonacular.com/bacon-and-egg-croissant-recipe",
+            "image_url": "https://spoonacular.com/recipeImages/645518-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/jeon-korean-pancakes-645518",
             "source": "spoonacular",
-            "dish_name": "Bacon and Egg Croissant",
-            "local_name": "Bacon and Egg Croissant",
-            "region": "Canada",
-            "culture_or_ethnicity": "Canadian",
-            "similarity_score": 0.86,
-            "recipe_search_prompt": "bacon egg croissant",
+            "dish_name": "Jeon",
+            "local_name": "\uc804",
+            "region": "Korea",
+            "culture_or_ethnicity": "Korean",
+            "similarity_score": 0.85,
+            "recipe_search_prompt": "korean jeon",
             "coordinates": [
-                56.1304,
-                -106.3468
+                37.5665,
+                126.978
+            ]
+        },
+        {
+            "matched_recipe_title": "Turkish Meze",
+            "summary": "A selection of small dishes typically enjoyed as appetizers in Turkey, offering a mix of flavors and textures from fresh vegetables, dips, and grilled meats.",
+            "servings": 6,
+            "total_time_minutes": 60,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "hummus",
+                        "quantity": "2",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "baba ghanoush",
+                        "quantity": "1.5",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "sliced cucumbers",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "tomatoes",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "red onion",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "grilled halloumi cheese",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": ""
+                    },
+                    {
+                        "name": "grilled vegetables",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "such as eggplant, zucchini, and bell peppers"
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "for serving"
+                    }
+                ],
+                "equipment": [
+                    "skillet or grill",
+                    "bowls",
+                    "serving platter"
+                ]
+            },
+            "steps": [
+                "Prepare hummus and baba ghanoush ahead of time or refrigerate for a fresh texture.",
+                "Slice cucumbers, tomatoes, and red onion into small, bite-sized pieces and arrange them in a bowl.",
+                "Grill halloumi cheese until golden brown and set aside.",
+                "Grill or saut\u00e9 the vegetables in a skillet until tender and slightly charred.",
+                "Arrange all the components on a serving platter and serve with warm, crusty bread on the side."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/633221-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/turkish-meze-633221",
+            "source": "spoonacular",
+            "dish_name": "Turkish Meze",
+            "local_name": "Meze",
+            "region": "Turkey",
+            "culture_or_ethnicity": "Turkish",
+            "similarity_score": 0.84,
+            "recipe_search_prompt": "turkish meze",
+            "coordinates": [
+                39.9049,
+                32.8539
+            ]
+        },
+        {
+            "matched_recipe_title": "Greek Mezedes (Greek Meze)",
+            "summary": "A traditional Greek meze platter with a variety of cold and warm items, including olives, cheese, salads, and grilled vegetables.",
+            "servings": 4,
+            "total_time_minutes": 45,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "feta cheese",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": ""
+                    },
+                    {
+                        "name": "tzatziki sauce",
+                        "quantity": "1.5",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "grilled octopus",
+                        "quantity": "1",
+                        "unit": "kg",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "grilled zucchini",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "grilled eggplant",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "olives",
+                        "quantity": "1 cup",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "sliced tomatoes",
+                        "quantity": "1 cup",
+                        "unit": "cup",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "for serving"
+                    }
+                ],
+                "equipment": [
+                    "skillet or grill",
+                    "bowls",
+                    "serving tray"
+                ]
+            },
+            "steps": [
+                "Prepare tzatziki by combining Greek yogurt, minced garlic, dill, and cucumber in a bowl.",
+                "Slice zucchini and eggplant, brush with olive oil, and grill until tender and slightly charred.",
+                "Prepare feta cheese by crumbling it into a serving bowl and drizzling with olive oil.",
+                "Arrange olives, grilled vegetables, and tzatziki on a serving tray.",
+                "Serve with warm pita bread and optional grilled octopus or tomatoes for added protein."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/644302-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/greek-mezedes-644302",
+            "source": "spoonacular",
+            "dish_name": "Greek Mezedes",
+            "local_name": "\u039c\u03b5\u03b6\u03ad\u03b4\u03b5\u03c2",
+            "region": "Greece",
+            "culture_or_ethnicity": "Greek",
+            "similarity_score": 0.83,
+            "recipe_search_prompt": "greek mezedes",
+            "coordinates": [
+                39.0338,
+                21.8243
             ]
         }
     ]

@@ -8,11 +8,17 @@ from flask import (
     url_for,
 )
 import json
+from pathlib import Path
+from pathvalidate import sanitize_filename
 
 app = Flask(__name__)
 
-results_store = {}
+BASE_DB_PATH = Path(__file__).parent / "data" / "db"
+RECIPES_DB_PATH = BASE_DB_PATH / "recipes"
+RESULTS_DB_PATH = BASE_DB_PATH / "results"
 
+def clean_filename(name: str) -> str:
+    return sanitize_filename(name.replace(" ", "_").lower())
 
 @app.route("/", methods=["GET"])
 def home():
@@ -46,7 +52,14 @@ def load_query():
     params = request.args
     food = params.get("food", "")
 
-    return render_template("query.html", query=food)
+    already_exists = False
+
+    cleaned_food = clean_filename(food)
+
+    if (RESULTS_DB_PATH / f"{cleaned_food}.json").exists():
+        already_exists = True
+
+    return render_template("query.html", query=food, already_exists=already_exists)
 
 
 @app.route("/api/query/", methods=["GET", "POST"])
@@ -79,11 +92,20 @@ def ai_query():
             {"status": "complete", "stage": "recipes", "result": recipes_result}
         ) + "\n"
 
-        # Store results for the results page
-        results_store[food] = {
-            "dishes": diversification_result,
-            "recipes": recipes_result,
-        }
+        cleaned_food = clean_filename(food)
+
+        with open(RESULTS_DB_PATH / f"{cleaned_food}.json", "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "dishes": json.dumps(diversification_result),
+                    "recipes": json.dumps(recipes_result),
+                },
+                f,
+                ensure_ascii=False,
+                indent=4,
+            )
+
+
 
         yield json.dumps({"status": "done"}) + "\n"
 
@@ -96,8 +118,16 @@ def load_results():
     params = request.args
     food = params.get("query", "")
 
+    cleaned_food = clean_filename(food)
+    try:
 
-    data = results_store.get(food, {"dishes": "[]", "recipes": "{}"})
+        with open(RESULTS_DB_PATH / f"{cleaned_food}.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+
+    except FileNotFoundError:
+
+        return render_template("results.html", query=food, dishes=[], recipe_dishes=[], non_recipe_dishes=[])
+
 
     try:
         dishes = (
@@ -133,8 +163,8 @@ def load_results():
 
             non_recipe_dishes.append(dish)
 
-    with open("example_response.json", "w") as f:
-        json.dump(data, f, indent=4)
+
+
     return render_template("results.html", query=food, dishes=dishes, recipe_dishes=recipe_dishes, non_recipe_dishes=non_recipe_dishes)
 
 

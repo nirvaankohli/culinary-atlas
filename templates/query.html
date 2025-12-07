@@ -33,6 +33,15 @@
         <div class="inner three"></div>
       </div>
       <div class="status-container"></div>
+      <div class="inform">
+        <p class="estimated-time">This process takes a long time. Be patient. The average time is around 2.5 minutes.</p>
+        {% if already_exists %} 
+        <p class="cache-info">Since someone has searched for this dish before, you can choose to be redirected to that.</p>
+
+        <button class="redirect-button" onclick="window.location.href='/load_results/?query={{ query }}'">Go to Existing Results</button>
+
+        {% endif %}
+      </div>
     </main>
   </body>
   <script>
