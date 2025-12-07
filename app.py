@@ -11,7 +11,6 @@ import json
 
 app = Flask(__name__)
 
-# Store results temporarily (in production, use a database or session)
 results_store = {}
 
 
@@ -93,23 +92,50 @@ def ai_query():
 
 @app.route("/load_results/", methods=["GET"])
 def load_results():
+
     params = request.args
     food = params.get("query", "")
 
-    # Get stored results
+
     data = results_store.get(food, {"dishes": "[]", "recipes": "{}"})
 
-    # Parse dishes
     try:
         dishes = (
             json.loads(data["dishes"])
             if isinstance(data["dishes"], str)
             else data["dishes"]
         )
+
+        recipes = (
+            json.loads(data["recipes"])
+            if isinstance(data["recipes"], str)
+            else data["recipes"]
+        )
+
     except:
         dishes = []
+        recipes = []
 
-    return render_template("results.html", query=food, dishes=dishes)
+
+    dishes_not_with_recipes = []
+    recipe_dishes = []
+
+    for i in recipes:
+
+        dishes_not_with_recipes.append(i["dish_name"])
+        recipe_dishes.append(i)
+
+    non_recipe_dishes = []
+
+    for dish in dishes:
+
+        if dish in dishes_not_with_recipes:
+
+            non_recipe_dishes.append(dish)
+
+    with open("example_response.json", "w") as f:
+        json.dump(data, f, indent=4)
+    return render_template("results.html", query=food, dishes=dishes, recipe_dishes=recipe_dishes, non_recipe_dishes=non_recipe_dishes)
 
 
 if __name__ == "__main__":

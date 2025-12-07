@@ -315,7 +315,7 @@ Output schema (single JSON object):
     "equipment": [string]     # e.g. ["wok", "large pot", "baking tray"]
 },
 "steps": [string],          # ordered, clear, numbered implicitly
-"image_url": string,        # direct URL to a representative image - Make sure this is an image URL
+"image_url": string,        # direct URL to a representative image - Make sure this is an image URL. It should exist and be accessible. Double check the link to see if the image exists, reachable, and has meaningful content.
 "source_url": string,       # canonical recipe/source URL if available, else ""
 "source": string            # e.g. "spoonacular"
 }
@@ -364,7 +364,9 @@ Output schema (single JSON object):
 
         except Exception as e:
 
-            with open(EXAMPLE_PATH / "recipes_debug_response.txt", "w", encoding="utf-8") as f:
+            with open(
+                EXAMPLE_PATH / "recipes_debug_response.txt", "w", encoding="utf-8"
+            ) as f:
 
                 f.write(response.json()["choices"][0]["message"]["content"])
 
@@ -379,7 +381,6 @@ Output schema (single JSON object):
                 addition[key] = value
 
             results.append(addition)
-
 
         if recursion_needed:
 
@@ -398,7 +399,9 @@ Output schema (single JSON object):
             f"Response: {response.text}",
         )
 
-    common_settings_instance.log(f"process_list completed with {len(results)} total results")
+    common_settings_instance.log(
+        f"process_list completed with {len(results)} total results"
+    )
 
     return results
 

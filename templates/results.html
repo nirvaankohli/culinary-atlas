@@ -37,27 +37,56 @@
       </div>
 
       <div class="cards-container">
-        {% for dish in dishes %}
+
+        {% for dish in recipe_dishes %}
         <div class="food-card">
           <div class="card-content">
+            <img src="{{ dish.image_url }}" alt="Recipe Available" class="recipe-img"/>
             <h3 class="dish-name">{{ dish.dish_name }}</h3>
+            <h4 class="local-dish-name">{{ dish.local_name }}</h4>
             <div class="confidence-bar">
               <div
                 class="confidence-fill"
-                style="width: {{ (dish.confidence * 100)|round }}%"
+                style="width: {{ (dish.similarity_score * 100)|round }}%"
               ></div>
             </div>
             <p class="confidence-text">
-              {{ (dish.confidence * 100)|round }}% similarity
+              {{ (dish["similarity_score"] * 100)|round }}% similarity
+            </p>
+            <div class="explore-more-dish" onclick="redirectToDish('{{ dish.dish_name }}')">Learn More</div>
+          </div>
+        </div>
+        {% endfor %}
+        {% for dish in non_recipe_dishes %}
+        <div class="food-card">
+          <div class="card-content">
+            <h3 class="dish-name">{{ dish.dish_name }}</h3>
+            <h4 class="local-dish-name">{{ dish.local_name }}</h4>
+            <div class="confidence-bar">
+              <div
+                class="confidence-fill"
+                style="width: {{ (dish.similarity_score * 100)|round }}%"
+              ></div>
+            </div>
+            <p class="confidence-text">
+              {{ (dish["similarity_score"] * 100)|round }}% similarity
             </p>
           </div>
         </div>
         {% endfor %}
       </div>
 
+      <p>Total {{ dishes|length }} dishes | {{ recipe_dishes|length }} with available recipes | {{ non_recipe_dishes|length }} without available recipes</p>
+
       <div class="back-button-container">
         <a href="/" class="back-button">Explore Another Dish</a>
       </div>
     </main>
   </body>
+  <script>
+    function redirectToDish(dishName) {
+      const encodedDishName = encodeURIComponent(dishName.replace(/ /g, "-").toLowerCase());
+      window.location.href = `/dish/${encodedDishName}`;
+    }
+    </script>
 </html>

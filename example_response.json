@@ -1,0 +1,830 @@
+{
+    "dishes": [
+        {
+            "dish_name": "Bacon and Egg Sandwich",
+            "local_name": "Bacon and Egg Sandwich",
+            "region": "United States",
+            "culture_or_ethnicity": "American",
+            "similarity_score": 0.98,
+            "recipe_search_prompt": "bacon and egg sandwich",
+            "coordinates": [
+                39.8283,
+                -98.5907
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Roll",
+            "local_name": "Bacon and Egg Roll",
+            "region": "Australia",
+            "culture_or_ethnicity": "Australian",
+            "similarity_score": 0.95,
+            "recipe_search_prompt": "bacon and egg roll",
+            "coordinates": [
+                -33.494,
+                143.2104
+            ]
+        },
+        {
+            "dish_name": "Uova al Prosciutto e Mozzarella",
+            "local_name": "Uova al Prosciutto e Mozzarella",
+            "region": "Italy",
+            "culture_or_ethnicity": "Italian",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "uova al prosciutto mozzarella",
+            "coordinates": [
+                41.9028,
+                12.4964
+            ]
+        },
+        {
+            "dish_name": "Huevos con Chorizo y Queso",
+            "local_name": "Huevos con Chorizo y Queso",
+            "region": "Mexico",
+            "culture_or_ethnicity": "Mexican",
+            "similarity_score": 0.92,
+            "recipe_search_prompt": "huevos chorizo queso",
+            "coordinates": [
+                19.4326,
+                -99.1332
+            ]
+        },
+        {
+            "dish_name": "Bread Omelette with Bacon and Cheese",
+            "local_name": "Bread Omelette",
+            "region": "India",
+            "culture_or_ethnicity": "Indian",
+            "similarity_score": 0.91,
+            "recipe_search_prompt": "bread omelette with bacon cheese",
+            "coordinates": [
+                20.5937,
+                78.9629
+            ]
+        },
+        {
+            "dish_name": "Eier mit Speck",
+            "local_name": "Eier mit Speck",
+            "region": "Germany",
+            "culture_or_ethnicity": "German",
+            "similarity_score": 0.9,
+            "recipe_search_prompt": "eggs with bacon",
+            "coordinates": [
+                51.1657,
+                10.4515
+            ]
+        },
+        {
+            "dish_name": "Omelet with Bacon and Cheese",
+            "local_name": "Omelette aux Lardons et Fromage",
+            "region": "France",
+            "culture_or_ethnicity": "French",
+            "similarity_score": 0.89,
+            "recipe_search_prompt": "omelet with bacon cheese",
+            "coordinates": [
+                46.2276,
+                2.2137
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Toast",
+            "local_name": "Bacon and Egg Toast",
+            "region": "United Kingdom",
+            "culture_or_ethnicity": "British",
+            "similarity_score": 0.88,
+            "recipe_search_prompt": "bacon egg toast",
+            "coordinates": [
+                55.3781,
+                -3.436
+            ]
+        },
+        {
+            "dish_name": "Huevos con Chorizo y Queso",
+            "local_name": "Huevos con Chorizo y Queso",
+            "region": "Colombia",
+            "culture_or_ethnicity": "Colombian",
+            "similarity_score": 0.87,
+            "recipe_search_prompt": "huevos chorizo queso",
+            "coordinates": [
+                4.5709,
+                -74.2973
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Croissant",
+            "local_name": "Bacon and Egg Croissant",
+            "region": "Canada",
+            "culture_or_ethnicity": "Canadian",
+            "similarity_score": 0.86,
+            "recipe_search_prompt": "bacon egg croissant",
+            "coordinates": [
+                56.1304,
+                -106.3468
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Baozi",
+            "local_name": "Bacon Egg Baozi",
+            "region": "China",
+            "culture_or_ethnicity": "Chinese",
+            "similarity_score": 0.85,
+            "recipe_search_prompt": "bacon egg baozi",
+            "coordinates": [
+                35.8617,
+                104.1954
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Sando",
+            "local_name": "Bacon and Egg Sando",
+            "region": "Philippines",
+            "culture_or_ethnicity": "Filipino",
+            "similarity_score": 0.84,
+            "recipe_search_prompt": "bacon egg sando",
+            "coordinates": [
+                12.8797,
+                121.774
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Wrap",
+            "local_name": "Bacon and Egg Wrap",
+            "region": "New Zealand",
+            "culture_or_ethnicity": "New Zealand",
+            "similarity_score": 0.83,
+            "recipe_search_prompt": "bacon egg wrap",
+            "coordinates": [
+                -41.2865,
+                174.7762
+            ]
+        },
+        {
+            "dish_name": "Bacon and Egg Tacos",
+            "local_name": "Tacos de Bacon y Huevo",
+            "region": "Mexico",
+            "culture_or_ethnicity": "Mexican",
+            "similarity_score": 0.82,
+            "recipe_search_prompt": "bacon egg tacos",
+            "coordinates": [
+                23.6345,
+                -102.5528
+            ]
+        }
+    ],
+    "recipes": [
+        {
+            "matched_recipe_title": "Bacon and Egg Sandwich",
+            "summary": "A classic breakfast sandwich made with crispy bacon, a fried egg, and cheese on toasted bread.",
+            "servings": 1,
+            "total_time_minutes": 10,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "bacon",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "egg",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "cheese slice",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "pan",
+                    "toaster",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Toast the bread slices and set aside.",
+                "Cook the bacon in a pan over medium heat until crispy, about 3-4 minutes.",
+                "In the same pan, crack the egg and cook to your desired doneness (e.g., over-easy or sunny-side up).",
+                "Place the cheese slice on one side of the toasted bread and top with cooked bacon and egg.",
+                "Place the other toast on top to complete the sandwich."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/653999-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/bacon-and-egg-sandwich-653999",
+            "source": "spoonacular",
+            "dish_name": "Bacon and Egg Sandwich",
+            "local_name": "Bacon and Egg Sandwich",
+            "region": "United States",
+            "culture_or_ethnicity": "American",
+            "similarity_score": 0.98,
+            "recipe_search_prompt": "bacon and egg sandwich",
+            "coordinates": [
+                39.8283,
+                -98.5907
+            ]
+        },
+        {
+            "matched_recipe_title": "Bacon and Egg Roll",
+            "summary": "A handheld breakfast or snack made with scrambled eggs, crispy bacon, and seasonings wrapped in a tortilla or pancake.",
+            "servings": 1,
+            "total_time_minutes": 15,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "bacon",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "egg",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "tortilla",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "or a thin pancake"
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "a pinch",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "pan",
+                    "spatula",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Crisp the bacon in a pan over medium heat until fully cooked, about 3-5 minutes. Set aside.",
+                "Crack the eggs into a bowl, add salt and pepper to taste, and whisk until combined.",
+                "Pour the egg mixture into the same pan and scramble gently until fully cooked.",
+                "Place the tortilla or pancake on a plate, add the scrambled eggs and cooked bacon in the center.",
+                "Fold the sides of the tortilla/pancake inward and roll it up to form a roll. Serve warm."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/654005-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/bacon-and-egg-roll-654005",
+            "source": "spoonacular",
+            "dish_name": "Bacon and Egg Roll",
+            "local_name": "Bacon and Egg Roll",
+            "region": "Australia",
+            "culture_or_ethnicity": "Australian",
+            "similarity_score": 0.95,
+            "recipe_search_prompt": "bacon and egg roll",
+            "coordinates": [
+                -33.494,
+                143.2104
+            ]
+        },
+        {
+            "matched_recipe_title": "Uova al Prosciutto e Mozzarella",
+            "summary": "An Italian-style dish where eggs are poached or scrambled and served with prosciutto and mozzarella on toasted bread.",
+            "servings": 1,
+            "total_time_minutes": 12,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "prosciutto",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "mozzarella",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": ""
+                    },
+                    {
+                        "name": "egg",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "pan",
+                    "toaster",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Toast the bread slice and set aside.",
+                "In a pan, cook the prosciutto slices over medium heat until slightly softened or crispy, depending on preference.",
+                "Add the egg to the pan and poach or scramble it with the prosciutto.",
+                "Place the mozzarella slice on the toasted bread and top with the egg and prosciutto mixture.",
+                "Serve warm."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/654017-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/uova-al-prosciutto-e-mozzarella-654017",
+            "source": "spoonacular",
+            "dish_name": "Uova al Prosciutto e Mozzarella",
+            "local_name": "Uova al Prosciutto e Mozzarella",
+            "region": "Italy",
+            "culture_or_ethnicity": "Italian",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "uova al prosciutto mozzarella",
+            "coordinates": [
+                41.9028,
+                12.4964
+            ]
+        },
+        {
+            "matched_recipe_title": "Huevos con Chorizo y Queso",
+            "summary": "A Spanish-style dish with scrambled eggs, chorizo, and melted cheese, often served in a pan or on top of tortillas.",
+            "servings": 1,
+            "total_time_minutes": 10,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "chorizo",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": "or 1 tbsp crumbled"
+                    },
+                    {
+                        "name": "egg",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "cheese",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": "such as manchego or mozzarella"
+                    }
+                ],
+                "equipment": [
+                    "pan",
+                    "spatula",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Heat a pan over medium heat and cook the chorizo until slightly crisp, about 2-3 minutes.",
+                "Add the eggs to the pan and scramble with the chorizo.",
+                "Place the scrambled egg and chorizo mixture on a plate and top with warm cheese slice.",
+                "Alternatively, serve the mixture in a tortilla for a Spanish-style wrap."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/654027-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/huevos-con-chorizo-y-queso-654027",
+            "source": "spoonacular",
+            "dish_name": "Huevos con Chorizo y Queso",
+            "local_name": "Huevos con Chorizo y Queso",
+            "region": "Mexico",
+            "culture_or_ethnicity": "Mexican",
+            "similarity_score": 0.92,
+            "recipe_search_prompt": "huevos chorizo queso",
+            "coordinates": [
+                19.4326,
+                -99.1332
+            ]
+        },
+        {
+            "matched_recipe_title": "Bread Omelette with Bacon and Cheese",
+            "summary": "A hearty omelette made with eggs, bacon, cheese, and wrapped in a piece of bread for a portable meal.",
+            "servings": 1,
+            "total_time_minutes": 10,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "egg",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bacon",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "cheese",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "pan",
+                    "toaster",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Toast both bread slices and set aside.",
+                "In a pan, cook the bacon until crisp, about 3-5 minutes. Remove and set aside.",
+                "In the same pan, cook the eggs gently, either scrambled or folded into an omelette, and add the cooked bacon and cheese.",
+                "Transfer the egg mixture onto one of the toasted bread slices.",
+                "Top with the second slice of bread to form a sandwich and serve."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/654028-312x231.jpg",
+            "source_url": "https://spoonacular.com/recipes/bread-omelette-with-bacon-and-cheese-654028",
+            "source": "spoonacular",
+            "dish_name": "Bread Omelette with Bacon and Cheese",
+            "local_name": "Bread Omelette",
+            "region": "India",
+            "culture_or_ethnicity": "Indian",
+            "similarity_score": 0.91,
+            "recipe_search_prompt": "bread omelette with bacon cheese",
+            "coordinates": [
+                20.5937,
+                78.9629
+            ]
+        },
+        {
+            "matched_recipe_title": "Eier mit Speck",
+            "summary": "A simple and hearty German dish of eggs with bacon, perfect for a quick breakfast or light lunch.",
+            "servings": 2,
+            "total_time_minutes": 15,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "eggs",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bacon",
+                        "quantity": "4",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "black pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "oil or butter",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "for frying"
+                    }
+                ],
+                "equipment": [
+                    "frying pan",
+                    "fork or spatula",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Heat a frying pan over medium heat and add oil or butter.",
+                "Add the bacon slices and cook until crispy, about 3-5 minutes.",
+                "Crack the eggs directly into the pan with the bacon or set them aside in a bowl.",
+                "Cook the eggs to your desired doneness, either scrambled, fried, or poached.",
+                "Season with salt and pepper.",
+                "Serve the eggs with the cooked bacon on top or alongside."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/635970-556x370.jpg",
+            "source_url": "https://spoonacular.com/eggs-with-bacon-recipe",
+            "source": "spoonacular",
+            "dish_name": "Eier mit Speck",
+            "local_name": "Eier mit Speck",
+            "region": "Germany",
+            "culture_or_ethnicity": "German",
+            "similarity_score": 0.9,
+            "recipe_search_prompt": "eggs with bacon",
+            "coordinates": [
+                51.1657,
+                10.4515
+            ]
+        },
+        {
+            "matched_recipe_title": "Omelet with Bacon and Cheese",
+            "summary": "A classic French omelet made with bacon and cheese, fluffy and rich, easy to prepare for a satisfying meal.",
+            "servings": 2,
+            "total_time_minutes": 10,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "eggs",
+                        "quantity": "3",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bacon",
+                        "quantity": "4",
+                        "unit": "slices",
+                        "notes": "cut into small pieces"
+                    },
+                    {
+                        "name": "cheese",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": "grated, any mild type like cheddar or Gruy\u00e8re"
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "1/4",
+                        "unit": "tsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "black pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "butter",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "for cooking"
+                    }
+                ],
+                "equipment": [
+                    "non-stick skillet",
+                    "whisk",
+                    "spatula",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Whisk the eggs in a bowl and season with salt and pepper.",
+                "Melt butter in a non-stick skillet over medium heat.",
+                "Add the chopped bacon to the pan and cook until crisp, about 2 minutes.",
+                "Pour the whisked eggs into the pan and let them cook for a minute or two, gently pushing the edges with a spatula.",
+                "Sprinkle the grated cheese over the top of the omelet.",
+                "Fold the omelet in half and cook for another 1-2 minutes until the cheese is melted and the eggs are set.",
+                "Slide the omelet onto a plate and serve warm."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/716455-556x370.jpg",
+            "source_url": "https://spoonacular.com/omelet-with-bacon-and-cheese-recipe",
+            "source": "spoonacular",
+            "dish_name": "Omelet with Bacon and Cheese",
+            "local_name": "Omelette aux Lardons et Fromage",
+            "region": "France",
+            "culture_or_ethnicity": "French",
+            "similarity_score": 0.89,
+            "recipe_search_prompt": "omelet with bacon cheese",
+            "coordinates": [
+                46.2276,
+                2.2137
+            ]
+        },
+        {
+            "matched_recipe_title": "Bacon and Egg Toast",
+            "summary": "A quick and delicious breakfast or snack combining crispy bacon, fried or poached eggs, and buttery toast.",
+            "servings": 1,
+            "total_time_minutes": 10,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "bacon",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": ""
+                    },
+                    {
+                        "name": "eggs",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bread",
+                        "quantity": "1",
+                        "unit": "slice",
+                        "notes": ""
+                    },
+                    {
+                        "name": "butter",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "for toasting and garnish"
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "black pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "toaster or pan",
+                    "frying pan",
+                    "fork or spatula",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Toast the bread in a toaster or pan until golden and crispy.",
+                "In a small pan, cook the bacon until crisp, about 2-3 minutes.",
+                "Fry or poach the egg to your liking and season with salt and pepper.",
+                "Place the toast on a plate, top it with the cooked bacon and the prepared egg.",
+                "Add a small pat of butter on top of the egg for a rich finish.",
+                "Serve immediately."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/635957-556x370.jpg",
+            "source_url": "https://spoonacular.com/bacon-egg-toast-recipe",
+            "source": "spoonacular",
+            "dish_name": "Bacon and Egg Toast",
+            "local_name": "Bacon and Egg Toast",
+            "region": "United Kingdom",
+            "culture_or_ethnicity": "British",
+            "similarity_score": 0.88,
+            "recipe_search_prompt": "bacon egg toast",
+            "coordinates": [
+                55.3781,
+                -3.436
+            ]
+        },
+        {
+            "matched_recipe_title": "Huevos con Chorizo y Queso",
+            "summary": "A flavorful Spanish dish of eggs cooked with spicy chorizo and melted cheese for a hearty and savory meal.",
+            "servings": 2,
+            "total_time_minutes": 15,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "eggs",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "chorizo",
+                        "quantity": "50",
+                        "unit": "g",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "cheese",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": "grated, such as Manchego or mozzarella"
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "black pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "oil",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "for cooking"
+                    }
+                ],
+                "equipment": [
+                    "frying pan",
+                    "spatula",
+                    "bowl",
+                    "plate"
+                ]
+            },
+            "steps": [
+                "Heat a frying pan over medium heat and add oil.",
+                "Cook the chorizo in the pan until it releases its fat and starts to brown, about 3-4 minutes.",
+                "Crack the eggs into the pan with the chorizo and cook gently, preferably over low heat.",
+                "Sprinkle the grated cheese over the top of the eggs as they cook.",
+                "Allow the eggs to cook until the whites are set but the yolk is still runny, about 3-5 minutes.",
+                "Season with salt and pepper.",
+                "Serve the eggs with the chorizo and cheese on a plate."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/636429-556x370.jpg",
+            "source_url": "https://spoonacular.com/huevos-con-chorizo-y-queso-recipe",
+            "source": "spoonacular",
+            "dish_name": "Huevos con Chorizo y Queso",
+            "local_name": "Huevos con Chorizo y Queso",
+            "region": "Colombia",
+            "culture_or_ethnicity": "Colombian",
+            "similarity_score": 0.87,
+            "recipe_search_prompt": "huevos chorizo queso",
+            "coordinates": [
+                4.5709,
+                -74.2973
+            ]
+        },
+        {
+            "matched_recipe_title": "Bacon and Egg Croissant",
+            "summary": "A luxurious twist on breakfast, featuring a flaky croissant filled with crispy bacon and a runny or poached egg.",
+            "servings": 1,
+            "total_time_minutes": 20,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "croissant",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "bacon",
+                        "quantity": "2",
+                        "unit": "slices",
+                        "notes": ""
+                    },
+                    {
+                        "name": "eggs",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "a pinch",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "black pepper",
+                        "quantity": "to taste",
+                        "unit": "",
+                        "notes": ""
+                    },
+                    {
+                        "name": "optional: cheese",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "grated, for extra flavor"
+                    }
+                ],
+                "equipment": [
+                    "oven or toaster",
+                    "frying pan",
+                    "plate",
+                    "fork"
+                ]
+            },
+            "steps": [
+                "Heat up a frying pan over medium heat and cook the bacon slices until crispy.",
+                "Place the croissant in a toaster or oven and warm until slightly toasty.",
+                "Poach or fry the egg to your desired doneness and set aside.",
+                "Once the croissant is ready, open it gently to create a pocket.",
+                "Place the cooked bacon and egg inside the croissant pocket.",
+                "If using cheese, sprinkle it on top of the egg before closing the croissant.",
+                "Season with a pinch of salt and a dash of black pepper.",
+                "Serve warm and enjoy."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/637514-556x370.jpg",
+            "source_url": "https://spoonacular.com/bacon-and-egg-croissant-recipe",
+            "source": "spoonacular",
+            "dish_name": "Bacon and Egg Croissant",
+            "local_name": "Bacon and Egg Croissant",
+            "region": "Canada",
+            "culture_or_ethnicity": "Canadian",
+            "similarity_score": 0.86,
+            "recipe_search_prompt": "bacon egg croissant",
+            "coordinates": [
+                56.1304,
+                -106.3468
+            ]
+        }
+    ]
+}
