@@ -1,3 +1,4 @@
+import os
 from flask import (
     Flask,
     jsonify,
@@ -17,8 +18,19 @@ BASE_DB_PATH = Path(__file__).parent / "data" / "db"
 RECIPES_DB_PATH = BASE_DB_PATH / "recipes"
 RESULTS_DB_PATH = BASE_DB_PATH / "results"
 
+
+def scan_directory_for_json(path: Path) -> list:
+
+    json_files = []
+    for file in path.glob("**/*.json"):
+        relative_path = file.relative_to(path)
+        json_files.append(str(relative_path))
+    return json_files
+
+
 def clean_filename(name: str) -> str:
     return sanitize_filename(name.replace(" ", "_").lower())
+
 
 @app.route("/", methods=["GET"])
 def home():
@@ -62,6 +74,32 @@ def load_query():
     return render_template("query.html", query=food, already_exists=already_exists)
 
 
+@app.route("/dish/<dish_name>/", methods=["GET"])
+def dish(dish_name):
+
+    params = request.args
+
+    all_files = scan_directory_for_json(
+        RECIPES_DB_PATH / f"{clean_filename(dish_name)}"
+    )
+
+    came_from = params.get(
+        "from", str(all_files[0]).replace(".json", "") if all_files else ""
+    )
+    came_from_cleaned = clean_filename(came_from.replace("-", " ").lower())
+
+    with open(
+        RECIPES_DB_PATH / f"{clean_filename(dish_name)}" / f"{came_from_cleaned}.json",
+        "r",
+        encoding="utf-8",
+    ) as f:
+        dish_data = json.load(f)
+
+    return render_template(
+        "dish.html", dish_name=dish_name, from_dish=came_from, dish_data=dish_data
+    )
+
+
 @app.route("/api/query/", methods=["GET", "POST"])
 def ai_query():
 
@@ -94,18 +132,32 @@ def ai_query():
 
         cleaned_food = clean_filename(food)
 
+        for i in recipes_result:
+
+            os.makedirs(
+                RECIPES_DB_PATH / f"{clean_filename(i['dish_name'])}", exist_ok=True
+            )
+
+            with open(
+                RECIPES_DB_PATH
+                / f"{clean_filename(i['dish_name'])}"
+                / f"{clean_filename(food)}.json",
+                "w",
+                encoding="utf-8",
+            ) as f:
+
+                json.dump(i, f, ensure_ascii=False, indent=4)
+
         with open(RESULTS_DB_PATH / f"{cleaned_food}.json", "w", encoding="utf-8") as f:
             json.dump(
                 {
-                    "dishes": json.dumps(diversification_result),
-                    "recipes": json.dumps(recipes_result),
+                    "dishes": diversification_result,
+                    "recipes": recipes_result,
                 },
                 f,
                 ensure_ascii=False,
                 indent=4,
             )
-
-
 
         yield json.dumps({"status": "done"}) + "\n"
 
@@ -126,8 +178,13 @@ def load_results():
 
     except FileNotFoundError:
 
-        return render_template("results.html", query=food, dishes=[], recipe_dishes=[], non_recipe_dishes=[])
-
+        return render_template(
+            "results.html",
+            query=food,
+            dishes=[],
+            recipe_dishes=[],
+            non_recipe_dishes=[],
+        )
 
     try:
         dishes = (
@@ -146,7 +203,6 @@ def load_results():
         dishes = []
         recipes = []
 
-
     dishes_not_with_recipes = []
     recipe_dishes = []
 
@@ -163,9 +219,13 @@ def load_results():
 
             non_recipe_dishes.append(dish)
 
-
-
-    return render_template("results.html", query=food, dishes=dishes, recipe_dishes=recipe_dishes, non_recipe_dishes=non_recipe_dishes)
+    return render_template(
+        "results.html",
+        query=food,
+        dishes=dishes,
+        recipe_dishes=recipe_dishes,
+        non_recipe_dishes=non_recipe_dishes,
+    )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,86 @@
+{
+    "matched_recipe_title": "Cơm Tấm (Vietnamese Broken Rice Bowl)",
+    "summary": "A popular Vietnamese dish featuring broken rice, grilled pork, egg, and a variety of toppings served in a bowl.",
+    "servings": 4,
+    "total_time_minutes": 60,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "broken rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "pork belly",
+                "quantity": "400",
+                "unit": "g",
+                "notes": "cut into cubes"
+            },
+            {
+                "name": "eggs",
+                "quantity": "4",
+                "unit": "",
+                "notes": ""
+            },
+            {
+                "name": "carrots",
+                "quantity": "2",
+                "unit": "",
+                "notes": "sliced into matchsticks"
+            },
+            {
+                "name": "green beans",
+                "quantity": "200",
+                "unit": "g",
+                "notes": "trimmed"
+            },
+            {
+                "name": "sauce (fish sauce, sugar, lime juice, chili, garlic)",
+                "quantity": "to taste",
+                "unit": "",
+                "notes": "mix well before adding"
+            },
+            {
+                "name": "fresh cilantro",
+                "quantity": "to taste",
+                "unit": "",
+                "notes": ""
+            },
+            {
+                "name": "lime wedges",
+                "quantity": "to serve",
+                "unit": "",
+                "notes": ""
+            }
+        ],
+        "equipment": [
+            "rice cooker or pot with lid",
+            "griddle or skillet",
+            "serving bowls"
+        ]
+    },
+    "steps": [
+        "Rinse the broken rice thoroughly and soak it in water for 30 minutes.",
+        "Cook the broken rice in a rice cooker or a pot with enough water until tender. Drain and set aside.",
+        "Heat a griddle or skillet and cook the pork belly cubes until crispy and golden. Remove and set aside.",
+        "In the same skillet, scramble the eggs until cooked through. Set aside.",
+        "Steam the carrots and green beans until tender-crisp. Set aside.",
+        "Assemble the dish by placing the broken rice in a bowl, then top with pork belly, scrambled eggs, carrots, and green beans.",
+        "Add the sauce (fish sauce, sugar, lime juice, chili, garlic) to taste and garnish with fresh cilantro.",
+        "Serve with lime wedges on the side."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/802192-312x231.jpg",
+    "source_url": "https://spoonacular.com/802192-vietnamese-com-tam-bowl",
+    "source": "spoonacular",
+    "dish_name": "Com Tam",
+    "local_name": "Cơm Tấm",
+    "region": "Vietnam",
+    "culture_or_ethnicity": "Vietnamese",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "com tam",
+    "coordinates": [
+        21.0285,
+        105.8548
+    ]
+}

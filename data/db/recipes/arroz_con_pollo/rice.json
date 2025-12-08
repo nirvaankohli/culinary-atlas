@@ -1,0 +1,114 @@
+{
+    "matched_recipe_title": "Arroz con Pollo (Spanish Chicken and Rice)",
+    "summary": "A hearty Spanish-American dish with tender chicken and flavorful rice, seasoned with spices and often cooked with tomatoes.",
+    "servings": 4,
+    "total_time_minutes": 90,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "chicken",
+                "quantity": "4",
+                "unit": "lbs",
+                "notes": "cut into pieces"
+            },
+            {
+                "name": "rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "olive oil",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "onion",
+                "quantity": "1",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "garlic",
+                "quantity": "3",
+                "unit": "cloves",
+                "notes": "minced"
+            },
+            {
+                "name": "green bell pepper",
+                "quantity": "1",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "canned tomatoes",
+                "quantity": "2",
+                "unit": "cans",
+                "notes": "14 oz each"
+            },
+            {
+                "name": "chicken broth",
+                "quantity": "4",
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "cumin",
+                "quantity": "1",
+                "unit": "tsp",
+                "notes": ""
+            },
+            {
+                "name": "oregano",
+                "quantity": "1",
+                "unit": "tsp",
+                "notes": ""
+            },
+            {
+                "name": "cilantro",
+                "quantity": "1/4",
+                "unit": "cup",
+                "notes": "chopped"
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste",
+                "unit": "",
+                "notes": ""
+            },
+            {
+                "name": "black pepper",
+                "quantity": "to taste",
+                "unit": "",
+                "notes": ""
+            }
+        ],
+        "equipment": [
+            "large pot or Dutch oven",
+            "wooden spoon",
+            "serving plates"
+        ]
+    },
+    "steps": [
+        "Heat olive oil in a large pot or Dutch oven over medium heat. Add the chicken and cook until browned on all sides.",
+        "Add the onion, garlic, and green bell pepper. Cook until the vegetables are softened.",
+        "Stir in the cumin, oregano, salt, and black pepper to season the chicken and vegetables.",
+        "Add the canned tomatoes and chicken broth. Bring the mixture to a boil.",
+        "Add the rice and stir to combine. Reduce the heat to low, cover, and let simmer for about 1 hour or until the rice is tender and the liquid is absorbed.",
+        "Once cooked, stir in the chopped cilantro and serve hot."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/654157-312x231.jpg",
+    "source_url": "https://spoonacular.com/654157-arroz-con-pollo",
+    "source": "spoonacular",
+    "dish_name": "Arroz con Pollo",
+    "local_name": "Arroz con Pollo",
+    "region": "Mexico",
+    "culture_or_ethnicity": "Mexican",
+    "similarity_score": 0.8,
+    "recipe_search_prompt": "arroz con pollo",
+    "coordinates": [
+        23.6345,
+        -102.5528
+    ]
+}

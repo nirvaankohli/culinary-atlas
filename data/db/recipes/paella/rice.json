@@ -1,0 +1,116 @@
+{
+    "matched_recipe_title": "Paella",
+    "summary": "A classic Spanish rice dish made with saffron, vegetables, and a mix of seafood or meat.",
+    "servings": 4,
+    "total_time_minutes": 60,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "rice",
+                "quantity": "1 1/2",
+                "unit": "cups"
+            },
+            {
+                "name": "chicken",
+                "quantity": "1",
+                "unit": "lb",
+                "notes": "cut into pieces"
+            },
+            {
+                "name": "shrimp",
+                "quantity": "1",
+                "unit": "lb",
+                "notes": "peeled and deveined"
+            },
+            {
+                "name": "rabbit",
+                "quantity": "1",
+                "unit": "",
+                "notes": "cut into chunks (optional)"
+            },
+            {
+                "name": "onions",
+                "quantity": "2",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "garlic",
+                "quantity": "4",
+                "unit": "cloves"
+            },
+            {
+                "name": "green bell pepper",
+                "quantity": "1",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "tomatoes",
+                "quantity": "2",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "paprika",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "vegetable or chicken stock",
+                "quantity": "4",
+                "unit": "cups"
+            },
+            {
+                "name": "peas",
+                "quantity": "1/2",
+                "unit": "cup"
+            },
+            {
+                "name": "olive oil",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "saffron threads",
+                "quantity": "1/2",
+                "unit": "tsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste"
+            },
+            {
+                "name": "lemon wedges",
+                "quantity": "4",
+                "unit": "",
+                "notes": "for serving"
+            }
+        ],
+        "equipment": [
+            "wide paella pan"
+        ]
+    },
+    "steps": [
+        "Heat olive oil in a paella pan over medium heat. Add diced onions, garlic, and green bell pepper. Sauté for 5 minutes until softened.",
+        "Add chicken pieces (and rabbit if using), and cook for 10 minutes until golden brown.",
+        "Stir in diced tomatoes and paprika. Cook for 5 minutes until the mixture becomes a thick sauce.",
+        "Rinse the rice and add it to the pan. Mix well to coat the rice with the sauce.",
+        "Add saffron threads, peas, and stock. Season with salt. Stir gently once, then let the rice cook undisturbed for 15-20 minutes until the rice is tender and the top is dry.",
+        "Add shrimp on top and cook for another 5 minutes until they turn pink.",
+        "Remove from heat, let it rest for 5 minutes, then serve with lemon wedges."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/636910-556x370.jpg",
+    "source_url": "https://spoonacular.com/recipes/paella-636910",
+    "source": "spoonacular",
+    "dish_name": "Paella",
+    "local_name": "Paella",
+    "region": "Spain",
+    "culture_or_ethnicity": "Spanish",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "paella",
+    "coordinates": [
+        40.4637,
+        -3.7492
+    ]
+}

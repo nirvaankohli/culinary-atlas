@@ -24,6 +24,11 @@
     <main>
       <div class="chat-container">
         <h2 class="chat-header">{{ phrase }}</h2>
+        <p class="chat-subtitle">
+          Discover how different cultures around the world prepare and interpret
+          your favorite dishes. Enter any dish to explore its global variations,
+          regional adaptations, and authentic recipes.
+        </p>
         <div class="chat-input-wrapper">
           <textarea
             class="chat-input"
@@ -40,7 +45,6 @@
   <script>
     const redirect = "/";
     const chat_input_element = document.querySelector(".chat-input");
-
 
     chat_input_element.addEventListener("keydown", function (e) {
       if (e.key === "Enter" && !e.shiftKey) {

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ dish_name }} - Culinary Atlas</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/dish.css') }}"
+    />
+  </head>
+  <body>
+    <div class="lines">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+
+    <div class="bg"></div>
+    <div class="grain"></div>
+
+    <nav>
+      <a href="/" class="nav-link">
+        <h1>Culinary Atlas</h1>
+      </a>
+    </nav>
+
+    <main>
+      <div class="dish-header">
+        <div class="breadcrumb">
+          <a href="/">Home</a>
+          <span class="separator">→</span>
+          <a href="/load_results/?query={{ from_dish }}">{{ from_dish }}</a>
+          <span class="separator">→</span>
+          <span class="current">{{ dish_name }}</span>
+        </div>
+        <h2 class="dish-title">{{ dish_name }}</h2>
+      </div>
+
+      <div class="dish-content">
+        <!-- Overview Section -->
+        <section class="section overview-section">
+          <h3 class="section-title">Overview</h3>
+          <div class="overview-grid">
+            <div class="info-card">
+              <div class="info-label">Region</div>
+              <div class="info-value">
+                {{ dish_data.region or dish_data.origin or "Unknown" }}
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Culture</div>
+              <div class="info-value">
+                {{ dish_data.culture_or_ethnicity or dish_data.cuisine or
+                "Traditional" }}
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Servings</div>
+              <div class="info-value">{{ dish_data.servings or "4" }}</div>
+            </div>
+            <div class="info-card">
+              <div class="info-label">Total Time</div>
+              <div class="info-value">
+                {{ dish_data.total_time_minutes or dish_data.prep_time or "30"
+                }} min
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Summary Section -->
+        {% if dish_data.summary %}
+        <section class="section description-section">
+          <h3 class="section-title">About This Dish</h3>
+          <p class="description-text">{{ dish_data.summary }}</p>
+        </section>
+        {% elif dish_data.description %}
+        <section class="section description-section">
+          <h3 class="section-title">About This Dish</h3>
+          <p class="description-text">{{ dish_data.description }}</p>
+        </section>
+        {% endif %}
+
+        <!-- Ingredients Section -->
+        {% if dish_data.materials and dish_data.materials.ingredients %}
+        <section class="section ingredients-section">
+          <h3 class="section-title">Ingredients</h3>
+          <ul class="ingredients-list">
+            {% for ingredient in dish_data.materials.ingredients %}
+            <li class="ingredient-item">
+              <span class="ingredient-quantity"
+                >{{ ingredient.quantity }} {{ ingredient.unit }}</span
+              >
+              <span class="ingredient-name">{{ ingredient.name }}</span>
+              {% if ingredient.notes %}
+              <span class="ingredient-notes">({{ ingredient.notes }})</span>
+              {% endif %}
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% elif dish_data.ingredients %}
+        <section class="section ingredients-section">
+          <h3 class="section-title">Ingredients</h3>
+          <ul class="ingredients-list">
+            {% for ingredient in dish_data.ingredients %}
+            <li class="ingredient-item">{{ ingredient }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        <!-- Equipment Section -->
+        {% if dish_data.materials and dish_data.materials.equipment %}
+        <section class="section equipment-section">
+          <h3 class="section-title">Equipment Needed</h3>
+          <ul class="equipment-list">
+            {% for item in dish_data.materials.equipment %}
+            <li class="equipment-item">{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        <!-- Instructions Section -->
+        {% if dish_data.steps %}
+        <section class="section instructions-section">
+          <h3 class="section-title">Instructions</h3>
+          <ol class="instructions-list">
+            {% for step in dish_data.steps %}
+            <li class="instruction-item">{{ step }}</li>
+            {% endfor %}
+          </ol>
+        </section>
+        {% elif dish_data.instructions %}
+        <section class="section instructions-section">
+          <h3 class="section-title">Instructions</h3>
+          <ol class="instructions-list">
+            {% for instruction in dish_data.instructions %}
+            <li class="instruction-item">{{ instruction }}</li>
+            {% endfor %}
+          </ol>
+        </section>
+        {% endif %}
+
+        <!-- Source Section -->
+        {% if dish_data.source_url %}
+        <section class="section source-section">
+          <h3 class="section-title">Recipe Source</h3>
+          <div class="source-content">
+            <p class="source-text">Original recipe adapted from:</p>
+            <a
+              href="{{ dish_data.source_url }}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="source-link"
+            >
+              {{ dish_data.source_url }}
+              <svg
+                class="external-icon"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                ></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            {% if dish_data.source %}
+            <p class="source-provider">Source: {{ dish_data.source }}</p>
+            {% endif %}
+          </div>
+        </section>
+        {% endif %}
+
+        <!-- Cultural Context Section -->
+        {% if dish_data.cultural_context %}
+        <section class="section cultural-section">
+          <h3 class="section-title">Cultural Context</h3>
+          <p class="cultural-text">{{ dish_data.cultural_context }}</p>
+        </section>
+        {% endif %}
+
+        <!-- Variations Section -->
+        {% if dish_data.variations %}
+        <section class="section variations-section">
+          <h3 class="section-title">Regional Variations</h3>
+          <div class="variations-grid">
+            {% for variation in dish_data.variations %}
+            <div class="variation-card">
+              <h4 class="variation-name">{{ variation.name }}</h4>
+              <p class="variation-description">{{ variation.description }}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+        {% endif %}
+
+        <!-- Serving Suggestions -->
+        {% if dish_data.serving_suggestions %}
+        <section class="section serving-section">
+          <h3 class="section-title">Serving Suggestions</h3>
+          <ul class="serving-list">
+            {% for suggestion in dish_data.serving_suggestions %}
+            <li class="serving-item">{{ suggestion }}</li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+      </div>
+
+      <div class="back-button-container">
+        <a href="/load_results/?query={{ from_dish }}" class="back-button">
+          ← Back to Results
+        </a>
+      </div>
+    </main>
+
+    <script>
+      const dishData = {{ dish_data | tojson }};
+      console.log("Dish data:", dishData);
+    </script>
+  </body>
+</html>

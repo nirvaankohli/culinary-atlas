@@ -1,0 +1,89 @@
+{
+    "matched_recipe_title": "Hainanese Chicken Rice",
+    "summary": "A popular dish from Singapore and Malaysia, featuring tender poached chicken served with fragrant rice cooked in chicken broth.",
+    "servings": 4,
+    "total_time_minutes": 120,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "chicken",
+                "quantity": "2",
+                "unit": "",
+                "notes": "whole"
+            },
+            {
+                "name": "rice",
+                "quantity": "2",
+                "unit": "cups"
+            },
+            {
+                "name": "chicken broth",
+                "quantity": "4",
+                "unit": "cups"
+            },
+            {
+                "name": "ginger",
+                "quantity": "1",
+                "unit": "inch",
+                "notes": "sliced"
+            },
+            {
+                "name": "scallions",
+                "quantity": "2",
+                "unit": "",
+                "notes": "chopped"
+            },
+            {
+                "name": "soy sauce",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "oil",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "garlic",
+                "quantity": "2",
+                "unit": "cloves",
+                "notes": "minced"
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste"
+            },
+            {
+                "name": "cilantro",
+                "quantity": "1/4",
+                "unit": "cup",
+                "notes": "chopped for garnish"
+            }
+        ],
+        "equipment": [
+            "large pot for poaching chicken",
+            "rice cooker or pot",
+            "large bowl for marinating"
+        ]
+    },
+    "steps": [
+        "Place the whole chicken in a large pot and add chicken broth, sliced ginger, chopped scallions, salt, and garlic. Bring to a boil then simmer for 45 minutes or until the chicken is fully cooked.",
+        "Remove chicken and let it cool. Shred or cut into pieces.",
+        "In a rice cooker or pot, mix rice with 1 cup of chicken broth, oil, and a pinch of salt. Cook according to the rice cooker instructions or simmer on the stove for 20 minutes.",
+        "Serve the chicken on top of the aromatic rice and drizzle soy sauce over it.",
+        "Garnish with fresh cilantro and serve with additional scallions and ginger on the side."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/636696-556x370.jpg",
+    "source_url": "https://spoonacular.com/recipes/hainanese-chicken-rice-636696",
+    "source": "spoonacular",
+    "dish_name": "Hainanese Chicken Rice",
+    "local_name": "海南鸡饭",
+    "region": "Hainan, China",
+    "culture_or_ethnicity": "Chinese",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "hainanese chicken rice",
+    "coordinates": [
+        19.8563,
+        109.4708
+    ]
+}

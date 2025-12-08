@@ -1,5 +1,6 @@
 import json
 from pathlib import Path
+import time
 
 ROOT_PATH = Path(__file__).parent.parent.parent
 SETTING_PATH = ROOT_PATH / "agents" / "common_settings.json"
@@ -248,10 +249,12 @@ class common_settings:
             print(f"| FROM {self.module_name} | LOG: {message}")
 
 
-common_settings_instance = common_settings(agent_name="recipes", log=True)
+common_settings_instance = common_settings(agent_name="recipes", log=False)
 
 
 def process_list(input_data: list, at_a_time=5, max_num=10) -> str:
+
+    t0 = time.perf_counter()
 
     recursion_needed = False
     input_data.sort(reverse=True, key=lambda x: x.get("similarity_score", 0))
@@ -315,7 +318,7 @@ Output schema (single JSON object):
     "equipment": [string]     # e.g. ["wok", "large pot", "baking tray"]
 },
 "steps": [string],          # ordered, clear, numbered implicitly
-"image_url": string,        # direct URL to a representative image - Make sure this is an image URL. It should exist and be accessible. Double check the link to see if the image exists, reachable, and has meaningful content.
+"image_url": string,        # direct URL to a representative image - Make sure this is an image URL. It should exist and be accessible. Double check the link to see if the image exists, reachable, and has meaningful content. Make sure it is the actual dish.
 "source_url": string,       # canonical recipe/source URL if available, else ""
 "source": string            # e.g. "spoonacular"
 }
@@ -362,6 +365,28 @@ Output schema (single JSON object):
                 .replace("`", "")
             )
 
+            common_settings_instance.log(f"Received {len(ayy)} results from API")
+
+            for res in range(len(ayy)):
+
+                addition = ayy[res]
+
+                for key, value in input_data[res].items():
+
+                    addition[key] = value
+
+                results.append(addition)
+
+            if recursion_needed:
+
+                results += process_list(
+                    recursion_list, at_a_time=at_a_time, max_num=max_num
+                )
+
+                common_settings_instance.log(
+                    f"Recursion needed; total results now {len(results)} after processing remaining items"
+                )
+
         except Exception as e:
 
             with open(
@@ -370,27 +395,7 @@ Output schema (single JSON object):
 
                 f.write(response.json()["choices"][0]["message"]["content"])
 
-        common_settings_instance.log(f"Received {len(ayy)} results from API")
-
-        for res in range(len(ayy)):
-
-            addition = ayy[res]
-
-            for key, value in input_data[res].items():
-
-                addition[key] = value
-
-            results.append(addition)
-
-        if recursion_needed:
-
-            results += process_list(
-                recursion_list, at_a_time=at_a_time, max_num=max_num
-            )
-
-            common_settings_instance.log(
-                f"Recursion needed; total results now {len(results)} after processing remaining items"
-            )
+                results = []
 
     else:
 
@@ -402,6 +407,9 @@ Output schema (single JSON object):
     common_settings_instance.log(
         f"process_list completed with {len(results)} total results"
     )
+
+    elapsed = time.perf_counter() - t0
+    common_settings_instance.log(f"Elapsed time for process_list: {elapsed:.2f}")
 
     return results
 

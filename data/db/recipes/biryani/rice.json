@@ -1,0 +1,123 @@
+{
+    "matched_recipe_title": "Biryani",
+    "summary": "A fragrant and spiced rice dish cooked with marinated meat or vegetables, commonly found in South Asian cuisine.",
+    "servings": 4,
+    "total_time_minutes": 90,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "basmati rice",
+                "quantity": "2",
+                "unit": "cups"
+            },
+            {
+                "name": "chicken",
+                "quantity": "1",
+                "unit": "lb",
+                "notes": "cut into pieces"
+            },
+            {
+                "name": "onions",
+                "quantity": "2",
+                "unit": "",
+                "notes": "sliced"
+            },
+            {
+                "name": "garlic",
+                "quantity": "4",
+                "unit": "cloves",
+                "notes": "minced"
+            },
+            {
+                "name": "ginger",
+                "quantity": "1",
+                "unit": "inch",
+                "notes": "grated"
+            },
+            {
+                "name": "yogurt",
+                "quantity": "1/2",
+                "unit": "cup"
+            },
+            {
+                "name": "garam masala",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "turmeric",
+                "quantity": "1/2",
+                "unit": "tsp"
+            },
+            {
+                "name": "cumin",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "coriander",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "cinnamon",
+                "quantity": "1",
+                "unit": "stick"
+            },
+            {
+                "name": "chopped cilantro",
+                "quantity": "1/4",
+                "unit": "cup"
+            },
+            {
+                "name": "saffron",
+                "quantity": "1/2",
+                "unit": "tsp"
+            },
+            {
+                "name": "oil or ghee",
+                "quantity": "2",
+                "unit": "tbsp"
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste"
+            },
+            {
+                "name": "water",
+                "quantity": "3",
+                "unit": "cups"
+            }
+        ],
+        "equipment": [
+            "large pot",
+            "mixing bowl",
+            "spoon",
+            "tongs"
+        ]
+    },
+    "steps": [
+        "Rinse the basmati rice thoroughly and soak for 30 minutes. Drain.",
+        "In a mixing bowl, marinate chicken pieces with yogurt, salt, turmeric, cumin, coriander, and garam masala. Let it sit for 15 minutes.",
+        "In a large pot, heat oil or ghee and sauté sliced onions until golden brown.",
+        "Add garlic and ginger, sauté for 2 minutes until fragrant.",
+        "Add the marinated chicken and cook until it is browned and partially cooked through.",
+        "Add soaked and drained rice to the pot and mix well with the chicken and onions.",
+        "Add cinnamon stick and saffron, stir to combine.",
+        "Pour in the water and bring to a boil. Reduce heat to low, cover, and simmer for 20-25 minutes until the rice is fully cooked and the chicken is tender.",
+        "Garnish with fresh cilantro and serve hot."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/716421-556x370.jpg",
+    "source_url": "https://spoonacular.com/recipes/biryani-716421",
+    "source": "spoonacular",
+    "dish_name": "Biryani",
+    "local_name": "বেরিয়ানি (Bangla), बिरयानी (Hindi)",
+    "region": "India",
+    "culture_or_ethnicity": "Indian",
+    "similarity_score": 0.9,
+    "recipe_search_prompt": "biryani",
+    "coordinates": [
+        20.5937,
+        78.9629
+    ]
+}

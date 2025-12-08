@@ -271,7 +271,7 @@ Field rules:
 - "local_name": Local or native name (can include non-Latin script); if unknown, repeat dish_name.
 - "region": Country and/or notable region/city (e.g. "Italy", "Sichuan, China", "Yucatán, Mexico").
 - "culture_or_ethnicity": The cultural or ethnic group most associated with the dish (e.g. "Turkish", "Punjabi", "Cantonese").
-- "similarity_score": Float 0.0–1.0 for how close it is to the input dish concept.
+- "similarity_score": Float 0.0–1.0 for how close it is to the input dish concept. Be critical and evaluate both the differences and similarities.
 - "recipe_search_prompt":
   - A short, realistic query that should return recipes from a database like Spoonacular.
   - Use common English transliteration + optional region, e.g. "pad thai", "sicilian arancini", "punjabi chole bhature".

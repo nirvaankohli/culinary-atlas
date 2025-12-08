@@ -1,0 +1,112 @@
+{
+    "matched_recipe_title": "Jollof Rice",
+    "summary": "A popular West African one-pot rice dish cooked in tomatoes and spices, often made with chicken or beef.",
+    "servings": 6,
+    "total_time_minutes": 60,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "rice",
+                "quantity": "2",
+                "unit": "cups"
+            },
+            {
+                "name": "tomatoes",
+                "quantity": "4",
+                "unit": "",
+                "notes": "chopped"
+            },
+            {
+                "name": "onions",
+                "quantity": "2",
+                "unit": "",
+                "notes": "chopped"
+            },
+            {
+                "name": "peppers",
+                "quantity": "2",
+                "unit": "",
+                "notes": "chopped"
+            },
+            {
+                "name": "garlic",
+                "quantity": "4",
+                "unit": "cloves",
+                "notes": "minced"
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "3",
+                "unit": "tbsp"
+            },
+            {
+                "name": "chicken or beef",
+                "quantity": "1",
+                "unit": "lb",
+                "notes": "cut into cubes"
+            },
+            {
+                "name": "tomato paste",
+                "quantity": "1",
+                "unit": "tbsp"
+            },
+            {
+                "name": "thyme",
+                "quantity": "1",
+                "unit": "tsp"
+            },
+            {
+                "name": "cumin",
+                "quantity": "1/2",
+                "unit": "tsp"
+            },
+            {
+                "name": "bay leaves",
+                "quantity": "2",
+                "unit": ""
+            },
+            {
+                "name": "stock or water",
+                "quantity": "2",
+                "unit": "cups"
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste"
+            },
+            {
+                "name": "cilantro",
+                "quantity": "1/4",
+                "unit": "cup",
+                "notes": "chopped for garnish"
+            }
+        ],
+        "equipment": [
+            "large pot"
+        ]
+    },
+    "steps": [
+        "Rinse the rice and set aside.",
+        "In a large pot, heat vegetable oil and sauté chopped onions until golden.",
+        "Add minced garlic and chopped peppers, sauté for 2 minutes.",
+        "Add chopped tomatoes and tomato paste, cook for 10 minutes until the mixture thickens.",
+        "Season with thyme, cumin, bay leaves, and salt. Stir well.",
+        "Add chicken or beef to the pot and cook for 10 minutes, allowing it to absorb the flavors.",
+        "Add the rinsed rice to the pot, mix thoroughly with the sauce.",
+        "Pour in stock or water and simmer for 20-25 minutes until the rice is fully cooked and the pot has a slightly dry top.",
+        "Garnish with cilantro before serving."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/634762-556x370.jpg",
+    "source_url": "https://spoonacular.com/recipes/jollof-rice-634762",
+    "source": "spoonacular",
+    "dish_name": "Jollof Rice",
+    "local_name": "Jollof (Gambian/ Ghanaian/Nigerian)",
+    "region": "West Africa",
+    "culture_or_ethnicity": "West African",
+    "similarity_score": 0.85,
+    "recipe_search_prompt": "jollof rice",
+    "coordinates": [
+        9.082,
+        8.6753
+    ]
+}
