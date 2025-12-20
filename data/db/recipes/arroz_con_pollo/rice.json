@@ -1,39 +1,39 @@
 {
-    "matched_recipe_title": "Arroz con Pollo (Spanish Chicken and Rice)",
-    "summary": "A hearty Spanish-American dish with tender chicken and flavorful rice, seasoned with spices and often cooked with tomatoes.",
+    "matched_recipe_title": "Arroz con Pollo",
+    "summary": "A one-pot Spanish dish combining spiced rice and chicken, often made with tomatoes and peppers.",
     "servings": 4,
-    "total_time_minutes": 90,
+    "total_time_minutes": 60,
     "materials": {
         "ingredients": [
             {
-                "name": "chicken",
+                "name": "boneless chicken thighs",
                 "quantity": "4",
-                "unit": "lbs",
-                "notes": "cut into pieces"
+                "unit": "",
+                "notes": "cut into chunks"
             },
             {
-                "name": "rice",
-                "quantity": "2",
-                "unit": "cups",
-                "notes": ""
-            },
-            {
-                "name": "olive oil",
-                "quantity": "2",
-                "unit": "tbsp",
-                "notes": ""
-            },
-            {
-                "name": "onion",
+                "name": "large onion",
                 "quantity": "1",
                 "unit": "",
                 "notes": "diced"
             },
             {
                 "name": "garlic",
-                "quantity": "3",
+                "quantity": "2",
                 "unit": "cloves",
                 "notes": "minced"
+            },
+            {
+                "name": "basmati or white rice",
+                "quantity": "1",
+                "unit": "cup",
+                "notes": ""
+            },
+            {
+                "name": "tomato",
+                "quantity": "2",
+                "unit": "",
+                "notes": "chopped"
             },
             {
                 "name": "green bell pepper",
@@ -42,73 +42,47 @@
                 "notes": "diced"
             },
             {
-                "name": "canned tomatoes",
+                "name": "olive oil",
                 "quantity": "2",
-                "unit": "cans",
-                "notes": "14 oz each"
+                "unit": "tbsp",
+                "notes": ""
             },
             {
                 "name": "chicken broth",
-                "quantity": "4",
+                "quantity": "2",
                 "unit": "cups",
                 "notes": ""
-            },
-            {
-                "name": "cumin",
-                "quantity": "1",
-                "unit": "tsp",
-                "notes": ""
-            },
-            {
-                "name": "oregano",
-                "quantity": "1",
-                "unit": "tsp",
-                "notes": ""
-            },
-            {
-                "name": "cilantro",
-                "quantity": "1/4",
-                "unit": "cup",
-                "notes": "chopped"
             },
             {
                 "name": "salt",
                 "quantity": "to taste",
                 "unit": "",
                 "notes": ""
-            },
-            {
-                "name": "black pepper",
-                "quantity": "to taste",
-                "unit": "",
-                "notes": ""
             }
         ],
         "equipment": [
-            "large pot or Dutch oven",
-            "wooden spoon",
-            "serving plates"
+            "large pot with lid",
+            "knife"
         ]
     },
     "steps": [
-        "Heat olive oil in a large pot or Dutch oven over medium heat. Add the chicken and cook until browned on all sides.",
-        "Add the onion, garlic, and green bell pepper. Cook until the vegetables are softened.",
-        "Stir in the cumin, oregano, salt, and black pepper to season the chicken and vegetables.",
-        "Add the canned tomatoes and chicken broth. Bring the mixture to a boil.",
-        "Add the rice and stir to combine. Reduce the heat to low, cover, and let simmer for about 1 hour or until the rice is tender and the liquid is absorbed.",
-        "Once cooked, stir in the chopped cilantro and serve hot."
+        "Heat olive oil in a large pot. Brown chicken chunks in batches.",
+        "Add onion, garlic, and bell pepper. Sauté until softened (5-7 minutes).",
+        "Stir in chopped tomatoes, rice, and season with salt.",
+        "Pour in chicken broth, reduce heat, cover, and simmer for 20-25 minutes until rice absorbs the liquid.",
+        "Check for doneness, fluff rice with a fork, and serve."
     ],
-    "image_url": "https://spoonacular.com/recipeImages/654157-312x231.jpg",
-    "source_url": "https://spoonacular.com/654157-arroz-con-pollo",
+    "image_url": "https://spoonacular.com/recipeImages/arroz-con-pollo-312x231.jpg",
+    "source_url": "",
     "source": "spoonacular",
     "dish_name": "Arroz con Pollo",
     "local_name": "Arroz con Pollo",
-    "region": "Mexico",
-    "culture_or_ethnicity": "Mexican",
-    "similarity_score": 0.8,
+    "region": "Latin America",
+    "culture_or_ethnicity": "Mexican/Spanish",
+    "similarity_score": 0.83,
     "recipe_search_prompt": "arroz con pollo",
     "coordinates": [
-        23.6345,
-        -102.5528
+        23.4162,
+        -82.399
     ]
 }

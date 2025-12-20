@@ -1,0 +1,76 @@
+{
+    "matched_recipe_title": "Fried Rice (炒饭)",
+    "summary": "Cantonese-style fried rice made with day-old rice, egg, and stir-fried vegetables.",
+    "servings": 2,
+    "total_time_minutes": 30,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "day-old rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": "cold, fluffed"
+            },
+            {
+                "name": "egg",
+                "quantity": "1",
+                "unit": "",
+                "notes": "beaten"
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "1",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "mixed vegetables",
+                "quantity": "1/2",
+                "unit": "cup",
+                "notes": "frozen or fresh"
+            },
+            {
+                "name": "soy sauce",
+                "quantity": "1",
+                "unit": "tbsp",
+                "notes": "plus extra for garnish"
+            },
+            {
+                "name": "garlic",
+                "quantity": "1",
+                "unit": "clove",
+                "notes": "minced"
+            },
+            {
+                "name": "vegetable stock",
+                "quantity": "1/4",
+                "unit": "cup",
+                "notes": ""
+            }
+        ],
+        "equipment": [
+            "wok",
+            "spatula"
+        ]
+    },
+    "steps": [
+        "Heat oil in a wok over medium-high heat. Add beaten egg and sauté briefly.",
+        "Push egg to the side, then add garlic and mixed vegetables. Stir-fry for 3-5 minutes.",
+        "Mix in day-old rice and soy sauce. Stir-fry for 10-15 minutes until rice is separate and golden.",
+        "Add vegetable stock to adjust moisture, if needed.",
+        "Serve garnished with additional soy sauce and green onions."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/chaofan-312x231.jpg",
+    "source_url": "https://allrecipes.com/recipe/22302/cantonese-fried-rice/",
+    "source": "spoonacular",
+    "dish_name": "Fried Rice",
+    "local_name": "炒饭",
+    "region": "China",
+    "culture_or_ethnicity": "Cantonese",
+    "similarity_score": 0.8,
+    "recipe_search_prompt": "chao fan",
+    "coordinates": [
+        31.2304,
+        121.4737
+    ]
+}

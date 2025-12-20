@@ -1,112 +1,89 @@
 {
     "matched_recipe_title": "Jollof Rice",
-    "summary": "A popular West African one-pot rice dish cooked in tomatoes and spices, often made with chicken or beef.",
+    "summary": "West African one-pot rice dish cooked with tomatoes, onions, and spices.",
     "servings": 6,
-    "total_time_minutes": 60,
+    "total_time_minutes": 40,
     "materials": {
         "ingredients": [
             {
-                "name": "rice",
+                "name": "long grain rice",
                 "quantity": "2",
-                "unit": "cups"
+                "unit": "cups",
+                "notes": "washed and soaked"
             },
             {
-                "name": "tomatoes",
-                "quantity": "4",
-                "unit": "",
-                "notes": "chopped"
-            },
-            {
-                "name": "onions",
-                "quantity": "2",
-                "unit": "",
-                "notes": "chopped"
-            },
-            {
-                "name": "peppers",
-                "quantity": "2",
-                "unit": "",
-                "notes": "chopped"
-            },
-            {
-                "name": "garlic",
-                "quantity": "4",
-                "unit": "cloves",
-                "notes": "minced"
-            },
-            {
-                "name": "vegetable oil",
+                "name": "onion",
                 "quantity": "3",
-                "unit": "tbsp"
-            },
-            {
-                "name": "chicken or beef",
-                "quantity": "1",
-                "unit": "lb",
-                "notes": "cut into cubes"
+                "unit": "tbsp",
+                "notes": "sliced and fried"
             },
             {
                 "name": "tomato paste",
                 "quantity": "1",
-                "unit": "tbsp"
+                "unit": "cup",
+                "notes": ""
             },
             {
-                "name": "thyme",
+                "name": "chili pepper",
                 "quantity": "1",
-                "unit": "tsp"
+                "unit": "large",
+                "notes": "blended into sauce"
             },
             {
-                "name": "cumin",
-                "quantity": "1/2",
-                "unit": "tsp"
-            },
-            {
-                "name": "bay leaves",
+                "name": "garlic",
                 "quantity": "2",
-                "unit": ""
+                "unit": "cloves",
+                "notes": "minced"
             },
             {
-                "name": "stock or water",
+                "name": "ginger",
+                "quantity": "1",
+                "unit": "tsp",
+                "notes": "grated"
+            },
+            {
+                "name": "cubed beef or chicken",
+                "quantity": "500",
+                "unit": "g",
+                "notes": ""
+            },
+            {
+                "name": "vegetable oil",
                 "quantity": "2",
-                "unit": "cups"
+                "unit": "tbsp",
+                "notes": ""
             },
             {
                 "name": "salt",
-                "quantity": "to taste"
-            },
-            {
-                "name": "cilantro",
-                "quantity": "1/4",
-                "unit": "cup",
-                "notes": "chopped for garnish"
+                "quantity": "1",
+                "unit": "tsp",
+                "notes": "to taste"
             }
         ],
         "equipment": [
-            "large pot"
+            "large pot",
+            "wooden spoon",
+            "frying pan"
         ]
     },
     "steps": [
-        "Rinse the rice and set aside.",
-        "In a large pot, heat vegetable oil and sauté chopped onions until golden.",
-        "Add minced garlic and chopped peppers, sauté for 2 minutes.",
-        "Add chopped tomatoes and tomato paste, cook for 10 minutes until the mixture thickens.",
-        "Season with thyme, cumin, bay leaves, and salt. Stir well.",
-        "Add chicken or beef to the pot and cook for 10 minutes, allowing it to absorb the flavors.",
-        "Add the rinsed rice to the pot, mix thoroughly with the sauce.",
-        "Pour in stock or water and simmer for 20-25 minutes until the rice is fully cooked and the pot has a slightly dry top.",
-        "Garnish with cilantro before serving."
+        "Heat oil in a pot, add cubed meat and cook until browned.",
+        "Add sliced onions and fry until golden. Stir in tomato paste, chili, garlic, and ginger.",
+        "Coat meat in the mixture, then add soaked rice, salt, and water. Bring to a boil.",
+        "Reduce heat, cover, and simmer for 20 minutes until rice is tender.",
+        "Uncover and cook 5 more minutes to form a crusty top (soccarat)."
     ],
-    "image_url": "https://spoonacular.com/recipeImages/634762-556x370.jpg",
-    "source_url": "https://spoonacular.com/recipes/jollof-rice-634762",
+    "image_url": "https://example.com/jollof-rice.jpg",
+    "source_url": "https://spoonacular.com/jollof-rice-recipe",
     "source": "spoonacular",
     "dish_name": "Jollof Rice",
-    "local_name": "Jollof (Gambian/ Ghanaian/Nigerian)",
+    "local_name": "Jollof",
     "region": "West Africa",
-    "culture_or_ethnicity": "West African",
-    "similarity_score": 0.85,
+    "culture_or_ethnicity": "Nigerian/Gambian/Senegalese",
+    "similarity_score": 0.93,
     "recipe_search_prompt": "jollof rice",
     "coordinates": [
-        9.082,
-        8.6753
+        12.1772,
+        -16.0988
     ]
 }

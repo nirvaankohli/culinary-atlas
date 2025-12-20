@@ -1,116 +1,108 @@
 {
     "matched_recipe_title": "Paella",
-    "summary": "A classic Spanish rice dish made with saffron, vegetables, and a mix of seafood or meat.",
+    "summary": "Spanish rice dish with saffron, seafood, chicken, and vegetables, cooked in a shallow pan.",
     "servings": 4,
-    "total_time_minutes": 60,
+    "total_time_minutes": 45,
     "materials": {
         "ingredients": [
             {
-                "name": "rice",
-                "quantity": "1 1/2",
-                "unit": "cups"
+                "name": "bomba rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": "rinsed"
             },
             {
-                "name": "chicken",
-                "quantity": "1",
-                "unit": "lb",
-                "notes": "cut into pieces"
+                "name": "chicken thighs",
+                "quantity": "4",
+                "unit": "pieces",
+                "notes": ""
             },
             {
                 "name": "shrimp",
-                "quantity": "1",
-                "unit": "lb",
-                "notes": "peeled and deveined"
+                "quantity": "200",
+                "unit": "g",
+                "notes": ""
             },
             {
-                "name": "rabbit",
-                "quantity": "1",
-                "unit": "",
-                "notes": "cut into chunks (optional)"
+                "name": "mussels",
+                "quantity": "200",
+                "unit": "g",
+                "notes": "debearded"
             },
             {
-                "name": "onions",
-                "quantity": "2",
-                "unit": "",
-                "notes": "diced"
+                "name": "onion",
+                "quantity": "1",
+                "unit": "medium",
+                "notes": "chopped"
             },
             {
                 "name": "garlic",
-                "quantity": "4",
-                "unit": "cloves"
+                "quantity": "3",
+                "unit": "cloves",
+                "notes": "minced"
             },
             {
-                "name": "green bell pepper",
+                "name": "chickpeas",
                 "quantity": "1",
-                "unit": "",
+                "unit": "cup",
+                "notes": "canned or cooked"
+            },
+            {
+                "name": "tomato",
+                "quantity": "2",
+                "unit": "cans (28 oz)",
                 "notes": "diced"
             },
             {
-                "name": "tomatoes",
-                "quantity": "2",
-                "unit": "",
-                "notes": "diced"
-            },
-            {
-                "name": "paprika",
+                "name": "bell pepper",
                 "quantity": "1",
-                "unit": "tbsp"
-            },
-            {
-                "name": "vegetable or chicken stock",
-                "quantity": "4",
-                "unit": "cups"
-            },
-            {
-                "name": "peas",
-                "quantity": "1/2",
-                "unit": "cup"
-            },
-            {
-                "name": "olive oil",
-                "quantity": "2",
-                "unit": "tbsp"
+                "unit": "green",
+                "notes": "sliced"
             },
             {
                 "name": "saffron threads",
-                "quantity": "1/2",
-                "unit": "tsp"
+                "quantity": "0.25",
+                "unit": "tsp",
+                "notes": "soaked in hot water"
             },
             {
-                "name": "salt",
-                "quantity": "to taste"
-            },
-            {
-                "name": "lemon wedges",
+                "name": "stock (chicken or seafood)",
                 "quantity": "4",
-                "unit": "",
-                "notes": "for serving"
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "olive oil",
+                "quantity": "3",
+                "unit": "tbsp",
+                "notes": ""
             }
         ],
         "equipment": [
-            "wide paella pan"
+            "paella pan",
+            "skillet",
+            "spatula"
         ]
     },
     "steps": [
-        "Heat olive oil in a paella pan over medium heat. Add diced onions, garlic, and green bell pepper. Sauté for 5 minutes until softened.",
-        "Add chicken pieces (and rabbit if using), and cook for 10 minutes until golden brown.",
-        "Stir in diced tomatoes and paprika. Cook for 5 minutes until the mixture becomes a thick sauce.",
-        "Rinse the rice and add it to the pan. Mix well to coat the rice with the sauce.",
-        "Add saffron threads, peas, and stock. Season with salt. Stir gently once, then let the rice cook undisturbed for 15-20 minutes until the rice is tender and the top is dry.",
-        "Add shrimp on top and cook for another 5 minutes until they turn pink.",
-        "Remove from heat, let it rest for 5 minutes, then serve with lemon wedges."
+        "Heat olive oil in a paella pan over medium heat. Sauté chicken until golden.",
+        "Add chopped onion, garlic, and bell pepper. Cook until softened (5-7 minutes).",
+        "Stir in diced tomatoes and cook until a thick sauce forms (10 minutes).",
+        "Add saffron water, stock, and chickpeas. Bring to a boil, then add rice. Stir briefly.",
+        "Arrange shrimp and mussels evenly on top. Reduce heat and cook undisturbed for 15-20 minutes.",
+        "Allow to rest for 5-10 minutes before serving with lemon wedges."
     ],
-    "image_url": "https://spoonacular.com/recipeImages/636910-556x370.jpg",
-    "source_url": "https://spoonacular.com/recipes/paella-636910",
+    "image_url": "https://example.com/paella.jpg",
+    "source_url": "https://spoonacular.com/paella-recipe",
     "source": "spoonacular",
     "dish_name": "Paella",
     "local_name": "Paella",
-    "region": "Spain",
-    "culture_or_ethnicity": "Spanish",
-    "similarity_score": 0.85,
+    "region": "Spain, Valencia",
+    "culture_or_ethnicity": "Valencian",
+    "similarity_score": 0.95,
     "recipe_search_prompt": "paella",
     "coordinates": [
-        40.4637,
-        -3.7492
+        39.4699,
+        -0.3763
     ]
 }

@@ -1,0 +1,58 @@
+{
+    "matched_recipe_title": "Chelow",
+    "summary": "Persian saffron-infused rice, often served with meat or stews.",
+    "servings": 4,
+    "total_time_minutes": 25,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "basmati rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": "washed and soaked"
+            },
+            {
+                "name": "saffron",
+                "quantity": "0.5",
+                "unit": "tsp",
+                "notes": "soaked in 2 tbsp water"
+            },
+            {
+                "name": "butter",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "salt",
+                "quantity": "1",
+                "unit": "tsp",
+                "notes": "to taste"
+            }
+        ],
+        "equipment": [
+            "rice cooker or deep pot",
+            "strainer",
+            "serving plate"
+        ]
+    },
+    "steps": [
+        "Drain soaked rice and layer in a pot with saffron water.",
+        "Cover with a cloth, then place a heatproof bowl with water on top as a diffuser.",
+        "Cook on low heat until rice is tender and water is absorbed (15-20 minutes).",
+        "Fluff with a fork and serve with butter on top."
+    ],
+    "image_url": "https://example.com/chelow.jpg",
+    "source_url": "https://spoonacular.com/chelow-recipe",
+    "source": "spoonacular",
+    "dish_name": "Chelow",
+    "local_name": "چلو",
+    "region": "Iran",
+    "culture_or_ethnicity": "Persian",
+    "similarity_score": 0.9,
+    "recipe_search_prompt": "chelow",
+    "coordinates": [
+        32.4299,
+        53.688
+    ]
+}

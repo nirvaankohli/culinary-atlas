@@ -2,10 +2,10 @@
     "dishes": [
         {
             "dish_name": "Biryani",
-            "local_name": "বেরিয়ানি (Bangla), बिरयानी (Hindi)",
+            "local_name": "बिरयाना",
             "region": "India",
-            "culture_or_ethnicity": "Indian",
-            "similarity_score": 0.9,
+            "culture_or_ethnicity": "Mughal/Persian-influenced Indian",
+            "similarity_score": 0.98,
             "recipe_search_prompt": "biryani",
             "coordinates": [
                 20.5937,
@@ -13,71 +13,35 @@
             ]
         },
         {
-            "dish_name": "Jollof Rice",
-            "local_name": "Jollof (Gambian/ Ghanaian/Nigerian)",
-            "region": "West Africa",
-            "culture_or_ethnicity": "West African",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "jollof rice",
-            "coordinates": [
-                9.082,
-                8.6753
-            ]
-        },
-        {
             "dish_name": "Paella",
             "local_name": "Paella",
-            "region": "Spain",
-            "culture_or_ethnicity": "Spanish",
-            "similarity_score": 0.85,
+            "region": "Spain, Valencia",
+            "culture_or_ethnicity": "Valencian",
+            "similarity_score": 0.95,
             "recipe_search_prompt": "paella",
             "coordinates": [
-                40.4637,
-                -3.7492
+                39.4699,
+                -0.3763
             ]
         },
         {
-            "dish_name": "Hainanese Chicken Rice",
-            "local_name": "海南鸡饭",
-            "region": "Hainan, China",
-            "culture_or_ethnicity": "Chinese",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "hainanese chicken rice",
+            "dish_name": "Jollof Rice",
+            "local_name": "Jollof",
+            "region": "West Africa",
+            "culture_or_ethnicity": "Nigerian/Gambian/Senegalese",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "jollof rice",
             "coordinates": [
-                19.8563,
-                109.4708
-            ]
-        },
-        {
-            "dish_name": "Chelou",
-            "local_name": "چلو",
-            "region": "Iran",
-            "culture_or_ethnicity": "Persian",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "chelou",
-            "coordinates": [
-                32.4279,
-                53.688
-            ]
-        },
-        {
-            "dish_name": "Com Tam",
-            "local_name": "Cơm Tấm",
-            "region": "Vietnam",
-            "culture_or_ethnicity": "Vietnamese",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "com tam",
-            "coordinates": [
-                21.0285,
-                105.8548
+                12.1772,
+                -16.0988
             ]
         },
         {
             "dish_name": "Risotto",
             "local_name": "Risotto",
             "region": "Italy",
-            "culture_or_ethnicity": "Italian",
-            "similarity_score": 0.85,
+            "culture_or_ethnicity": "Northern Italian",
+            "similarity_score": 0.91,
             "recipe_search_prompt": "risotto",
             "coordinates": [
                 41.8719,
@@ -85,692 +49,30 @@
             ]
         },
         {
-            "dish_name": "Arroz con Pollo",
-            "local_name": "Arroz con Pollo",
-            "region": "Mexico",
-            "culture_or_ethnicity": "Mexican",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "arroz con pollo",
-            "coordinates": [
-                23.6345,
-                -102.5528
-            ]
-        },
-        {
-            "dish_name": "Jambalaya",
-            "local_name": "Jambalaya",
-            "region": "Louisiana, USA",
-            "culture_or_ethnicity": "Creole",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "jambalaya",
-            "coordinates": [
-                30.4383,
-                -91.1374
-            ]
-        },
-        {
-            "dish_name": "Arroz con Gandules",
-            "local_name": "Arroz con Gandules",
-            "region": "Dominican Republic",
-            "culture_or_ethnicity": "Dominican",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "arroz con gandules",
-            "coordinates": [
-                18.7357,
-                -68.2642
-            ]
-        },
-        {
-            "dish_name": "Torshi Polow",
-            "local_name": "ترشی پلو",
-            "region": "Iran",
-            "culture_or_ethnicity": "Persian",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "torshi polow",
-            "coordinates": [
-                32.4279,
-                53.688
-            ]
-        },
-        {
-            "dish_name": "Pulao",
-            "local_name": "पुलाव",
-            "region": "India",
-            "culture_or_ethnicity": "Indian",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "pulav",
-            "coordinates": [
-                20.5937,
-                78.9629
-            ]
-        },
-        {
-            "dish_name": "Risotto alla Milanese",
-            "local_name": "Risotto alla Milanese",
-            "region": "Italy",
-            "culture_or_ethnicity": "Italian",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "risotto alla Milanese",
-            "coordinates": [
-                41.8719,
-                12.5674
-            ]
-        },
-        {
-            "dish_name": "Sushi",
-            "local_name": "寿司",
-            "region": "Japan",
-            "culture_or_ethnicity": "Japanese",
-            "similarity_score": 0.75,
-            "recipe_search_prompt": "sushi",
-            "coordinates": [
-                36.2048,
-                138.2529
-            ]
-        }
-    ],
-    "recipes": [
-        {
-            "matched_recipe_title": "Biryani",
-            "summary": "A fragrant and spiced rice dish cooked with marinated meat or vegetables, commonly found in South Asian cuisine.",
-            "servings": 4,
-            "total_time_minutes": 90,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "basmati rice",
-                        "quantity": "2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "chicken",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into pieces"
-                    },
-                    {
-                        "name": "onions",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "sliced"
-                    },
-                    {
-                        "name": "garlic",
-                        "quantity": "4",
-                        "unit": "cloves",
-                        "notes": "minced"
-                    },
-                    {
-                        "name": "ginger",
-                        "quantity": "1",
-                        "unit": "inch",
-                        "notes": "grated"
-                    },
-                    {
-                        "name": "yogurt",
-                        "quantity": "1/2",
-                        "unit": "cup"
-                    },
-                    {
-                        "name": "garam masala",
-                        "quantity": "1",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "turmeric",
-                        "quantity": "1/2",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "cumin",
-                        "quantity": "1",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "coriander",
-                        "quantity": "1",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "cinnamon",
-                        "quantity": "1",
-                        "unit": "stick"
-                    },
-                    {
-                        "name": "chopped cilantro",
-                        "quantity": "1/4",
-                        "unit": "cup"
-                    },
-                    {
-                        "name": "saffron",
-                        "quantity": "1/2",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "oil or ghee",
-                        "quantity": "2",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "water",
-                        "quantity": "3",
-                        "unit": "cups"
-                    }
-                ],
-                "equipment": [
-                    "large pot",
-                    "mixing bowl",
-                    "spoon",
-                    "tongs"
-                ]
-            },
-            "steps": [
-                "Rinse the basmati rice thoroughly and soak for 30 minutes. Drain.",
-                "In a mixing bowl, marinate chicken pieces with yogurt, salt, turmeric, cumin, coriander, and garam masala. Let it sit for 15 minutes.",
-                "In a large pot, heat oil or ghee and sauté sliced onions until golden brown.",
-                "Add garlic and ginger, sauté for 2 minutes until fragrant.",
-                "Add the marinated chicken and cook until it is browned and partially cooked through.",
-                "Add soaked and drained rice to the pot and mix well with the chicken and onions.",
-                "Add cinnamon stick and saffron, stir to combine.",
-                "Pour in the water and bring to a boil. Reduce heat to low, cover, and simmer for 20-25 minutes until the rice is fully cooked and the chicken is tender.",
-                "Garnish with fresh cilantro and serve hot."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/716421-556x370.jpg",
-            "source_url": "https://spoonacular.com/recipes/biryani-716421",
-            "source": "spoonacular",
-            "dish_name": "Biryani",
-            "local_name": "বেরিয়ানি (Bangla), बिरयानी (Hindi)",
-            "region": "India",
-            "culture_or_ethnicity": "Indian",
-            "similarity_score": 0.9,
-            "recipe_search_prompt": "biryani",
-            "coordinates": [
-                20.5937,
-                78.9629
-            ]
-        },
-        {
-            "matched_recipe_title": "Jollof Rice",
-            "summary": "A popular West African one-pot rice dish cooked in tomatoes and spices, often made with chicken or beef.",
-            "servings": 6,
-            "total_time_minutes": 60,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "rice",
-                        "quantity": "2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "tomatoes",
-                        "quantity": "4",
-                        "unit": "",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "onions",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "peppers",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "garlic",
-                        "quantity": "4",
-                        "unit": "cloves",
-                        "notes": "minced"
-                    },
-                    {
-                        "name": "vegetable oil",
-                        "quantity": "3",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "chicken or beef",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into cubes"
-                    },
-                    {
-                        "name": "tomato paste",
-                        "quantity": "1",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "thyme",
-                        "quantity": "1",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "cumin",
-                        "quantity": "1/2",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "bay leaves",
-                        "quantity": "2",
-                        "unit": ""
-                    },
-                    {
-                        "name": "stock or water",
-                        "quantity": "2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "cilantro",
-                        "quantity": "1/4",
-                        "unit": "cup",
-                        "notes": "chopped for garnish"
-                    }
-                ],
-                "equipment": [
-                    "large pot"
-                ]
-            },
-            "steps": [
-                "Rinse the rice and set aside.",
-                "In a large pot, heat vegetable oil and sauté chopped onions until golden.",
-                "Add minced garlic and chopped peppers, sauté for 2 minutes.",
-                "Add chopped tomatoes and tomato paste, cook for 10 minutes until the mixture thickens.",
-                "Season with thyme, cumin, bay leaves, and salt. Stir well.",
-                "Add chicken or beef to the pot and cook for 10 minutes, allowing it to absorb the flavors.",
-                "Add the rinsed rice to the pot, mix thoroughly with the sauce.",
-                "Pour in stock or water and simmer for 20-25 minutes until the rice is fully cooked and the pot has a slightly dry top.",
-                "Garnish with cilantro before serving."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/634762-556x370.jpg",
-            "source_url": "https://spoonacular.com/recipes/jollof-rice-634762",
-            "source": "spoonacular",
-            "dish_name": "Jollof Rice",
-            "local_name": "Jollof (Gambian/ Ghanaian/Nigerian)",
-            "region": "West Africa",
-            "culture_or_ethnicity": "West African",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "jollof rice",
-            "coordinates": [
-                9.082,
-                8.6753
-            ]
-        },
-        {
-            "matched_recipe_title": "Paella",
-            "summary": "A classic Spanish rice dish made with saffron, vegetables, and a mix of seafood or meat.",
-            "servings": 4,
-            "total_time_minutes": 60,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "rice",
-                        "quantity": "1 1/2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "chicken",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into pieces"
-                    },
-                    {
-                        "name": "shrimp",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "peeled and deveined"
-                    },
-                    {
-                        "name": "rabbit",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "cut into chunks (optional)"
-                    },
-                    {
-                        "name": "onions",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "garlic",
-                        "quantity": "4",
-                        "unit": "cloves"
-                    },
-                    {
-                        "name": "green bell pepper",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "tomatoes",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "paprika",
-                        "quantity": "1",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "vegetable or chicken stock",
-                        "quantity": "4",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "peas",
-                        "quantity": "1/2",
-                        "unit": "cup"
-                    },
-                    {
-                        "name": "olive oil",
-                        "quantity": "2",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "saffron threads",
-                        "quantity": "1/2",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "lemon wedges",
-                        "quantity": "4",
-                        "unit": "",
-                        "notes": "for serving"
-                    }
-                ],
-                "equipment": [
-                    "wide paella pan"
-                ]
-            },
-            "steps": [
-                "Heat olive oil in a paella pan over medium heat. Add diced onions, garlic, and green bell pepper. Sauté for 5 minutes until softened.",
-                "Add chicken pieces (and rabbit if using), and cook for 10 minutes until golden brown.",
-                "Stir in diced tomatoes and paprika. Cook for 5 minutes until the mixture becomes a thick sauce.",
-                "Rinse the rice and add it to the pan. Mix well to coat the rice with the sauce.",
-                "Add saffron threads, peas, and stock. Season with salt. Stir gently once, then let the rice cook undisturbed for 15-20 minutes until the rice is tender and the top is dry.",
-                "Add shrimp on top and cook for another 5 minutes until they turn pink.",
-                "Remove from heat, let it rest for 5 minutes, then serve with lemon wedges."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/636910-556x370.jpg",
-            "source_url": "https://spoonacular.com/recipes/paella-636910",
-            "source": "spoonacular",
-            "dish_name": "Paella",
-            "local_name": "Paella",
-            "region": "Spain",
-            "culture_or_ethnicity": "Spanish",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "paella",
-            "coordinates": [
-                40.4637,
-                -3.7492
-            ]
-        },
-        {
-            "matched_recipe_title": "Hainanese Chicken Rice",
-            "summary": "A popular dish from Singapore and Malaysia, featuring tender poached chicken served with fragrant rice cooked in chicken broth.",
-            "servings": 4,
-            "total_time_minutes": 120,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "chicken",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "whole"
-                    },
-                    {
-                        "name": "rice",
-                        "quantity": "2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "chicken broth",
-                        "quantity": "4",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "ginger",
-                        "quantity": "1",
-                        "unit": "inch",
-                        "notes": "sliced"
-                    },
-                    {
-                        "name": "scallions",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "soy sauce",
-                        "quantity": "2",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "oil",
-                        "quantity": "1",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "garlic",
-                        "quantity": "2",
-                        "unit": "cloves",
-                        "notes": "minced"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "cilantro",
-                        "quantity": "1/4",
-                        "unit": "cup",
-                        "notes": "chopped for garnish"
-                    }
-                ],
-                "equipment": [
-                    "large pot for poaching chicken",
-                    "rice cooker or pot",
-                    "large bowl for marinating"
-                ]
-            },
-            "steps": [
-                "Place the whole chicken in a large pot and add chicken broth, sliced ginger, chopped scallions, salt, and garlic. Bring to a boil then simmer for 45 minutes or until the chicken is fully cooked.",
-                "Remove chicken and let it cool. Shred or cut into pieces.",
-                "In a rice cooker or pot, mix rice with 1 cup of chicken broth, oil, and a pinch of salt. Cook according to the rice cooker instructions or simmer on the stove for 20 minutes.",
-                "Serve the chicken on top of the aromatic rice and drizzle soy sauce over it.",
-                "Garnish with fresh cilantro and serve with additional scallions and ginger on the side."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/636696-556x370.jpg",
-            "source_url": "https://spoonacular.com/recipes/hainanese-chicken-rice-636696",
-            "source": "spoonacular",
-            "dish_name": "Hainanese Chicken Rice",
-            "local_name": "海南鸡饭",
-            "region": "Hainan, China",
-            "culture_or_ethnicity": "Chinese",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "hainanese chicken rice",
-            "coordinates": [
-                19.8563,
-                109.4708
-            ]
-        },
-        {
-            "matched_recipe_title": "Chelou",
-            "summary": "A traditional Persian rice dish layered with saffron-infused rice, meat, and sometimes eggplant and almonds.",
-            "servings": 4,
-            "total_time_minutes": 90,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "rice",
-                        "quantity": "2",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "veal or lamb",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into cubes"
-                    },
-                    {
-                        "name": "onions",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "thinly sliced"
-                    },
-                    {
-                        "name": "saffron",
-                        "quantity": "1/2",
-                        "unit": "tsp"
-                    },
-                    {
-                        "name": "oil",
-                        "quantity": "2",
-                        "unit": "tbsp"
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste"
-                    },
-                    {
-                        "name": "water or stock",
-                        "quantity": "3",
-                        "unit": "cups"
-                    },
-                    {
-                        "name": "boiled eggplant",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "optional"
-                    },
-                    {
-                        "name": "roasted almonds",
-                        "quantity": "1/4",
-                        "unit": "cup",
-                        "notes": "optional for garnish"
-                    }
-                ],
-                "equipment": [
-                    "large pot or casserole dish"
-                ]
-            },
-            "steps": [
-                "Rinse the rice thoroughly and set aside.",
-                "In a pot, heat oil and sauté sliced onions until golden and caramelized.",
-                "Add cubed veal or lamb and cook for 10 minutes, stirring occasionally.",
-                "Pour in water or stock, add saffron, salt, and pepper. Bring to a boil, then reduce heat and cover. Simmer for 20 minutes until the meat is tender and the rice is cooked but still al dente.",
-                "If using eggplant, place it on top of the meat and rice mixture for added flavor.",
-                "Once the rice is fully cooked and the dish is aromatic, sprinkle with roasted almonds and serve."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/635154-556x370.jpg",
-            "source_url": "https://spoonacular.com/recipes/chelou-635154",
-            "source": "spoonacular",
-            "dish_name": "Chelou",
+            "dish_name": "Chelow",
             "local_name": "چلو",
             "region": "Iran",
             "culture_or_ethnicity": "Persian",
-            "similarity_score": 0.85,
-            "recipe_search_prompt": "chelou",
+            "similarity_score": 0.9,
+            "recipe_search_prompt": "chelow",
             "coordinates": [
-                32.4279,
+                32.4299,
                 53.688
             ]
         },
         {
-            "matched_recipe_title": "Cơm Tấm (Vietnamese Broken Rice Bowl)",
-            "summary": "A popular Vietnamese dish featuring broken rice, grilled pork, egg, and a variety of toppings served in a bowl.",
-            "servings": 4,
-            "total_time_minutes": 60,
-            "materials": {
-                "ingredients": [
-                    {
-                        "name": "broken rice",
-                        "quantity": "2",
-                        "unit": "cups",
-                        "notes": ""
-                    },
-                    {
-                        "name": "pork belly",
-                        "quantity": "400",
-                        "unit": "g",
-                        "notes": "cut into cubes"
-                    },
-                    {
-                        "name": "eggs",
-                        "quantity": "4",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "carrots",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "sliced into matchsticks"
-                    },
-                    {
-                        "name": "green beans",
-                        "quantity": "200",
-                        "unit": "g",
-                        "notes": "trimmed"
-                    },
-                    {
-                        "name": "sauce (fish sauce, sugar, lime juice, chili, garlic)",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": "mix well before adding"
-                    },
-                    {
-                        "name": "fresh cilantro",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "lime wedges",
-                        "quantity": "to serve",
-                        "unit": "",
-                        "notes": ""
-                    }
-                ],
-                "equipment": [
-                    "rice cooker or pot with lid",
-                    "griddle or skillet",
-                    "serving bowls"
-                ]
-            },
-            "steps": [
-                "Rinse the broken rice thoroughly and soak it in water for 30 minutes.",
-                "Cook the broken rice in a rice cooker or a pot with enough water until tender. Drain and set aside.",
-                "Heat a griddle or skillet and cook the pork belly cubes until crispy and golden. Remove and set aside.",
-                "In the same skillet, scramble the eggs until cooked through. Set aside.",
-                "Steam the carrots and green beans until tender-crisp. Set aside.",
-                "Assemble the dish by placing the broken rice in a bowl, then top with pork belly, scrambled eggs, carrots, and green beans.",
-                "Add the sauce (fish sauce, sugar, lime juice, chili, garlic) to taste and garnish with fresh cilantro.",
-                "Serve with lime wedges on the side."
-            ],
-            "image_url": "https://spoonacular.com/recipeImages/802192-312x231.jpg",
-            "source_url": "https://spoonacular.com/802192-vietnamese-com-tam-bowl",
-            "source": "spoonacular",
+            "dish_name": "Nasi Goreng",
+            "local_name": "Nasi Goreng",
+            "region": "Indonesia",
+            "culture_or_ethnicity": "Indonesian",
+            "similarity_score": 0.88,
+            "recipe_search_prompt": "nasi goreng",
+            "coordinates": [
+                -6.2088,
+                106.8456
+            ]
+        },
+        {
             "dish_name": "Com Tam",
             "local_name": "Cơm Tấm",
             "region": "Vietnam",
@@ -778,33 +80,424 @@
             "similarity_score": 0.85,
             "recipe_search_prompt": "com tam",
             "coordinates": [
-                21.0285,
-                105.8548
+                10.7769,
+                106.6897
             ]
         },
         {
-            "matched_recipe_title": "Risotto alla Milanese (Saffron Risotto)",
-            "summary": "A creamy Italian rice dish made with saffron, bone marrow, and Parmesan for a rich and aromatic taste.",
+            "dish_name": "Arroz con Pollo",
+            "local_name": "Arroz con Pollo",
+            "region": "Latin America",
+            "culture_or_ethnicity": "Mexican/Spanish",
+            "similarity_score": 0.83,
+            "recipe_search_prompt": "arroz con pollo",
+            "coordinates": [
+                23.4162,
+                -82.399
+            ]
+        },
+        {
+            "dish_name": "Pulao",
+            "local_name": "पुलाव",
+            "region": "India/Pakistan",
+            "culture_or_ethnicity": "North Indian/Persian-influenced",
+            "similarity_score": 0.82,
+            "recipe_search_prompt": "pulao",
+            "coordinates": [
+                28.6139,
+                77.209
+            ]
+        },
+        {
+            "dish_name": "Fried Rice",
+            "local_name": "炒饭",
+            "region": "China",
+            "culture_or_ethnicity": "Cantonese",
+            "similarity_score": 0.8,
+            "recipe_search_prompt": "chao fan",
+            "coordinates": [
+                31.2304,
+                121.4737
+            ]
+        },
+        {
+            "dish_name": "Sushi",
+            "local_name": "寿司",
+            "region": "Japan",
+            "culture_or_ethnicity": "Japanese",
+            "similarity_score": 0.78,
+            "recipe_search_prompt": "sushi",
+            "coordinates": [
+                35.6895,
+                139.6917
+            ]
+        },
+        {
+            "dish_name": "Kimbap",
+            "local_name": "김밥",
+            "region": "South Korea",
+            "culture_or_ethnicity": "Korean",
+            "similarity_score": 0.76,
+            "recipe_search_prompt": "kimchi rice rolls",
+            "coordinates": [
+                37.5665,
+                126.978
+            ]
+        },
+        {
+            "dish_name": "Kabsa",
+            "local_name": "كُبْسَة",
+            "region": "Middle East",
+            "culture_or_ethnicity": "Saudia Arabi/Yemeni",
+            "similarity_score": 0.75,
+            "recipe_search_prompt": "kabsa",
+            "coordinates": [
+                23.8859,
+                45.0933
+            ]
+        },
+        {
+            "dish_name": "Hainanese Chicken Rice",
+            "local_name": "海南鸡饭",
+            "region": "Singapore/Malaysia",
+            "culture_or_ethnicity": "Chinese-Singaporean",
+            "similarity_score": 0.73,
+            "recipe_search_prompt": "hainanese chicken rice",
+            "coordinates": [
+                1.3521,
+                103.8578
+            ]
+        },
+        {
+            "dish_name": "Donburi",
+            "local_name": "丼",
+            "region": "Japan",
+            "culture_or_ethnicity": "Japanese",
+            "similarity_score": 0.7,
+            "recipe_search_prompt": "rice bowl with toppings",
+            "coordinates": [
+                35.6895,
+                139.6917
+            ]
+        }
+    ],
+    "recipes": [
+        {
+            "matched_recipe_title": "Biryani",
+            "summary": "Aromatic Indian rice dish with spiced meat, saffron, and fried onions.",
+            "servings": 4,
+            "total_time_minutes": 60,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "basmati rice",
+                        "quantity": "2",
+                        "unit": "cups",
+                        "notes": "washed and soaked for 30 minutes"
+                    },
+                    {
+                        "name": "chicken",
+                        "quantity": "500",
+                        "unit": "g",
+                        "notes": "cut into pieces and marinated with yogurt, turmeric, and salt"
+                    },
+                    {
+                        "name": "onion",
+                        "quantity": "2",
+                        "unit": "pieces",
+                        "notes": "sliced and fried"
+                    },
+                    {
+                        "name": "garlic",
+                        "quantity": "2",
+                        "unit": "cloves",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "ginger",
+                        "quantity": "1",
+                        "unit": "inch",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "tomato",
+                        "quantity": "2",
+                        "unit": "large",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "green chili",
+                        "quantity": "1",
+                        "unit": "piece",
+                        "notes": "slit"
+                    },
+                    {
+                        "name": "garam masala",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "saffron",
+                        "quantity": "0.5",
+                        "unit": "tsp",
+                        "notes": "soaked in warm milk"
+                    },
+                    {
+                        "name": "ghee or oil",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "large pot",
+                    "mixing bowls",
+                    "serving platter"
+                ]
+            },
+            "steps": [
+                "Heat ghee in a pot and sauté marinated chicken until browned.",
+                "Add fried onions, garlic, ginger, and green chili. Cook for 5 minutes.",
+                "Stir in chopped tomatoes and cook until soft (10-15 minutes).",
+                "Season with salt and garam masala, then add soaked rice and saffron milk. Mix well.",
+                "Cover and simmer on low heat for 20-25 minutes or until rice is tender.",
+                "Let rest for 10 minutes before fluffing and serving."
+            ],
+            "image_url": "https://example.com/biryani.jpg",
+            "source_url": "https://spoonacular.com/biryani-recipe",
+            "source": "spoonacular",
+            "dish_name": "Biryani",
+            "local_name": "बिरयाना",
+            "region": "India",
+            "culture_or_ethnicity": "Mughal/Persian-influenced Indian",
+            "similarity_score": 0.98,
+            "recipe_search_prompt": "biryani",
+            "coordinates": [
+                20.5937,
+                78.9629
+            ]
+        },
+        {
+            "matched_recipe_title": "Paella",
+            "summary": "Spanish rice dish with saffron, seafood, chicken, and vegetables, cooked in a shallow pan.",
             "servings": 4,
             "total_time_minutes": 45,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "arborio rice",
-                        "quantity": "1 1/2",
+                        "name": "bomba rice",
+                        "quantity": "2",
                         "unit": "cups",
+                        "notes": "rinsed"
+                    },
+                    {
+                        "name": "chicken thighs",
+                        "quantity": "4",
+                        "unit": "pieces",
                         "notes": ""
                     },
                     {
-                        "name": "chicken broth",
-                        "quantity": "6",
-                        "unit": "cups",
-                        "notes": "kept warm"
+                        "name": "shrimp",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": ""
+                    },
+                    {
+                        "name": "mussels",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "debearded"
                     },
                     {
                         "name": "onion",
                         "quantity": "1",
-                        "unit": "",
+                        "unit": "medium",
+                        "notes": "chopped"
+                    },
+                    {
+                        "name": "garlic",
+                        "quantity": "3",
+                        "unit": "cloves",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "chickpeas",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "canned or cooked"
+                    },
+                    {
+                        "name": "tomato",
+                        "quantity": "2",
+                        "unit": "cans (28 oz)",
+                        "notes": "diced"
+                    },
+                    {
+                        "name": "bell pepper",
+                        "quantity": "1",
+                        "unit": "green",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "saffron threads",
+                        "quantity": "0.25",
+                        "unit": "tsp",
+                        "notes": "soaked in hot water"
+                    },
+                    {
+                        "name": "stock (chicken or seafood)",
+                        "quantity": "4",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "olive oil",
+                        "quantity": "3",
+                        "unit": "tbsp",
+                        "notes": ""
+                    }
+                ],
+                "equipment": [
+                    "paella pan",
+                    "skillet",
+                    "spatula"
+                ]
+            },
+            "steps": [
+                "Heat olive oil in a paella pan over medium heat. Sauté chicken until golden.",
+                "Add chopped onion, garlic, and bell pepper. Cook until softened (5-7 minutes).",
+                "Stir in diced tomatoes and cook until a thick sauce forms (10 minutes).",
+                "Add saffron water, stock, and chickpeas. Bring to a boil, then add rice. Stir briefly.",
+                "Arrange shrimp and mussels evenly on top. Reduce heat and cook undisturbed for 15-20 minutes.",
+                "Allow to rest for 5-10 minutes before serving with lemon wedges."
+            ],
+            "image_url": "https://example.com/paella.jpg",
+            "source_url": "https://spoonacular.com/paella-recipe",
+            "source": "spoonacular",
+            "dish_name": "Paella",
+            "local_name": "Paella",
+            "region": "Spain, Valencia",
+            "culture_or_ethnicity": "Valencian",
+            "similarity_score": 0.95,
+            "recipe_search_prompt": "paella",
+            "coordinates": [
+                39.4699,
+                -0.3763
+            ]
+        },
+        {
+            "matched_recipe_title": "Jollof Rice",
+            "summary": "West African one-pot rice dish cooked with tomatoes, onions, and spices.",
+            "servings": 6,
+            "total_time_minutes": 40,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "long grain rice",
+                        "quantity": "2",
+                        "unit": "cups",
+                        "notes": "washed and soaked"
+                    },
+                    {
+                        "name": "onion",
+                        "quantity": "3",
+                        "unit": "tbsp",
+                        "notes": "sliced and fried"
+                    },
+                    {
+                        "name": "tomato paste",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "chili pepper",
+                        "quantity": "1",
+                        "unit": "large",
+                        "notes": "blended into sauce"
+                    },
+                    {
+                        "name": "garlic",
+                        "quantity": "2",
+                        "unit": "cloves",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "ginger",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "grated"
+                    },
+                    {
+                        "name": "cubed beef or chicken",
+                        "quantity": "500",
+                        "unit": "g",
+                        "notes": ""
+                    },
+                    {
+                        "name": "vegetable oil",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "salt",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "to taste"
+                    }
+                ],
+                "equipment": [
+                    "large pot",
+                    "wooden spoon",
+                    "frying pan"
+                ]
+            },
+            "steps": [
+                "Heat oil in a pot, add cubed meat and cook until browned.",
+                "Add sliced onions and fry until golden. Stir in tomato paste, chili, garlic, and ginger.",
+                "Coat meat in the mixture, then add soaked rice, salt, and water. Bring to a boil.",
+                "Reduce heat, cover, and simmer for 20 minutes until rice is tender.",
+                "Uncover and cook 5 more minutes to form a crusty top (soccarat)."
+            ],
+            "image_url": "https://example.com/jollof-rice.jpg",
+            "source_url": "https://spoonacular.com/jollof-rice-recipe",
+            "source": "spoonacular",
+            "dish_name": "Jollof Rice",
+            "local_name": "Jollof",
+            "region": "West Africa",
+            "culture_or_ethnicity": "Nigerian/Gambian/Senegalese",
+            "similarity_score": 0.93,
+            "recipe_search_prompt": "jollof rice",
+            "coordinates": [
+                12.1772,
+                -16.0988
+            ]
+        },
+        {
+            "matched_recipe_title": "Risotto",
+            "summary": "Creamy Italian rice dish made with broth and stirred constantly.",
+            "servings": 4,
+            "total_time_minutes": 35,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "arborio rice",
+                        "quantity": "2",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "chicken or vegetable stock",
+                        "quantity": "4",
+                        "unit": "cups",
+                        "notes": "warm"
+                    },
+                    {
+                        "name": "onion",
+                        "quantity": "1",
+                        "unit": "small",
                         "notes": "finely chopped"
                     },
                     {
@@ -815,21 +508,9 @@
                     },
                     {
                         "name": "white wine",
-                        "quantity": "1/2",
-                        "unit": "cup",
-                        "notes": ""
-                    },
-                    {
-                        "name": "saffron threads",
-                        "quantity": "1/2",
-                        "unit": "tsp",
-                        "notes": "soaked in warm water"
-                    },
-                    {
-                        "name": "Parmigiano-Reggiano cheese",
                         "quantity": "1",
                         "unit": "cup",
-                        "notes": "grated"
+                        "notes": ""
                     },
                     {
                         "name": "butter",
@@ -838,41 +519,45 @@
                         "notes": ""
                     },
                     {
-                        "name": "heavy cream",
-                        "quantity": "1/4",
+                        "name": "parmesan cheese",
+                        "quantity": "1",
                         "unit": "cup",
-                        "notes": ""
+                        "notes": "grated"
                     },
                     {
-                        "name": "salt",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
+                        "name": "carrot",
+                        "quantity": "1",
+                        "unit": "medium",
+                        "notes": "diced"
+                    },
+                    {
+                        "name": "celery",
+                        "quantity": "1",
+                        "unit": "stalk",
+                        "notes": "diced"
                     }
                 ],
                 "equipment": [
-                    "large pan or pot",
+                    "saucepan",
                     "whisk",
-                    "strainer"
+                    "ladle"
                 ]
             },
             "steps": [
-                "In a large pan, melt 1 tablespoon of butter and sauté the onion and garlic until translucent.",
-                "Add the arborio rice and stir to coat it with the fat. Cook for 2 minutes.",
-                "Pour in the white wine and cook until it's fully absorbed.",
-                "Gradually add the warm chicken broth, one ladle at a time, stirring constantly and allowing each addition to be absorbed before adding more.",
-                "Once the rice is nearly cooked, stir in the saffron and its soaking water.",
-                "Remove the pan from heat and mix in the remaining butter, heavy cream, and half of the Parmesan cheese.",
-                "Season with salt and taste for creaminess. Add more Parmesan to serve."
+                "Sauté onion, garlic, carrot, and celery in butter until translucent.",
+                "Add arborio rice and stir to coat with fat. Cook for 2 minutes.",
+                "Pour in wine and stir until absorbed. Add stock one ladle at a time, stirring constantly until absorbed before adding more.",
+                "Cook for 20-25 minutes until rice is creamy and al dente. Season with salt and pepper.",
+                "Stir in remaining stock and parmesan. Serve immediately."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/645631-312x231.jpg",
-            "source_url": "https://spoonacular.com/645631-risotto-alla-milanese",
+            "image_url": "https://example.com/risotto.jpg",
+            "source_url": "https://spoonacular.com/risotto-recipe",
             "source": "spoonacular",
             "dish_name": "Risotto",
             "local_name": "Risotto",
             "region": "Italy",
-            "culture_or_ethnicity": "Italian",
-            "similarity_score": 0.85,
+            "culture_or_ethnicity": "Northern Italian",
+            "similarity_score": 0.91,
             "recipe_search_prompt": "risotto",
             "coordinates": [
                 41.8719,
@@ -880,41 +565,263 @@
             ]
         },
         {
-            "matched_recipe_title": "Arroz con Pollo (Spanish Chicken and Rice)",
-            "summary": "A hearty Spanish-American dish with tender chicken and flavorful rice, seasoned with spices and often cooked with tomatoes.",
+            "matched_recipe_title": "Chelow",
+            "summary": "Persian saffron-infused rice, often served with meat or stews.",
             "servings": 4,
-            "total_time_minutes": 90,
+            "total_time_minutes": 25,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "chicken",
-                        "quantity": "4",
-                        "unit": "lbs",
-                        "notes": "cut into pieces"
-                    },
-                    {
-                        "name": "rice",
+                        "name": "basmati rice",
                         "quantity": "2",
                         "unit": "cups",
-                        "notes": ""
+                        "notes": "washed and soaked"
                     },
                     {
-                        "name": "olive oil",
+                        "name": "saffron",
+                        "quantity": "0.5",
+                        "unit": "tsp",
+                        "notes": "soaked in 2 tbsp water"
+                    },
+                    {
+                        "name": "butter",
                         "quantity": "2",
                         "unit": "tbsp",
                         "notes": ""
                     },
                     {
+                        "name": "salt",
+                        "quantity": "1",
+                        "unit": "tsp",
+                        "notes": "to taste"
+                    }
+                ],
+                "equipment": [
+                    "rice cooker or deep pot",
+                    "strainer",
+                    "serving plate"
+                ]
+            },
+            "steps": [
+                "Drain soaked rice and layer in a pot with saffron water.",
+                "Cover with a cloth, then place a heatproof bowl with water on top as a diffuser.",
+                "Cook on low heat until rice is tender and water is absorbed (15-20 minutes).",
+                "Fluff with a fork and serve with butter on top."
+            ],
+            "image_url": "https://example.com/chelow.jpg",
+            "source_url": "https://spoonacular.com/chelow-recipe",
+            "source": "spoonacular",
+            "dish_name": "Chelow",
+            "local_name": "چلو",
+            "region": "Iran",
+            "culture_or_ethnicity": "Persian",
+            "similarity_score": 0.9,
+            "recipe_search_prompt": "chelow",
+            "coordinates": [
+                32.4299,
+                53.688
+            ]
+        },
+        {
+            "matched_recipe_title": "Nasi Goreng",
+            "summary": "A popular Indonesian fried rice dish with a mix of vegetables, eggs, and meat, typically cooked with soy sauce and chili.",
+            "servings": 4,
+            "total_time_minutes": 30,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "cooked rice",
+                        "quantity": "2",
+                        "unit": "cups",
+                        "notes": "cooked and cooled"
+                    },
+                    {
+                        "name": "vegetable oil",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "eggs",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "beaten"
+                    },
+                    {
                         "name": "onion",
+                        "quantity": "1",
+                        "unit": "medium",
+                        "notes": "finely chopped"
+                    },
+                    {
+                        "name": "carrot",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": "julienned"
+                    },
+                    {
+                        "name": "cucumber",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "soy sauce",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "chili paste",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "shrimp or chicken",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "optional"
+                    }
+                ],
+                "equipment": [
+                    "wok",
+                    "spatula"
+                ]
+            },
+            "steps": [
+                "Heat oil in a wok over medium heat. Add beaten eggs and scramble briefly.",
+                "Add chopped onions, carrots, and cucumbers. Stir-fry for 2-3 minutes until vegetables soften.",
+                "Incorporate cooked rice, soy sauce, and chili paste. Stir-fry for 5-7 minutes until heated through.",
+                "If using meat or shrimp, add and cook until done (5-10 minutes).",
+                "Season with salt or pepper to taste. Serve hot with fried shallots or lime slices."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/nasi-goreng-312x231.jpg",
+            "source_url": "",
+            "source": "spoonacular",
+            "dish_name": "Nasi Goreng",
+            "local_name": "Nasi Goreng",
+            "region": "Indonesia",
+            "culture_or_ethnicity": "Indonesian",
+            "similarity_score": 0.88,
+            "recipe_search_prompt": "nasi goreng",
+            "coordinates": [
+                -6.2088,
+                106.8456
+            ]
+        },
+        {
+            "matched_recipe_title": "Cơm Tấm",
+            "summary": "Vietnamese broken rice with grilled pork, poached egg, and pickled vegetables, served with brothy fish sauce.",
+            "servings": 2,
+            "total_time_minutes": 45,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "broken rice",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": "rinsed and soaked for 30 minutes"
+                    },
+                    {
+                        "name": "pork shoulder",
+                        "quantity": "200",
+                        "unit": "g",
+                        "notes": "cut into cubes"
+                    },
+                    {
+                        "name": "egg",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "poached"
+                    },
+                    {
+                        "name": "fish sauce",
+                        "quantity": "2",
+                        "unit": "tbsp",
+                        "notes": ""
+                    },
+                    {
+                        "name": "water",
+                        "quantity": "1 1/2",
+                        "unit": "cups",
+                        "notes": ""
+                    },
+                    {
+                        "name": "shrimp or crab meat",
+                        "quantity": "100",
+                        "unit": "g",
+                        "notes": "optional"
+                    },
+                    {
+                        "name": "pickled vegetables",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": "optional"
+                    }
+                ],
+                "equipment": [
+                    "rice cooker",
+                    "pan"
+                ]
+            },
+            "steps": [
+                "Pressure-cook broken rice with fish sauce and water until tender (15-20 minutes).",
+                "Grill pork cubes in a pan with a bit of oil until charred and cooked through.",
+                "Poach eggs in a separate pan or boiling water.",
+                "Arrange rice, pork, and poached eggs on a plate.",
+                "Add pickled vegetables and optional shrimp/crab meat as toppings."
+            ],
+            "image_url": "https://spoonacular.com/recipeImages/com-tam-312x231.jpg",
+            "source_url": "",
+            "source": "spoonacular",
+            "dish_name": "Com Tam",
+            "local_name": "Cơm Tấm",
+            "region": "Vietnam",
+            "culture_or_ethnicity": "Vietnamese",
+            "similarity_score": 0.85,
+            "recipe_search_prompt": "com tam",
+            "coordinates": [
+                10.7769,
+                106.6897
+            ]
+        },
+        {
+            "matched_recipe_title": "Arroz con Pollo",
+            "summary": "A one-pot Spanish dish combining spiced rice and chicken, often made with tomatoes and peppers.",
+            "servings": 4,
+            "total_time_minutes": 60,
+            "materials": {
+                "ingredients": [
+                    {
+                        "name": "boneless chicken thighs",
+                        "quantity": "4",
+                        "unit": "",
+                        "notes": "cut into chunks"
+                    },
+                    {
+                        "name": "large onion",
                         "quantity": "1",
                         "unit": "",
                         "notes": "diced"
                     },
                     {
                         "name": "garlic",
-                        "quantity": "3",
+                        "quantity": "2",
                         "unit": "cloves",
                         "notes": "minced"
+                    },
+                    {
+                        "name": "basmati or white rice",
+                        "quantity": "1",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "tomato",
+                        "quantity": "2",
+                        "unit": "",
+                        "notes": "chopped"
                     },
                     {
                         "name": "green bell pepper",
@@ -923,157 +830,101 @@
                         "notes": "diced"
                     },
                     {
-                        "name": "canned tomatoes",
+                        "name": "olive oil",
                         "quantity": "2",
-                        "unit": "cans",
-                        "notes": "14 oz each"
+                        "unit": "tbsp",
+                        "notes": ""
                     },
                     {
                         "name": "chicken broth",
-                        "quantity": "4",
+                        "quantity": "2",
                         "unit": "cups",
                         "notes": ""
-                    },
-                    {
-                        "name": "cumin",
-                        "quantity": "1",
-                        "unit": "tsp",
-                        "notes": ""
-                    },
-                    {
-                        "name": "oregano",
-                        "quantity": "1",
-                        "unit": "tsp",
-                        "notes": ""
-                    },
-                    {
-                        "name": "cilantro",
-                        "quantity": "1/4",
-                        "unit": "cup",
-                        "notes": "chopped"
                     },
                     {
                         "name": "salt",
                         "quantity": "to taste",
                         "unit": "",
                         "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
                     }
                 ],
                 "equipment": [
-                    "large pot or Dutch oven",
-                    "wooden spoon",
-                    "serving plates"
+                    "large pot with lid",
+                    "knife"
                 ]
             },
             "steps": [
-                "Heat olive oil in a large pot or Dutch oven over medium heat. Add the chicken and cook until browned on all sides.",
-                "Add the onion, garlic, and green bell pepper. Cook until the vegetables are softened.",
-                "Stir in the cumin, oregano, salt, and black pepper to season the chicken and vegetables.",
-                "Add the canned tomatoes and chicken broth. Bring the mixture to a boil.",
-                "Add the rice and stir to combine. Reduce the heat to low, cover, and let simmer for about 1 hour or until the rice is tender and the liquid is absorbed.",
-                "Once cooked, stir in the chopped cilantro and serve hot."
+                "Heat olive oil in a large pot. Brown chicken chunks in batches.",
+                "Add onion, garlic, and bell pepper. Sauté until softened (5-7 minutes).",
+                "Stir in chopped tomatoes, rice, and season with salt.",
+                "Pour in chicken broth, reduce heat, cover, and simmer for 20-25 minutes until rice absorbs the liquid.",
+                "Check for doneness, fluff rice with a fork, and serve."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/654157-312x231.jpg",
-            "source_url": "https://spoonacular.com/654157-arroz-con-pollo",
+            "image_url": "https://spoonacular.com/recipeImages/arroz-con-pollo-312x231.jpg",
+            "source_url": "",
             "source": "spoonacular",
             "dish_name": "Arroz con Pollo",
             "local_name": "Arroz con Pollo",
-            "region": "Mexico",
-            "culture_or_ethnicity": "Mexican",
-            "similarity_score": 0.8,
+            "region": "Latin America",
+            "culture_or_ethnicity": "Mexican/Spanish",
+            "similarity_score": 0.83,
             "recipe_search_prompt": "arroz con pollo",
             "coordinates": [
-                23.6345,
-                -102.5528
+                23.4162,
+                -82.399
             ]
         },
         {
-            "matched_recipe_title": "Jambalaya (Cajun Style)",
-            "summary": "A spicy, one-pot rice dish with chicken, shrimp, sausage, and Andouille, popular in Louisiana and the American South.",
-            "servings": 6,
-            "total_time_minutes": 80,
+            "matched_recipe_title": "पुलाओ (Pulao)",
+            "summary": "An Indian one-pot rice dish with mixed vegetables, peas, and aromatic spices.",
+            "servings": 4,
+            "total_time_minutes": 40,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "rice",
-                        "quantity": "2",
+                        "name": "basmati rice",
+                        "quantity": "1 1/2",
+                        "unit": "cups",
+                        "notes": "rinsed and drained"
+                    },
+                    {
+                        "name": "water",
+                        "quantity": "2 1/2",
                         "unit": "cups",
                         "notes": ""
                     },
                     {
-                        "name": "chicken thighs",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "cut into chunks"
-                    },
-                    {
-                        "name": "andouille sausage",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into rounds"
-                    },
-                    {
-                        "name": "shrimp",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "peeled and deveined"
-                    },
-                    {
-                        "name": "onion",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "bell pepper",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "garlic",
-                        "quantity": "4",
-                        "unit": "cloves",
-                        "notes": "minced"
-                    },
-                    {
-                        "name": "tomato sauce",
-                        "quantity": "2",
-                        "unit": "cups",
-                        "notes": ""
-                    },
-                    {
-                        "name": "chicken broth",
-                        "quantity": "2",
-                        "unit": "cups",
-                        "notes": ""
-                    },
-                    {
-                        "name": "celery",
-                        "quantity": "2",
-                        "unit": "",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "paprika",
+                        "name": "vegetable oil",
                         "quantity": "2",
                         "unit": "tbsp",
                         "notes": ""
                     },
                     {
-                        "name": "thyme",
+                        "name": "onion",
                         "quantity": "1",
+                        "unit": "medium",
+                        "notes": "sliced"
+                    },
+                    {
+                        "name": "carrot",
+                        "quantity": "1",
+                        "unit": "",
+                        "notes": "diced"
+                    },
+                    {
+                        "name": "peas",
+                        "quantity": "1/2",
+                        "unit": "cup",
+                        "notes": ""
+                    },
+                    {
+                        "name": "cumin seeds",
+                        "quantity": "1/2",
                         "unit": "tsp",
                         "notes": ""
                     },
                     {
-                        "name": "cayenne pepper",
+                        "name": "turmeric powder",
                         "quantity": "1/2",
                         "unit": "tsp",
                         "notes": ""
@@ -1083,158 +934,108 @@
                         "quantity": "to taste",
                         "unit": "",
                         "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
                     }
                 ],
                 "equipment": [
                     "large pot",
-                    "colander",
-                    "mixing bowls"
+                    "colander"
                 ]
             },
             "steps": [
-                "In a large pot, cook the andouille sausage over medium heat until golden and crispy. Remove and set aside.",
-                "Add the chicken thighs and cook until browned and cooked through. Remove and set aside.",
-                "In the same pot, sauté the onion, bell pepper, celery, and garlic until softened.",
-                "Stir in the paprika, thyme, and cayenne pepper, cooking for about 30 seconds to release the aroma.",
-                "Add the cooked chicken and sausage back to the pot.",
-                "Pour in the tomato sauce and chicken broth, stirring well to combine. Bring to a simmer.",
-                "Add the rice and stir to coat it in the mixture. Cover and cook on low heat for about 30-40 minutes, or until the rice is tender and the liquid is absorbed.",
-                "Toss in the shrimp and cook for an additional 5-7 minutes, until the shrimp turn pink and are no longer translucent.",
-                "Season with salt and black pepper to taste. Serve hot."
+                "In a pot, heat oil and temper with cumin seeds. Add onions and sauté until golden.",
+                "Stir in diced carrots, peas, and turmeric powder. Cook for 5 minutes.",
+                "Add rinsed rice, salt, and water. Bring to a boil.",
+                "Reduce heat, cover, and simmer for 15-20 minutes until rice is tender.",
+                "Let rest for 5 minutes before fluffing with a fork."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/646677-312x231.jpg",
-            "source_url": "https://spoonacular.com/646677-jambalaya",
+            "image_url": "https://spoonacular.com/recipeImages/pulao-312x231.jpg",
+            "source_url": "",
             "source": "spoonacular",
-            "dish_name": "Jambalaya",
-            "local_name": "Jambalaya",
-            "region": "Louisiana, USA",
-            "culture_or_ethnicity": "Creole",
-            "similarity_score": 0.8,
-            "recipe_search_prompt": "jambalaya",
+            "dish_name": "Pulao",
+            "local_name": "पुलाव",
+            "region": "India/Pakistan",
+            "culture_or_ethnicity": "North Indian/Persian-influenced",
+            "similarity_score": 0.82,
+            "recipe_search_prompt": "pulao",
             "coordinates": [
-                30.4383,
-                -91.1374
+                28.6139,
+                77.209
             ]
         },
         {
-            "matched_recipe_title": "Arroz con Gandules (Puerto Rican Rice with Pigeon Peas)",
-            "summary": "A traditional Puerto Rican side dish made with rice, pigeon peas, pork, and a mix of spices.",
-            "servings": 5,
-            "total_time_minutes": 60,
+            "matched_recipe_title": "Fried Rice (炒饭)",
+            "summary": "Cantonese-style fried rice made with day-old rice, egg, and stir-fried vegetables.",
+            "servings": 2,
+            "total_time_minutes": 30,
             "materials": {
                 "ingredients": [
                     {
-                        "name": "rice",
+                        "name": "day-old rice",
                         "quantity": "2",
                         "unit": "cups",
-                        "notes": ""
+                        "notes": "cold, fluffed"
                     },
                     {
-                        "name": "canned pigeon peas",
-                        "quantity": "1",
-                        "unit": "can",
-                        "notes": "drained and rinsed"
-                    },
-                    {
-                        "name": "pork",
-                        "quantity": "1",
-                        "unit": "lb",
-                        "notes": "cut into cubes"
-                    },
-                    {
-                        "name": "onion",
+                        "name": "egg",
                         "quantity": "1",
                         "unit": "",
-                        "notes": "diced"
+                        "notes": "beaten"
                     },
                     {
-                        "name": "garlic",
-                        "quantity": "2",
-                        "unit": "cloves",
-                        "notes": "minced"
-                    },
-                    {
-                        "name": "olive oil",
-                        "quantity": "2",
+                        "name": "vegetable oil",
+                        "quantity": "1",
                         "unit": "tbsp",
                         "notes": ""
                     },
                     {
-                        "name": "green bell pepper",
-                        "quantity": "1",
-                        "unit": "",
-                        "notes": "diced"
-                    },
-                    {
-                        "name": "tomato sauce",
-                        "quantity": "1",
+                        "name": "mixed vegetables",
+                        "quantity": "1/2",
                         "unit": "cup",
-                        "notes": ""
+                        "notes": "frozen or fresh"
                     },
                     {
-                        "name": "cilantro",
+                        "name": "soy sauce",
+                        "quantity": "1",
+                        "unit": "tbsp",
+                        "notes": "plus extra for garnish"
+                    },
+                    {
+                        "name": "garlic",
+                        "quantity": "1",
+                        "unit": "clove",
+                        "notes": "minced"
+                    },
+                    {
+                        "name": "vegetable stock",
                         "quantity": "1/4",
                         "unit": "cup",
-                        "notes": "chopped"
-                    },
-                    {
-                        "name": "cilantro stems",
-                        "quantity": "1/4",
-                        "unit": "cup",
-                        "notes": ""
-                    },
-                    {
-                        "name": "salt",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "black pepper",
-                        "quantity": "to taste",
-                        "unit": "",
-                        "notes": ""
-                    },
-                    {
-                        "name": "oregano",
-                        "quantity": "1",
-                        "unit": "tsp",
                         "notes": ""
                     }
                 ],
                 "equipment": [
-                    "large pot",
-                    "strainer",
-                    "wooden spoon"
+                    "wok",
+                    "spatula"
                 ]
             },
             "steps": [
-                "In a large pot, heat the olive oil over medium heat. Add the onion and garlic, sauté until translucent.",
-                "Add the pork and cook until browned and cooked through.",
-                "Stir in the green bell pepper and cook until softened.",
-                "Add the drained pigeon peas, rice, tomato sauce, cilantro stems, oregano, salt, and black pepper. Stir well.",
-                "Pour in enough chicken or vegetable broth to cover the ingredients by about 2 inches. Bring to a boil.",
-                "Reduce heat, cover, and simmer for 30-35 minutes, until the rice is fully cooked and the liquid is absorbed.",
-                "Once ready, fluff the rice gently with a fork and garnish with chopped cilantro before serving."
+                "Heat oil in a wok over medium-high heat. Add beaten egg and sauté briefly.",
+                "Push egg to the side, then add garlic and mixed vegetables. Stir-fry for 3-5 minutes.",
+                "Mix in day-old rice and soy sauce. Stir-fry for 10-15 minutes until rice is separate and golden.",
+                "Add vegetable stock to adjust moisture, if needed.",
+                "Serve garnished with additional soy sauce and green onions."
             ],
-            "image_url": "https://spoonacular.com/recipeImages/646679-312x231.jpg",
-            "source_url": "https://spoonacular.com/646679-arroz-con-gandules",
+            "image_url": "https://spoonacular.com/recipeImages/chaofan-312x231.jpg",
+            "source_url": "https://allrecipes.com/recipe/22302/cantonese-fried-rice/",
             "source": "spoonacular",
-            "dish_name": "Arroz con Gandules",
-            "local_name": "Arroz con Gandules",
-            "region": "Dominican Republic",
-            "culture_or_ethnicity": "Dominican",
+            "dish_name": "Fried Rice",
+            "local_name": "炒饭",
+            "region": "China",
+            "culture_or_ethnicity": "Cantonese",
             "similarity_score": 0.8,
-            "recipe_search_prompt": "arroz con gandules",
+            "recipe_search_prompt": "chao fan",
             "coordinates": [
-                18.7357,
-                -68.2642
+                31.2304,
+                121.4737
             ]
         }
     ]

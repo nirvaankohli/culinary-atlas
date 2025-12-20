@@ -1,0 +1,88 @@
+{
+    "matched_recipe_title": "Nasi Goreng",
+    "summary": "A popular Indonesian fried rice dish with a mix of vegetables, eggs, and meat, typically cooked with soy sauce and chili.",
+    "servings": 4,
+    "total_time_minutes": 30,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "cooked rice",
+                "quantity": "2",
+                "unit": "cups",
+                "notes": "cooked and cooled"
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "eggs",
+                "quantity": "2",
+                "unit": "",
+                "notes": "beaten"
+            },
+            {
+                "name": "onion",
+                "quantity": "1",
+                "unit": "medium",
+                "notes": "finely chopped"
+            },
+            {
+                "name": "carrot",
+                "quantity": "1/2",
+                "unit": "cup",
+                "notes": "julienned"
+            },
+            {
+                "name": "cucumber",
+                "quantity": "1/2",
+                "unit": "cup",
+                "notes": "sliced"
+            },
+            {
+                "name": "soy sauce",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "chili paste",
+                "quantity": "1",
+                "unit": "tbsp",
+                "notes": "optional"
+            },
+            {
+                "name": "shrimp or chicken",
+                "quantity": "200",
+                "unit": "g",
+                "notes": "optional"
+            }
+        ],
+        "equipment": [
+            "wok",
+            "spatula"
+        ]
+    },
+    "steps": [
+        "Heat oil in a wok over medium heat. Add beaten eggs and scramble briefly.",
+        "Add chopped onions, carrots, and cucumbers. Stir-fry for 2-3 minutes until vegetables soften.",
+        "Incorporate cooked rice, soy sauce, and chili paste. Stir-fry for 5-7 minutes until heated through.",
+        "If using meat or shrimp, add and cook until done (5-10 minutes).",
+        "Season with salt or pepper to taste. Serve hot with fried shallots or lime slices."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/nasi-goreng-312x231.jpg",
+    "source_url": "",
+    "source": "spoonacular",
+    "dish_name": "Nasi Goreng",
+    "local_name": "Nasi Goreng",
+    "region": "Indonesia",
+    "culture_or_ethnicity": "Indonesian",
+    "similarity_score": 0.88,
+    "recipe_search_prompt": "nasi goreng",
+    "coordinates": [
+        -6.2088,
+        106.8456
+    ]
+}

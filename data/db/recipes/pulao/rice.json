@@ -1,0 +1,88 @@
+{
+    "matched_recipe_title": "पुलाओ (Pulao)",
+    "summary": "An Indian one-pot rice dish with mixed vegetables, peas, and aromatic spices.",
+    "servings": 4,
+    "total_time_minutes": 40,
+    "materials": {
+        "ingredients": [
+            {
+                "name": "basmati rice",
+                "quantity": "1 1/2",
+                "unit": "cups",
+                "notes": "rinsed and drained"
+            },
+            {
+                "name": "water",
+                "quantity": "2 1/2",
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "vegetable oil",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "onion",
+                "quantity": "1",
+                "unit": "medium",
+                "notes": "sliced"
+            },
+            {
+                "name": "carrot",
+                "quantity": "1",
+                "unit": "",
+                "notes": "diced"
+            },
+            {
+                "name": "peas",
+                "quantity": "1/2",
+                "unit": "cup",
+                "notes": ""
+            },
+            {
+                "name": "cumin seeds",
+                "quantity": "1/2",
+                "unit": "tsp",
+                "notes": ""
+            },
+            {
+                "name": "turmeric powder",
+                "quantity": "1/2",
+                "unit": "tsp",
+                "notes": ""
+            },
+            {
+                "name": "salt",
+                "quantity": "to taste",
+                "unit": "",
+                "notes": ""
+            }
+        ],
+        "equipment": [
+            "large pot",
+            "colander"
+        ]
+    },
+    "steps": [
+        "In a pot, heat oil and temper with cumin seeds. Add onions and sauté until golden.",
+        "Stir in diced carrots, peas, and turmeric powder. Cook for 5 minutes.",
+        "Add rinsed rice, salt, and water. Bring to a boil.",
+        "Reduce heat, cover, and simmer for 15-20 minutes until rice is tender.",
+        "Let rest for 5 minutes before fluffing with a fork."
+    ],
+    "image_url": "https://spoonacular.com/recipeImages/pulao-312x231.jpg",
+    "source_url": "",
+    "source": "spoonacular",
+    "dish_name": "Pulao",
+    "local_name": "पुलाव",
+    "region": "India/Pakistan",
+    "culture_or_ethnicity": "North Indian/Persian-influenced",
+    "similarity_score": 0.82,
+    "recipe_search_prompt": "pulao",
+    "coordinates": [
+        28.6139,
+        77.209
+    ]
+}

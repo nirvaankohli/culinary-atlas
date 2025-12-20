@@ -1,77 +1,67 @@
 {
-    "matched_recipe_title": "Cơm Tấm (Vietnamese Broken Rice Bowl)",
-    "summary": "A popular Vietnamese dish featuring broken rice, grilled pork, egg, and a variety of toppings served in a bowl.",
-    "servings": 4,
-    "total_time_minutes": 60,
+    "matched_recipe_title": "Cơm Tấm",
+    "summary": "Vietnamese broken rice with grilled pork, poached egg, and pickled vegetables, served with brothy fish sauce.",
+    "servings": 2,
+    "total_time_minutes": 45,
     "materials": {
         "ingredients": [
             {
                 "name": "broken rice",
-                "quantity": "2",
-                "unit": "cups",
-                "notes": ""
+                "quantity": "1",
+                "unit": "cup",
+                "notes": "rinsed and soaked for 30 minutes"
             },
             {
-                "name": "pork belly",
-                "quantity": "400",
+                "name": "pork shoulder",
+                "quantity": "200",
                 "unit": "g",
                 "notes": "cut into cubes"
             },
             {
-                "name": "eggs",
-                "quantity": "4",
-                "unit": "",
-                "notes": ""
-            },
-            {
-                "name": "carrots",
+                "name": "egg",
                 "quantity": "2",
                 "unit": "",
-                "notes": "sliced into matchsticks"
+                "notes": "poached"
             },
             {
-                "name": "green beans",
-                "quantity": "200",
+                "name": "fish sauce",
+                "quantity": "2",
+                "unit": "tbsp",
+                "notes": ""
+            },
+            {
+                "name": "water",
+                "quantity": "1 1/2",
+                "unit": "cups",
+                "notes": ""
+            },
+            {
+                "name": "shrimp or crab meat",
+                "quantity": "100",
                 "unit": "g",
-                "notes": "trimmed"
+                "notes": "optional"
             },
             {
-                "name": "sauce (fish sauce, sugar, lime juice, chili, garlic)",
-                "quantity": "to taste",
-                "unit": "",
-                "notes": "mix well before adding"
-            },
-            {
-                "name": "fresh cilantro",
-                "quantity": "to taste",
-                "unit": "",
-                "notes": ""
-            },
-            {
-                "name": "lime wedges",
-                "quantity": "to serve",
-                "unit": "",
-                "notes": ""
+                "name": "pickled vegetables",
+                "quantity": "1/2",
+                "unit": "cup",
+                "notes": "optional"
             }
         ],
         "equipment": [
-            "rice cooker or pot with lid",
-            "griddle or skillet",
-            "serving bowls"
+            "rice cooker",
+            "pan"
         ]
     },
     "steps": [
-        "Rinse the broken rice thoroughly and soak it in water for 30 minutes.",
-        "Cook the broken rice in a rice cooker or a pot with enough water until tender. Drain and set aside.",
-        "Heat a griddle or skillet and cook the pork belly cubes until crispy and golden. Remove and set aside.",
-        "In the same skillet, scramble the eggs until cooked through. Set aside.",
-        "Steam the carrots and green beans until tender-crisp. Set aside.",
-        "Assemble the dish by placing the broken rice in a bowl, then top with pork belly, scrambled eggs, carrots, and green beans.",
-        "Add the sauce (fish sauce, sugar, lime juice, chili, garlic) to taste and garnish with fresh cilantro.",
-        "Serve with lime wedges on the side."
+        "Pressure-cook broken rice with fish sauce and water until tender (15-20 minutes).",
+        "Grill pork cubes in a pan with a bit of oil until charred and cooked through.",
+        "Poach eggs in a separate pan or boiling water.",
+        "Arrange rice, pork, and poached eggs on a plate.",
+        "Add pickled vegetables and optional shrimp/crab meat as toppings."
     ],
-    "image_url": "https://spoonacular.com/recipeImages/802192-312x231.jpg",
-    "source_url": "https://spoonacular.com/802192-vietnamese-com-tam-bowl",
+    "image_url": "https://spoonacular.com/recipeImages/com-tam-312x231.jpg",
+    "source_url": "",
     "source": "spoonacular",
     "dish_name": "Com Tam",
     "local_name": "Cơm Tấm",
@@ -80,7 +70,7 @@
     "similarity_score": 0.85,
     "recipe_search_prompt": "com tam",
     "coordinates": [
-        21.0285,
-        105.8548
+        10.7769,
+        106.6897
     ]
 }

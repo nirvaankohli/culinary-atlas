@@ -1,26 +1,26 @@
 {
-    "matched_recipe_title": "Risotto alla Milanese (Saffron Risotto)",
-    "summary": "A creamy Italian rice dish made with saffron, bone marrow, and Parmesan for a rich and aromatic taste.",
+    "matched_recipe_title": "Risotto",
+    "summary": "Creamy Italian rice dish made with broth and stirred constantly.",
     "servings": 4,
-    "total_time_minutes": 45,
+    "total_time_minutes": 35,
     "materials": {
         "ingredients": [
             {
                 "name": "arborio rice",
-                "quantity": "1 1/2",
+                "quantity": "2",
                 "unit": "cups",
                 "notes": ""
             },
             {
-                "name": "chicken broth",
-                "quantity": "6",
+                "name": "chicken or vegetable stock",
+                "quantity": "4",
                 "unit": "cups",
-                "notes": "kept warm"
+                "notes": "warm"
             },
             {
                 "name": "onion",
                 "quantity": "1",
-                "unit": "",
+                "unit": "small",
                 "notes": "finely chopped"
             },
             {
@@ -31,21 +31,9 @@
             },
             {
                 "name": "white wine",
-                "quantity": "1/2",
-                "unit": "cup",
-                "notes": ""
-            },
-            {
-                "name": "saffron threads",
-                "quantity": "1/2",
-                "unit": "tsp",
-                "notes": "soaked in warm water"
-            },
-            {
-                "name": "Parmigiano-Reggiano cheese",
                 "quantity": "1",
                 "unit": "cup",
-                "notes": "grated"
+                "notes": ""
             },
             {
                 "name": "butter",
@@ -54,41 +42,45 @@
                 "notes": ""
             },
             {
-                "name": "heavy cream",
-                "quantity": "1/4",
+                "name": "parmesan cheese",
+                "quantity": "1",
                 "unit": "cup",
-                "notes": ""
+                "notes": "grated"
             },
             {
-                "name": "salt",
-                "quantity": "to taste",
-                "unit": "",
-                "notes": ""
+                "name": "carrot",
+                "quantity": "1",
+                "unit": "medium",
+                "notes": "diced"
+            },
+            {
+                "name": "celery",
+                "quantity": "1",
+                "unit": "stalk",
+                "notes": "diced"
             }
         ],
         "equipment": [
-            "large pan or pot",
+            "saucepan",
             "whisk",
-            "strainer"
+            "ladle"
         ]
     },
     "steps": [
-        "In a large pan, melt 1 tablespoon of butter and sauté the onion and garlic until translucent.",
-        "Add the arborio rice and stir to coat it with the fat. Cook for 2 minutes.",
-        "Pour in the white wine and cook until it's fully absorbed.",
-        "Gradually add the warm chicken broth, one ladle at a time, stirring constantly and allowing each addition to be absorbed before adding more.",
-        "Once the rice is nearly cooked, stir in the saffron and its soaking water.",
-        "Remove the pan from heat and mix in the remaining butter, heavy cream, and half of the Parmesan cheese.",
-        "Season with salt and taste for creaminess. Add more Parmesan to serve."
+        "Sauté onion, garlic, carrot, and celery in butter until translucent.",
+        "Add arborio rice and stir to coat with fat. Cook for 2 minutes.",
+        "Pour in wine and stir until absorbed. Add stock one ladle at a time, stirring constantly until absorbed before adding more.",
+        "Cook for 20-25 minutes until rice is creamy and al dente. Season with salt and pepper.",
+        "Stir in remaining stock and parmesan. Serve immediately."
     ],
-    "image_url": "https://spoonacular.com/recipeImages/645631-312x231.jpg",
-    "source_url": "https://spoonacular.com/645631-risotto-alla-milanese",
+    "image_url": "https://example.com/risotto.jpg",
+    "source_url": "https://spoonacular.com/risotto-recipe",
     "source": "spoonacular",
     "dish_name": "Risotto",
     "local_name": "Risotto",
     "region": "Italy",
-    "culture_or_ethnicity": "Italian",
-    "similarity_score": 0.85,
+    "culture_or_ethnicity": "Northern Italian",
+    "similarity_score": 0.91,
     "recipe_search_prompt": "risotto",
     "coordinates": [
         41.8719,

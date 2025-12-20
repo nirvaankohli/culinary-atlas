@@ -79,20 +79,33 @@ def dish(dish_name):
 
     params = request.args
 
-    all_files = scan_directory_for_json(
-        RECIPES_DB_PATH / f"{clean_filename(dish_name)}"
-    )
+    # Normalize dish_name to handle URL dashes mapped to directory underscores
+    normalized_dish_name = dish_name.replace("-", "_")
+    dish_dir = RECIPES_DB_PATH / f"{clean_filename(normalized_dish_name)}"
+
+    if not dish_dir.exists() or not dish_dir.is_dir():
+        return "Dish not found", 404
+
+    all_files = scan_directory_for_json(dish_dir)
+
+    if not all_files:
+        return "No recipes found for this dish", 404
 
     came_from = params.get(
         "from", str(all_files[0]).replace(".json", "") if all_files else ""
     )
     came_from_cleaned = clean_filename(came_from.replace("-", " ").lower())
 
-    with open(
-        RECIPES_DB_PATH / f"{clean_filename(dish_name)}" / f"{came_from_cleaned}.json",
-        "r",
-        encoding="utf-8",
-    ) as f:
+    target_file = dish_dir / f"{came_from_cleaned}.json"
+
+    if not target_file.exists():
+        # Fallback to the first available file if the requested one doesn't exist
+        fallback_file = dish_dir / all_files[0]
+        target_file = fallback_file
+        # Update came_from to match the fallback file for the UI
+        came_from = all_files[0].replace(".json", "")
+
+    with open(target_file, "r", encoding="utf-8") as f:
         dish_data = json.load(f)
 
     return render_template(
@@ -148,6 +161,7 @@ def ai_query():
 
                 json.dump(i, f, ensure_ascii=False, indent=4)
 
+        os.makedirs(RESULTS_DB_PATH, exist_ok=True)
         with open(RESULTS_DB_PATH / f"{cleaned_food}.json", "w", encoding="utf-8") as f:
             json.dump(
                 {
